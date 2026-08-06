@@ -1,0 +1,6660 @@
+{
+  "input_characters": 251933,
+  "output_characters": 245542,
+  "deleted_characters": 6391,
+  "delete_ratio": 0.025368,
+  "counters": {
+    "html_comments_removed": 6,
+    "image_links_removed": 46,
+    "image_captions_preserved": 45,
+    "pattern_lines_removed": 148,
+    "meaningless_headings_removed": 22,
+    "headings_normalized": 3,
+    "broken_lines_merged": 394,
+    "blank_lines_collapsed": 104
+  },
+  "warnings": [],
+  "total_changes": 664,
+  "change_examples": [
+    {
+      "rule": "html_comments_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1
+      ],
+      "before": "<!-- Source pages 1-100 -->",
+      "after": "",
+      "reason": "HTML 注释"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        3
+      ],
+      "before": "![](images/ecd4c899da62b9e4ab9627bf10240d67440a906e43f68a6f7b136aeddabf9f8d.jpg)",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        11
+      ],
+      "before": "![](images/1c7957f53c021b2f271281965d2f8ba1bbe13ec8514777f5011e7b64a228a3af.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        12
+      ],
+      "before": "贺迈平",
+      "after": "> 图片说明：贺迈平",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        34
+      ],
+      "before": "(2012年11月15日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        37
+      ],
+      "before": "(2012年11月17日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        39
+      ],
+      "before": "(2013年1月5日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        41
+      ],
+      "before": "(2013年12月26日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        45
+      ],
+      "before": "(2012年11月29日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        47
+      ],
+      "before": "(2013年3月17日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        50
+      ],
+      "before": "(2013年4月28日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        52
+      ],
+      "before": "(2013年5月4日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        56
+      ],
+      "before": "(2013年10月21日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        59
+      ],
+      "before": "(2014年6月6日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        64
+      ],
+      "before": "(2012年12月31日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        67
+      ],
+      "before": "(2013年11月9日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        69
+      ],
+      "before": "(2013年11月12日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        71
+      ],
+      "before": "(2014年2月7日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        74
+      ],
+      "before": "(2014年2月17日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        79
+      ],
+      "before": "(2012年11月30日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        81
+      ],
+      "before": "(2013年4月8日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        83
+      ],
+      "before": "(2014年5月26日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        86
+      ],
+      "before": "(2014年6月9日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        88
+      ],
+      "before": "(2014年6月13日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        94
+      ],
+      "before": "(2012年12月4日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        96
+      ],
+      "before": "(2013年2月23日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        98
+      ],
+      "before": "(2014年1月7日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        102
+      ],
+      "before": "(2013年8月19日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        105
+      ],
+      "before": "(2013年9月26日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        108
+      ],
+      "before": "(2013年12月30日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        111
+      ],
+      "before": "(2014年2月24日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        114
+      ],
+      "before": "(2014年5月4日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        117
+      ],
+      "before": "(2014年5月30日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        125
+      ],
+      "before": "(2013年9月25日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        128
+      ],
+      "before": "(2013年10月29日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        131
+      ],
+      "before": "(2013年11月24日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        134
+      ],
+      "before": "(2014年2月27日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        137
+      ],
+      "before": "(2014年4月15日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        140
+      ],
+      "before": "(2014年4月25日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        145
+      ],
+      "before": "(2013年4月2日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        148
+      ],
+      "before": "(2013年5月24日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        152
+      ],
+      "before": "(2013年7月18日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        157
+      ],
+      "before": "(2012年11月16日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        164
+      ],
+      "before": "(2013年3月11日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        176
+      ],
+      "before": "(2013年6月13日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        178
+      ],
+      "before": "(2014年2月18日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        181
+      ],
+      "before": "(2014年5月7日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        187
+      ],
+      "before": "(2013年1月28日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        191
+      ],
+      "before": "(2014年3月24日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        193
+      ],
+      "before": "(2014年3月27日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        196
+      ],
+      "before": "(2014年3月28日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        200
+      ],
+      "before": "(2013年3月23日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        203
+      ],
+      "before": "(2013年6月7日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        205
+      ],
+      "before": "(2014年4月1日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        210
+      ],
+      "before": "(2013年9月7日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        212
+      ],
+      "before": "(2013年10月3日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        214
+      ],
+      "before": "(2013年10月24日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        219
+      ],
+      "before": "(2013年3月25日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        221
+      ],
+      "before": "(2013年6月5日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        223
+      ],
+      "before": "(2014年6月5日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        228
+      ],
+      "before": "(2013年3月27日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        231
+      ],
+      "before": "(2013年4月7日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        233
+      ],
+      "before": "(2013年9月5日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        235
+      ],
+      "before": "(2013年9月13日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        237
+      ],
+      "before": "(2013年10月7日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        239
+      ],
+      "before": "(2014年5月21日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        246
+      ],
+      "before": "(2013年6月18日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        249
+      ],
+      "before": "(2013年6月18日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        251
+      ],
+      "before": "(2014年3月9日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        255
+      ],
+      "before": "(2013年1月22日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        258
+      ],
+      "before": "(2013年4月19日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        260
+      ],
+      "before": "(2014年1月14日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        265
+      ],
+      "before": "(2013年2月28日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        267
+      ],
+      "before": "(2013年3月1日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        269
+      ],
+      "before": "(2013年3月19日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        271
+      ],
+      "before": "(2013年6月28日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        279
+      ],
+      "before": "![](images/107dc00a20efea34a7f22b38ba6e814e16495c93570a69ca57cc0b57d06ff55c.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        280
+      ],
+      "before": "1977 年，读大学时的习近平。",
+      "after": "> 图片说明：1977 年，读大学时的习近平。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        282
+      ],
+      "before": "![](images/e0617bda8e635bd24e9df3f39f0a8fd70dd28412d1462a940c000a59c801eeab.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        283
+      ],
+      "before": "1972 年，插队回京探亲时的习近平。",
+      "after": "> 图片说明：1972 年，插队回京探亲时的习近平。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        285
+      ],
+      "before": "![](images/66c759a477fe3a06e187e95e2e5136174fd83faf91552f4b30f38e82d5df3242.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        286
+      ],
+      "before": "1979年，在中央军委办公厅工作时的习近平。",
+      "after": "> 图片说明：1979年，在中央军委办公厅工作时的习近平。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        288
+      ],
+      "before": "![](images/b8bef682e450e442398b8fc587af56a2dc01bfbb6f35b736fc7582c6f262b95c.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        289
+      ],
+      "before": "1983年，时任河北省正定县委书记的习近平临时在大街上摆桌子听取老百姓意见。",
+      "after": "> 图片说明：1983年，时任河北省正定县委书记的习近平临时在大街上摆桌子听取老百姓意见。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        291
+      ],
+      "before": "![](images/72088875bf5898e063854a9017fdb92d731bde0c5f4c7c39bcabc218044dacf2.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        292
+      ],
+      "before": "时任福建省厦门市副市长的习近平到国外考察。",
+      "after": "> 图片说明：时任福建省厦门市副市长的习近平到国外考察。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        294
+      ],
+      "before": "![](images/d3e736721c586729d9e2ffdbf40de436c020a222105fb661fd2ee0b8d4949fa2.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        295
+      ],
+      "before": "1989 年，时任福建省宁德地委书记的习近平在农村参加劳动。",
+      "after": "> 图片说明：1989 年，时任福建省宁德地委书记的习近平在农村参加劳动。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        297
+      ],
+      "before": "![](images/fe73737261acc8285207d300213e72ed85ea7cab0af391d991cc0fef2cbef086.jpg)",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        299
+      ],
+      "before": "1995 年 12 月，时任福建省委副书记、福州市委书记的习近平在闽侯县参加闽江下游防洪堤加固工程劳动。",
+      "after": "> 图片说明：1995 年 12 月，时任福建省委副书记、福州市委书记的习近平在闽侯县参加闽江下游防洪堤加固工程劳动。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        301
+      ],
+      "before": "![](images/e27d9f804a3ac487252b26ce731a863775c9b19b5d0648b8e32f24e47d5a9f4e.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        302
+      ],
+      "before": "2007 年 1 月，时任浙江省委书记的习近平在浙江省庆元县屏都镇敬老院为老人们炒菜。",
+      "after": "> 图片说明：2007 年 1 月，时任浙江省委书记的习近平在浙江省庆元县屏都镇敬老院为老人们炒菜。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        304
+      ],
+      "before": "![](images/64620f68941a2a5a243eb8283d189d322ee516c32decca7bbcbdd33e0c3b804c.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        305
+      ],
+      "before": "2007年9月，时任上海市委书记的习近平在上海市闵行区启音学校与听障学生亲切交谈。",
+      "after": "> 图片说明：2007年9月，时任上海市委书记的习近平在上海市闵行区启音学校与听障学生亲切交谈。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        307
+      ],
+      "before": "![](images/b6250b3fe3c71a9924e6ca95edf92530c842c1f0742eac61a6667715b7c010b1.jpg)",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        309
+      ],
+      "before": "2008年1月贵州雨雪冰冻灾害时，时任中共中央政治局常委、中央书记处书记的习近平到铜仁地区万山特区高楼坪乡老山口村受灾的侗族村民唐召维家看望慰问。",
+      "after": "> 图片说明：2008年1月贵州雨雪冰冻灾害时，时任中共中央政治局常委、中央书记处书记的习近平到铜仁地区万山特区高楼坪乡老山口村受灾的侗族村民唐召维家看望慰问。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        311
+      ],
+      "before": "![](images/a33b4ad95d88d9493b0de465a5bd298a67f3533442fa128a44f76d94c78afa80.jpg)",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        313
+      ],
+      "before": "2012年2月，时任中华人民共和国副主席的习近平访美时到艾奥瓦州老朋友家里与27年前结交的美国老朋友茶叙。",
+      "after": "> 图片说明：2012年2月，时任中华人民共和国副主席的习近平访美时到艾奥瓦州老朋友家里与27年前结交的美国老朋友茶叙。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        315
+      ],
+      "before": "![](images/312e576cac3d8e81a873c2d8f3c37dcf153cebddbaac6f06e4d189e836d28561.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        316
+      ],
+      "before": "2012 年 2 月，时任中华人民共和国副主席的习近平访问爱尔兰，在参观爱尔兰盖尔式运动协会时应邀开球。",
+      "after": "> 图片说明：2012 年 2 月，时任中华人民共和国副主席的习近平访问爱尔兰，在参观爱尔兰盖尔式运动协会时应邀开球。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        318
+      ],
+      "before": "![](images/14a59294ee001d4259a7a56a1f80aeb01ae9016f8e893c5173924d6b8fced35e.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        319
+      ],
+      "before": "习近平和夫人彭丽媛合影。",
+      "after": "> 图片说明：习近平和夫人彭丽媛合影。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        321
+      ],
+      "before": "![](images/6957baa0726c4e1a7e43cd6d06ae1418d6c252015e84b3cef0d1e67c93d65200.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        322
+      ],
+      "before": "习近平在福州带女儿玩耍。",
+      "after": "> 图片说明：习近平在福州带女儿玩耍。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        324
+      ],
+      "before": "![](images/62a8a218efba22c06b76ed75e48a820ff747d34e7dc140402200f36ee8169c67.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        325
+      ],
+      "before": "习近平与父亲习仲勋、夫人彭丽媛、女儿的家庭照。",
+      "after": "> 图片说明：习近平与父亲习仲勋、夫人彭丽媛、女儿的家庭照。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        327
+      ],
+      "before": "![](images/9d7754273fc09ffda92edede3c7cab66ed47d07b2ce2f8643e840ad85965e647.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        328
+      ],
+      "before": "习近平陪母亲齐心散步。",
+      "after": "> 图片说明：习近平陪母亲齐心散步。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        334
+      ],
+      "before": "(2012年11月15日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        354
+      ],
+      "before": "(2012年11月17日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        468
+      ],
+      "before": "(2013年1月5日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        492
+      ],
+      "before": "(2013年12月26日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        554
+      ],
+      "before": "(2012年11月29日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        576
+      ],
+      "before": "(2013年3月17日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        584
+      ],
+      "before": "各位代表!",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        630
+      ],
+      "before": "各位代表!",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        640
+      ],
+      "before": "(2013年4月28日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        682
+      ],
+      "before": "(2013年5月4日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        770
+      ],
+      "before": "(2013年10月21日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        820
+      ],
+      "before": "(2014年6月6日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "html_comments_removed",
+      "action": "delete_line",
+      "source_lines": [
+        836
+      ],
+      "before": "<!-- Source pages 101-200 -->",
+      "after": "",
+      "reason": "HTML 注释"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        840
+      ],
+      "before": "(2012年12月31日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        852
+      ],
+      "before": "(2013年11月9日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1034
+      ],
+      "before": "(2013年11月12日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1104
+      ],
+      "before": "(2014年2月7日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1138
+      ],
+      "before": "(2014年2月17日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1164
+      ],
+      "before": "(2012年11月30日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1174
+      ],
+      "before": "(2013年4月8日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1198
+      ],
+      "before": "(2014年5月26日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1216
+      ],
+      "before": "(2014年6月9日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1300
+      ],
+      "before": "(2014年6月13日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1318
+      ],
+      "before": "(2012年12月4日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1382
+      ],
+      "before": "(2013年2月23日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1398
+      ],
+      "before": "(2014年1月7日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1422
+      ],
+      "before": "![](images/77b41ae77fda3c8d67470c5bd968d0022c96cd9459e9f86e84528c5fe1aeada8.jpg)",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1424
+      ],
+      "before": "2012年11月15日，刚刚在中国共产党第十八届中央委员会第一次全体会议上当选的中共中央总书记习近平和中共中央政治局常委李克强、张德江、俞正声、刘云山、王岐山、张高丽在北京人民大会堂同采访十八大的中外记者亲切见面。",
+      "after": "> 图片说明：2012年11月15日，刚刚在中国共产党第十八届中央委员会第一次全体会议上当选的中共中央总书记习近平和中共中央政治局常委李克强、张德江、俞正声、刘云山、王岐山、张高丽在北京人民大会堂同采访十八大的中外记者亲切见面。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1426
+      ],
+      "before": "![](images/f56dce85c3fe9cf34f52b5f0882350879843f75401beea10346c3de3ebbd37bb.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1427
+      ],
+      "before": "2012年11月15日，在北京人民大会堂会见出席中共十八大代表、特邀代表和列席人员时，习近平和胡锦涛亲切握手。",
+      "after": "> 图片说明：2012年11月15日，在北京人民大会堂会见出席中共十八大代表、特邀代表和列席人员时，习近平和胡锦涛亲切握手。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1429
+      ],
+      "before": "![](images/774ad7bdff9b2733d6828cca1e59cf515da65eec81b9ea73914ab7685385e564.jpg)",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1431
+      ],
+      "before": "2012年11月29日，习近平和李克强、张德江、俞正声、刘云山、王岐山、张高丽等来到中国国家博物馆，参观《复兴之路》展览，首次提出实现中华民族伟大复兴的中国梦。",
+      "after": "> 图片说明：2012年11月29日，习近平和李克强、张德江、俞正声、刘云山、王岐山、张高丽等来到中国国家博物馆，参观《复兴之路》展览，首次提出实现中华民族伟大复兴的中国梦。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1433
+      ],
+      "before": "![](images/8ce32442c6765a391c1c7589807a210535a9de2460a641e3e7f004bb51b52fd8.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1434
+      ],
+      "before": "2012年12月8日，习近平在深圳考察期间，在莲花山公园与当年参与特区建设的老同志交谈，强调结合新的时代条件把改革开放继续推向前进。",
+      "after": "> 图片说明：2012年12月8日，习近平在深圳考察期间，在莲花山公园与当年参与特区建设的老同志交谈，强调结合新的时代条件把改革开放继续推向前进。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1436
+      ],
+      "before": "![](images/a8db5edfc79ae8cc4a7a24bdba9ba85d98217844247e6b03c7d625692fc5cb93.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1437
+      ],
+      "before": "2013年2月4日，习近平来到甘肃省兰州市五泉菜市场了解节日供应情况，在一经营户的摊位前了解蔬菜价格、供应、销售情况。",
+      "after": "> 图片说明：2013年2月4日，习近平来到甘肃省兰州市五泉菜市场了解节日供应情况，在一经营户的摊位前了解蔬菜价格、供应、销售情况。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1439
+      ],
+      "before": "![](images/9a734a75a715c0646b8bde5e25fc3e429e362400f6e5ea6c118318f04f0cd1ba.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1440
+      ],
+      "before": "2013年3月14日，习近平在第十二届全国人民代表大会第一次会议上当选中华人民共和国主席。3月17日，习近平在闭幕会上发表重要讲话。",
+      "after": "> 图片说明：2013年3月14日，习近平在第十二届全国人民代表大会第一次会议上当选中华人民共和国主席。3月17日，习近平在闭幕会上发表重要讲话。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1442
+      ],
+      "before": "![](images/9c538b1ea5bd3c9d02723fa3e4b0814af4206b6a3ae451a9bc40ca2b38d2fcbb.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1443
+      ],
+      "before": "2013年4月9日，习近平在海南考察工作时，在亚龙湾兰德玫瑰风情产业园高兴地戴上黎族群众递上的斗笠。",
+      "after": "> 图片说明：2013年4月9日，习近平在海南考察工作时，在亚龙湾兰德玫瑰风情产业园高兴地戴上黎族群众递上的斗笠。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1445
+      ],
+      "before": "![](images/32fa9cff9bb787638e74e11e53edfc6f5337b0d043badb76046147cfdc5d0d13.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1446
+      ],
+      "before": "2013年6月11日，习近平在酒泉卫星发射中心观看神舟十号载人飞船发射，向即将出征的航天员聂海胜、张晓光、王亚平挥手致意。",
+      "after": "> 图片说明：2013年6月11日，习近平在酒泉卫星发射中心观看神舟十号载人飞船发射，向即将出征的航天员聂海胜、张晓光、王亚平挥手致意。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1448
+      ],
+      "before": "![](images/79d3bfed6b16c120f8d050a0273dc68c93f3e71562140f087f654ccf9b988763.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1449
+      ],
+      "before": "2013年7月21日，习近平在湖北调研全面深化改革问题和经济运行情况时，冒雨来到武汉新港阳逻集装箱港区考察。",
+      "after": "> 图片说明：2013年7月21日，习近平在湖北调研全面深化改革问题和经济运行情况时，冒雨来到武汉新港阳逻集装箱港区考察。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1451
+      ],
+      "before": "![](images/c5eb019df8f2b498279f1f79a06c8569f76410b489769486a1f515b453d957d5.jpg)",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1453
+      ],
+      "before": "2013年8月28日，习近平在中国第一艘航空母舰——辽宁舰上检阅水兵仪仗队。",
+      "after": "> 图片说明：2013年8月28日，习近平在中国第一艘航空母舰——辽宁舰上检阅水兵仪仗队。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1455
+      ],
+      "before": "![](images/cf253e98054fc4cf3e9eacbb49ef1fa6b3c865e06997802e15fa7e00159eb455.jpg)",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1457
+      ],
+      "before": "2013年11月3日，习近平在湖南考察时，在湘西土家族苗族自治州花垣县排碧乡十八洞村同村干部和村民座谈。",
+      "after": "> 图片说明：2013年11月3日，习近平在湖南考察时，在湘西土家族苗族自治州花垣县排碧乡十八洞村同村干部和村民座谈。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1459
+      ],
+      "before": "![](images/6349bc6d4b0495ac1f90d38e8db44a93b1407edb1ebfc6581acd372cf5accdae.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1460
+      ],
+      "before": "2013年11月25日，习近平在地处山东沂蒙老区的临沭县曹庄镇朱村亲切地拉着83岁的“老支前”王克昌的手去他家看望。",
+      "after": "> 图片说明：2013年11月25日，习近平在地处山东沂蒙老区的临沭县曹庄镇朱村亲切地拉着83岁的“老支前”王克昌的手去他家看望。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1462
+      ],
+      "before": "![](images/38b999826329bbda3baffea0553331d5fe1e336e28ab6e51197e8e702be6775a.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1463
+      ],
+      "before": "2014年1月26日，习近平来到中国边疆的内蒙古阿尔山，冒着零下30多摄氏度的严寒，迎风踏雪慰问在边防线上巡逻执勤的官兵。",
+      "after": "> 图片说明：2014年1月26日，习近平来到中国边疆的内蒙古阿尔山，冒着零下30多摄氏度的严寒，迎风踏雪慰问在边防线上巡逻执勤的官兵。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1465
+      ],
+      "before": "![](images/7b338db31385c58fb2cbc8f1cd36010fcbfc163dd2fa5fad70b7afb0556c1947.jpg)",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1467
+      ],
+      "before": "2014年4月9日，习近平视察中国人民武装警察部队特种警察学院并为“猎鹰突击队”授旗。",
+      "after": "> 图片说明：2014年4月9日，习近平视察中国人民武装警察部队特种警察学院并为“猎鹰突击队”授旗。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1469
+      ],
+      "before": "![](images/82fe0cb14f2e1ee6fda21a5058ddc9ad0955f4412f5788c67a7c81508752dea3.jpg)",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1471
+      ],
+      "before": "2014年4月28日，习近平在新疆考察时，在疏附县托克扎克镇阿亚格曼干村村民阿卜都克尤木·肉孜家同村民座谈。",
+      "after": "> 图片说明：2014年4月28日，习近平在新疆考察时，在疏附县托克扎克镇阿亚格曼干村村民阿卜都克尤木·肉孜家同村民座谈。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1473
+      ],
+      "before": "![](images/638ca0d877ab9f9f63990248d7c94c3e000babb34ed34d047b92edb1a0aa2cfc.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1474
+      ],
+      "before": "2014年5月9日，习近平在河南考察时，在尉氏县张市镇高标准粮田察看小麦长势。",
+      "after": "> 图片说明：2014年5月9日，习近平在河南考察时，在尉氏县张市镇高标准粮田察看小麦长势。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "html_comments_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1476
+      ],
+      "before": "<!-- Source pages 201-300 -->",
+      "after": "",
+      "reason": "HTML 注释"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1482
+      ],
+      "before": "(2013年8月19日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1514
+      ],
+      "before": "(2013年9月26日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1528
+      ],
+      "before": "(2013年12月30日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1548
+      ],
+      "before": "(2014年2月24日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1566
+      ],
+      "before": "(2014年5月4日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1740
+      ],
+      "before": "(2014年5月30日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1821
+      ],
+      "before": "(2013年9月25日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1829
+      ],
+      "before": "(2013年10月29日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1851
+      ],
+      "before": "(2013年11月24日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1869
+      ],
+      "before": "(2014年2月27日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1895
+      ],
+      "before": "(2014年4月15日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1909
+      ],
+      "before": "(2014年4月25日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1933
+      ],
+      "before": "(2013年4月2日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1943
+      ],
+      "before": "(2013年5月24日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1963
+      ],
+      "before": "(2013年7月18日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1983
+      ],
+      "before": "(2012年11月16日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2025
+      ],
+      "before": "(2013年3月11日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2127
+      ],
+      "before": "(2013年6月13日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2143
+      ],
+      "before": "(2014年2月18日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2203
+      ],
+      "before": "(2014年5月7日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2221
+      ],
+      "before": "(2013年1月28日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "html_comments_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2245
+      ],
+      "before": "<!-- Source pages 301-400 -->",
+      "after": "",
+      "reason": "HTML 注释"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2265
+      ],
+      "before": "(2014年3月24日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2275
+      ],
+      "before": "各位同事!",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2327
+      ],
+      "before": "(2014年3月27日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2395
+      ],
+      "before": "(2014年3月28日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2431
+      ],
+      "before": "(2013年3月23日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2517
+      ],
+      "before": "(2013年6月7日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2543
+      ],
+      "before": "(2014年4月1日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2567
+      ],
+      "before": "(2013年9月7日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2619
+      ],
+      "before": "(2013年10月3日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2669
+      ],
+      "before": "(2013年10月24日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2699
+      ],
+      "before": "(2013年3月25日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2797
+      ],
+      "before": "(2013年6月5日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2823
+      ],
+      "before": "(2014年6月5日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2909
+      ],
+      "before": "![](images/a8aef91d2398e295e7c15204dbcc00984f5657cf19b876cb434bec5fb3d7d051.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        2910
+      ],
+      "before": "2013年3月22日，习近平在俄罗斯莫斯科克里姆林宫与俄罗斯总统普京举行会谈。",
+      "after": "> 图片说明：2013年3月22日，习近平在俄罗斯莫斯科克里姆林宫与俄罗斯总统普京举行会谈。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2912
+      ],
+      "before": "![](images/a6ce5a21502270211cd811719bef16944cea96ceb5219805f9420d9c217d4225.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        2913
+      ],
+      "before": "2013年3月25日，习近平在坦桑尼亚达累斯萨拉姆尼雷尔国际会议中心发表演讲。",
+      "after": "> 图片说明：2013年3月25日，习近平在坦桑尼亚达累斯萨拉姆尼雷尔国际会议中心发表演讲。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2915
+      ],
+      "before": "![](images/8eb1466e98ea7ede58b689d233b8602271b06f1e6e68c83dc3f3c6caa6ea6df8.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        2916
+      ],
+      "before": "2013年3月27日，习近平在南非德班出席金砖国家领导人第五次会晤。",
+      "after": "> 图片说明：2013年3月27日，习近平在南非德班出席金砖国家领导人第五次会晤。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2918
+      ],
+      "before": "![](images/4bf7117107c819370b1c1958eff08678987ba97a8888c6181d6f5b44b9f79b5c.jpg)",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        2920
+      ],
+      "before": "2013年4月7日，习近平在海南博鳌同出席博鳌亚洲论坛2013年年会的外国领导人和国际组织负责人合影。",
+      "after": "> 图片说明：2013年4月7日，习近平在海南博鳌同出席博鳌亚洲论坛2013年年会的外国领导人和国际组织负责人合影。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2922
+      ],
+      "before": "![](images/f00bc7d621e681693a825c207bd7c80af5bc0c298e1f4fe809a7e7bd87bd8700.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        2923
+      ],
+      "before": "2013年6月3日，正在哥斯达黎加进行国事访问的习近平和夫人彭丽媛走访当地农户萨莫拉一家。",
+      "after": "> 图片说明：2013年6月3日，正在哥斯达黎加进行国事访问的习近平和夫人彭丽媛走访当地农户萨莫拉一家。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2925
+      ],
+      "before": "![](images/e029453930845832ff28f7e47f79ea6bb96f95c016c14f4d1966110c66d4b6e1.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        2926
+      ],
+      "before": "2013年6月7日，习近平在美国加利福尼亚州安纳伯格庄园同美国总统奥巴马举行中美元首会晤。",
+      "after": "> 图片说明：2013年6月7日，习近平在美国加利福尼亚州安纳伯格庄园同美国总统奥巴马举行中美元首会晤。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2928
+      ],
+      "before": "![](images/324bbf1ff4802abb95a500beb12c1d4755b3dc4ef41a0e19cb4b12e979a518ee.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        2929
+      ],
+      "before": "2013年9月6日，习近平在俄罗斯圣彼得堡出席二十国集团领导人第八次峰会。",
+      "after": "> 图片说明：2013年9月6日，习近平在俄罗斯圣彼得堡出席二十国集团领导人第八次峰会。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2931
+      ],
+      "before": "![](images/136e2b0d4e2fe2d0bcb31c6a1bd1c045a898bb3b5917c7ea22800184f6a95bf4.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        2932
+      ],
+      "before": "2013年9月13日，习近平在吉尔吉斯斯坦比什凯克出席上海合作组织成员国元首理事会第十三次会议。",
+      "after": "> 图片说明：2013年9月13日，习近平在吉尔吉斯斯坦比什凯克出席上海合作组织成员国元首理事会第十三次会议。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2934
+      ],
+      "before": "![](images/3e9995b245cebf9378aaff9b0ef13f6170e62314733824741b9516445ffc2917.jpg)",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        2936
+      ],
+      "before": "2013年10月8日，习近平在印度尼西亚巴厘岛出席亚太经合组织第二十一次领导人非正式会议。",
+      "after": "> 图片说明：2013年10月8日，习近平在印度尼西亚巴厘岛出席亚太经合组织第二十一次领导人非正式会议。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2938
+      ],
+      "before": "![](images/5ed76bba9eab9bee4f72ca5307bfc0436021810d95e577eb1baa364e95b26094.jpg)",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        2940
+      ],
+      "before": "2014 年 3 月 22 日，习近平和夫人彭丽媛在荷兰阿姆斯特丹出席荷兰国王威廉—亚历山大举行的盛大国宴。",
+      "after": "> 图片说明：2014 年 3 月 22 日，习近平和夫人彭丽媛在荷兰阿姆斯特丹出席荷兰国王威廉—亚历山大举行的盛大国宴。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2942
+      ],
+      "before": "![](images/1c2a0ee23fb3f9a3b0bb6e5cb471b3329483feea58891bff5afb123a4c61c734.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        2943
+      ],
+      "before": "2014年3月26日，习近平和夫人彭丽媛在法国参观里昂中法大学旧址，为中国一里昂关系促进中心、里昂中法大学历史博物馆揭牌。",
+      "after": "> 图片说明：2014年3月26日，习近平和夫人彭丽媛在法国参观里昂中法大学旧址，为中国一里昂关系促进中心、里昂中法大学历史博物馆揭牌。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2945
+      ],
+      "before": "![](images/eab486084823b8f6bdf4f3e087e4e04b37a277a8cdef4e771d082123269681f4.jpg)",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        2947
+      ],
+      "before": "2014年5月20日，习近平在上海国际会议中心举行宴会，代表中国政府和人民，欢迎前来出席亚洲相互协作与信任措施会议第四次峰会的各国贵宾。",
+      "after": "> 图片说明：2014年5月20日，习近平在上海国际会议中心举行宴会，代表中国政府和人民，欢迎前来出席亚洲相互协作与信任措施会议第四次峰会的各国贵宾。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2953
+      ],
+      "before": "(2013年3月27日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2999
+      ],
+      "before": "各位同事!",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        3011
+      ],
+      "before": "(2013年4月7日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        3083
+      ],
+      "before": "(2013年9月5日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "html_comments_removed",
+      "action": "delete_line",
+      "source_lines": [
+        3131
+      ],
+      "before": "<!-- Source pages 401-500 -->",
+      "after": "",
+      "reason": "HTML 注释"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        3135
+      ],
+      "before": "(2013年9月13日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        3193
+      ],
+      "before": "(2013年10月7日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        3299
+      ],
+      "before": "(2014年5月21日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        3403
+      ],
+      "before": "(2013年6月18日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        3479
+      ],
+      "before": "(2013年6月18日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        3539
+      ],
+      "before": "(2014年3月9日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        3551
+      ],
+      "before": "(2013年1月22日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        3575
+      ],
+      "before": "(2013年4月19日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        3601
+      ],
+      "before": "(2014年1月14日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        3637
+      ],
+      "before": "(2013年2月28日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        3643
+      ],
+      "before": "(2013年3月1日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        3707
+      ],
+      "before": "(2013年3月19日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "pattern_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        3733
+      ],
+      "before": "(2013年6月28日)",
+      "after": "",
+      "reason": "配置的整行正则"
+    },
+    {
+      "rule": "html_comments_removed",
+      "action": "delete_line",
+      "source_lines": [
+        3991
+      ],
+      "before": "<!-- Source pages 501-536 -->",
+      "after": "",
+      "reason": "HTML 注释"
+    },
+    {
+      "rule": "remove_meaningless_headings",
+      "action": "delete_heading_only",
+      "source_lines": [
+        4093
+      ],
+      "before": "## A",
+      "after": "",
+      "reason": "标题仅含编号而无语义"
+    },
+    {
+      "rule": "remove_meaningless_headings",
+      "action": "delete_heading_only",
+      "source_lines": [
+        4132
+      ],
+      "before": "## B",
+      "after": "",
+      "reason": "标题仅含编号而无语义"
+    },
+    {
+      "rule": "remove_meaningless_headings",
+      "action": "delete_heading_only",
+      "source_lines": [
+        4195
+      ],
+      "before": "## C",
+      "after": "",
+      "reason": "标题仅含编号而无语义"
+    },
+    {
+      "rule": "remove_meaningless_headings",
+      "action": "delete_heading_only",
+      "source_lines": [
+        4266
+      ],
+      "before": "## D",
+      "after": "",
+      "reason": "标题仅含编号而无语义"
+    },
+    {
+      "rule": "remove_meaningless_headings",
+      "action": "delete_heading_only",
+      "source_lines": [
+        4379
+      ],
+      "before": "## E",
+      "after": "",
+      "reason": "标题仅含编号而无语义"
+    },
+    {
+      "rule": "remove_meaningless_headings",
+      "action": "delete_heading_only",
+      "source_lines": [
+        4392
+      ],
+      "before": "## F",
+      "after": "",
+      "reason": "标题仅含编号而无语义"
+    },
+    {
+      "rule": "remove_meaningless_headings",
+      "action": "delete_heading_only",
+      "source_lines": [
+        4452
+      ],
+      "before": "## G",
+      "after": "",
+      "reason": "标题仅含编号而无语义"
+    },
+    {
+      "rule": "remove_meaningless_headings",
+      "action": "delete_heading_only",
+      "source_lines": [
+        4598
+      ],
+      "before": "## H",
+      "after": "",
+      "reason": "标题仅含编号而无语义"
+    },
+    {
+      "rule": "remove_meaningless_headings",
+      "action": "delete_heading_only",
+      "source_lines": [
+        4697
+      ],
+      "before": "## J",
+      "after": "",
+      "reason": "标题仅含编号而无语义"
+    },
+    {
+      "rule": "remove_meaningless_headings",
+      "action": "delete_heading_only",
+      "source_lines": [
+        4807
+      ],
+      "before": "## K",
+      "after": "",
+      "reason": "标题仅含编号而无语义"
+    },
+    {
+      "rule": "remove_meaningless_headings",
+      "action": "delete_heading_only",
+      "source_lines": [
+        4860
+      ],
+      "before": "## L",
+      "after": "",
+      "reason": "标题仅含编号而无语义"
+    },
+    {
+      "rule": "remove_meaningless_headings",
+      "action": "delete_heading_only",
+      "source_lines": [
+        4984
+      ],
+      "before": "## M",
+      "after": "",
+      "reason": "标题仅含编号而无语义"
+    },
+    {
+      "rule": "remove_meaningless_headings",
+      "action": "delete_heading_only",
+      "source_lines": [
+        5066
+      ],
+      "before": "## N",
+      "after": "",
+      "reason": "标题仅含编号而无语义"
+    },
+    {
+      "rule": "remove_meaningless_headings",
+      "action": "delete_heading_only",
+      "source_lines": [
+        5115
+      ],
+      "before": "## p",
+      "after": "",
+      "reason": "标题仅含编号而无语义"
+    },
+    {
+      "rule": "remove_meaningless_headings",
+      "action": "delete_heading_only",
+      "source_lines": [
+        5137
+      ],
+      "before": "## Q",
+      "after": "",
+      "reason": "标题仅含编号而无语义"
+    },
+    {
+      "rule": "remove_meaningless_headings",
+      "action": "delete_heading_only",
+      "source_lines": [
+        5216
+      ],
+      "before": "## R",
+      "after": "",
+      "reason": "标题仅含编号而无语义"
+    },
+    {
+      "rule": "remove_meaningless_headings",
+      "action": "delete_heading_only",
+      "source_lines": [
+        5263
+      ],
+      "before": "## S",
+      "after": "",
+      "reason": "标题仅含编号而无语义"
+    },
+    {
+      "rule": "remove_meaningless_headings",
+      "action": "delete_heading_only",
+      "source_lines": [
+        5485
+      ],
+      "before": "## T",
+      "after": "",
+      "reason": "标题仅含编号而无语义"
+    },
+    {
+      "rule": "remove_meaningless_headings",
+      "action": "delete_heading_only",
+      "source_lines": [
+        5536
+      ],
+      "before": "## W",
+      "after": "",
+      "reason": "标题仅含编号而无语义"
+    },
+    {
+      "rule": "remove_meaningless_headings",
+      "action": "delete_heading_only",
+      "source_lines": [
+        5614
+      ],
+      "before": "## X",
+      "after": "",
+      "reason": "标题仅含编号而无语义"
+    },
+    {
+      "rule": "remove_meaningless_headings",
+      "action": "delete_heading_only",
+      "source_lines": [
+        5739
+      ],
+      "before": "## Y",
+      "after": "",
+      "reason": "标题仅含编号而无语义"
+    },
+    {
+      "rule": "remove_meaningless_headings",
+      "action": "delete_heading_only",
+      "source_lines": [
+        5859
+      ],
+      "before": "## z",
+      "after": "",
+      "reason": "标题仅含编号而无语义"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        592
+      ],
+      "before": "## 各位代表!",
+      "after": "**各位代表!**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        616
+      ],
+      "before": "## 各位代表!",
+      "after": "**各位代表!**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        626
+      ],
+      "before": "## 各位代表!",
+      "after": "**各位代表!**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        33
+      ],
+      "before": "人民对美好生活的向往，就是我们的奋斗目标 …… 3",
+      "after": "人民对美好生活的向往，就是我们的奋斗目标 …… 3紧紧围绕坚持和发展中国特色社会主义",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        36
+      ],
+      "before": "学习宣传贯彻党的十八大精神 …… 6",
+      "after": "学习宣传贯彻党的十八大精神 …… 6毫不动摇坚持和发展中国特色社会主义 …… 21",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        40
+      ],
+      "before": "坚持和运用好毛泽东思想活的灵魂 …… 25",
+      "after": "坚持和运用好毛泽东思想活的灵魂 …… 25二、实现中华民族伟大复兴的中国梦",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        44
+      ],
+      "before": "中华民族近代以来最伟大的梦想 …… 35",
+      "after": "中华民族近代以来最伟大的梦想 …… 35在第十二届全国人民代表大会第一次会议上的讲话 …… 38",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        51
+      ],
+      "before": "在实现中国梦的生动实践中放飞青春梦想 …… 49",
+      "after": "在实现中国梦的生动实践中放飞青春梦想 …… 49实现中国梦不仅造福中国人民，而且造福世界人民 …… 56",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        55
+      ],
+      "before": "创新正当其时，圆梦适得其势 …… 58",
+      "after": "创新正当其时，圆梦适得其势 …… 58实现中华民族伟大复兴",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        63
+      ],
+      "before": "改革开放只有进行时没有完成时 …… 67",
+      "after": "改革开放只有进行时没有完成时 …… 67关于《中共中央关于全面深化改革",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        66
+      ],
+      "before": "若干重大问题的决定》的说明 …… 70",
+      "after": "若干重大问题的决定》的说明 …… 70切实把思想统一到党的十八届三中全会精神上来 …… 90",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        78
+      ],
+      "before": "经济增长必须是实实在在和没有水分的增长 …… 111",
+      "after": "经济增长必须是实实在在和没有水分的增长 …… 111提高开放型经济水平 …… 113",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        82
+      ],
+      "before": "“看不见的手”和“看得见的手”都要用好 …… 116",
+      "after": "“看不见的手”和“看得见的手”都要用好 …… 116加快从要素驱动、投资规模驱动发展为主",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        85
+      ],
+      "before": "向以创新驱动发展为主的转变 …… 119",
+      "after": "向以创新驱动发展为主的转变 …… 119积极推动我国能源生产和消费革命 …… 130",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        93
+      ],
+      "before": "施行30周年大会上的讲话 …… 135",
+      "after": "施行30周年大会上的讲话 …… 135坚持法治国家、法治政府、法治社会一体建设 …… 144",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        97
+      ],
+      "before": "促进社会公平正义，保障人民安居乐业 …… 147",
+      "after": "促进社会公平正义，保障人民安居乐业 …… 147六、建设社会主义文化强国",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        101
+      ],
+      "before": "把宣传思想工作做得更好 …… 153",
+      "after": "把宣传思想工作做得更好 …… 153为实现中国梦凝聚有力道德支撑 …… 158",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        110
+      ],
+      "before": "培育和弘扬社会主义核心价值观 …… 163",
+      "after": "培育和弘扬社会主义核心价值观 …… 163青年要自觉践行社会主义核心价值观 …… 166",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        116
+      ],
+      "before": "从小积极培育和践行社会主义核心价值观 …… 180",
+      "after": "从小积极培育和践行社会主义核心价值观 …… 180七、推进社会事业和社会管理改革发展",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        121
+      ],
+      "before": "推动贫困地区脱贫致富、加快发展 …… 189",
+      "after": "推动贫困地区脱贫致富、加快发展 …… 189(2012年12月29日、30日)",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        124
+      ],
+      "before": "让十三亿人民享有更好更公平的教育 …… 191",
+      "after": "让十三亿人民享有更好更公平的教育 …… 191加快推进住房保障和供应体系建设 …… 192",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        130
+      ],
+      "before": "始终把人民群众生命安全放在第一位 …… 195",
+      "after": "始终把人民群众生命安全放在第一位 …… 195努力把我国建设成为网络强国 …… 197",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        136
+      ],
+      "before": "坚持总体国家安全观，走中国特色国家安全道路 …… 200",
+      "after": "坚持总体国家安全观，走中国特色国家安全道路 …… 200切实维护国家安全和社会安定 …… 202",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        144
+      ],
+      "before": "为建设美丽中国创造更好生态条件 …… 207",
+      "after": "为建设美丽中国创造更好生态条件 …… 207努力走向社会主义生态文明新时代 …… 208",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        156
+      ],
+      "before": "把国防和军队建设不断推向前进 …… 215",
+      "after": "把国防和军队建设不断推向前进 …… 215努力建设巩固国防和强大军队 …… 218",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        166
+      ],
+      "before": "十、丰富“一国两制”实践和推进祖国统一",
+      "after": "十、丰富“一国两制”实践和推进祖国统一香港、澳门与祖国内地的命运始终紧密相连 …… 225",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        169
+      ],
+      "before": "(2012年12月20日、2013年3月18日、",
+      "after": "(2012年12月20日、2013年3月18日、2013年12月18日)",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        172
+      ],
+      "before": "共同开创中华民族美好未来 …… 230",
+      "after": "共同开创中华民族美好未来 …… 230(2013年4月8日、10月6日)",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        175
+      ],
+      "before": "从中华民族整体利益的高度把握两岸关系大局 …… 233",
+      "after": "从中华民族整体利益的高度把握两岸关系大局 …… 233共圆中华民族伟大复兴的中国梦 …… 236",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        186
+      ],
+      "before": "夯实走和平发展道路的基础 …… 247",
+      "after": "夯实走和平发展道路的基础 …… 247走出一条和衷共济、合作共赢的新路子 …… 250",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        190
+      ],
+      "before": "坚持理性、协调、并进的核安全观 …… 253",
+      "after": "坚持理性、协调、并进的核安全观 …… 253文明因交流而多彩，文明因互鉴而丰富 …… 258",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        195
+      ],
+      "before": "自身发展目标的自信和自觉 …… 264",
+      "after": "自身发展目标的自信和自觉 …… 264十二、推动构建新型大国关系",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        199
+      ],
+      "before": "顺应时代前进潮流，促进世界和平发展 …… 271",
+      "after": "顺应时代前进潮流，促进世界和平发展 …… 271构建中美新型大国关系 …… 279",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        204
+      ],
+      "before": "在亚欧大陆架起一座友谊和合作之桥 …… 282",
+      "after": "在亚欧大陆架起一座友谊和合作之桥 …… 282十三、做好周边外交工作",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        209
+      ],
+      "before": "共同建设“丝绸之路经济带” …… 287",
+      "after": "共同建设“丝绸之路经济带” …… 287共同建设二十一世纪“海上丝绸之路” …… 292",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        213
+      ],
+      "before": "坚持亲、诚、惠、容的周边外交理念 …… 296",
+      "after": "坚持亲、诚、惠、容的周边外交理念 …… 296十四、加强与发展中国家团结合作",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        218
+      ],
+      "before": "永远做可靠朋友和真诚伙伴 …… 303",
+      "after": "永远做可靠朋友和真诚伙伴 …… 303推动中拉关系实现新的更大发展 …… 311",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        222
+      ],
+      "before": "弘扬丝路精神，深化中阿合作 …… 313",
+      "after": "弘扬丝路精神，深化中阿合作 …… 313十五、积极参与多边事务",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        230
+      ],
+      "before": "共同创造亚洲和世界的美好未来 …… 328",
+      "after": "共同创造亚洲和世界的美好未来 …… 328共同维护和发展开放型世界经济 …… 335",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        234
+      ],
+      "before": "弘扬“上海精神”，促进共同发展 …… 339",
+      "after": "弘扬“上海精神”，促进共同发展 …… 339深化改革开放，共创美好亚太 …… 343",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        243
+      ],
+      "before": "厉行勤俭节约，反对铺张浪费 …… 363",
+      "after": "厉行勤俭节约，反对铺张浪费 …… 363(2013年1月17日、2月22日)",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        245
+      ],
+      "before": "群众路线是党的生命线和根本工作路线 …… 365",
+      "after": "群众路线是党的生命线和根本工作路线 …… 365准确把握党的群众路线教育实践活动的",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        250
+      ],
+      "before": "树立和发扬“三严三实”的作风 …… 381",
+      "after": "树立和发扬“三严三实”的作风 …… 381十七、推进反腐倡廉建设",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        254
+      ],
+      "before": "把权力关进制度的笼子里 …… 385",
+      "after": "把权力关进制度的笼子里 …… 385运用历史智慧推进反腐倡廉建设 …… 390",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        264
+      ],
+      "before": "发扬钉钉子的精神，一张好的蓝图一干到底 …… 399",
+      "after": "发扬钉钉子的精神，一张好的蓝图一干到底 …… 399依靠学习走向未来 …… 401",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        276
+      ],
+      "before": "——记中共中央总书记习近平 …… 423",
+      "after": "——记中共中央总书记习近平 …… 423索引 …… 449",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        392
+      ],
+      "before": "第四，深刻领会夺取中国特色社会主义新胜利的基本要求。党的十八大提出了在新的历史条件下夺取中国特色社会主义新胜利必须牢牢把握的基本要求。这些基本要求是根据党的基本理论、基本路线、基本纲领、基本经验，深刻总结60多年来我国社会主义建设特别是中国特色社会主义建设实践提出的，是最本质的东西，是体现共产党执政规律、社会主义建设规律、人类社会发展规律的东西，表明我们党对中国特色社会主义规",
+      "after": "第四，深刻领会夺取中国特色社会主义新胜利的基本要求。党的十八大提出了在新的历史条件下夺取中国特色社会主义新胜利必须牢牢把握的基本要求。这些基本要求是根据党的基本理论、基本路线、基本纲领、基本经验，深刻总结60多年来我国社会主义建设特别是中国特色社会主义建设实践提出的，是最本质的东西，是体现共产党执政规律、社会主义建设规律、人类社会发展规律的东西，表明我们党对中国特色社会主义规律的认识达到了新水平。",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        700
+      ],
+      "before": "广大青年要坚持用邓小平理论、“三个代表”重要思想、科学发展观武装头脑，把理想信念建立在对科学理论的理性认同上，建立在对历史规律的正确认识上，建立在对基本国情的准确把握上，不断增强道路自信、理论自信、制度自信，增强对坚持党的领导的信念，永远紧跟党高高举起中国特色社会主义",
+      "after": "广大青年要坚持用邓小平理论、“三个代表”重要思想、科学发展观武装头脑，把理想信念建立在对科学理论的理性认同上，建立在对历史规律的正确认识上，建立在对基本国情的准确把握上，不断增强道路自信、理论自信、制度自信，增强对坚持党的领导的信念，永远紧跟党高高举起中国特色社会主义伟大旗帜。",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        904
+      ],
+      "before": "1992 年，党的十四大提出了我国经济体制改革的目标是建立社会主义市场经济体制，提出要使市场在国家宏观调控下对资源配置起基础性作用。这一重大理论突破，对我国改革开放和经济社会发展发挥了极为重要的作用。这也说明，理论创新对实践创新具有重大先导作用，全面深化改革必须以理论创",
+      "after": "1992 年，党的十四大提出了我国经济体制改革的目标是建立社会主义市场经济体制，提出要使市场在国家宏观调控下对资源配置起基础性作用。这一重大理论突破，对我国改革开放和经济社会发展发挥了极为重要的作用。这也说明，理论创新对实践创新具有重大先导作用，全面深化改革必须以理论创新为先导。",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        986
+      ],
+      "before": "我们要认识到，山水林田湖是一个生命共同体，人的命脉在田，田的命脉在水，水的命脉在山，山的命脉在土，土的命脉在树。用途管制和生态修复必须遵循自然规律，如果种树的只管种树、治水的只管治水、护田的单纯护田，很容易顾此失彼，最终造成生态的系统性破坏。由一个部门负责领土范围内所有国土空间用途管制职责，对山水林田湖进行统一保护、统一修",
+      "after": "我们要认识到，山水林田湖是一个生命共同体，人的命脉在田，田的命脉在水，水的命脉在山，山的命脉在土，土的命脉在树。用途管制和生态修复必须遵循自然规律，如果种树的只管种树、治水的只管治水、护田的单纯护田，很容易顾此失彼，最终造成生态的系统性破坏。由一个部门负责领土范围内所有国土空间用途管制职责，对山水林田湖进行统一保护、统一修复是十分必要的。",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        1278
+      ],
+      "before": "加快从要素驱动、投资规模驱动发展为主向以创新驱动发展为主的转变",
+      "after": "加快从要素驱动、投资规模驱动发展为主向以创新驱动发展为主的转变〔5〕荀子（约前325—前238），名况，赵国人。战国末期哲学家、思想家、教育家。认为“天行有常”，提出“制天命而用之”的人定胜天思想和性恶论等。著作有《荀子》。《荀子》是先秦儒、墨、道诸家学派哲学思想的总结和发展。",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        1326
+      ],
+      "before": "我国现行宪法可以追溯到1949年具有临时宪法作用的《中国人民政治协商会议共同纲领》和1954年一届全国人大一次会议通过的《中华人民共和国宪法》。这些文献都以国家根本法的形式，确认了近代100多年来中国人民为反对内外敌人、争取民族独立和人民自由幸福进行的英勇斗争，确认了中国共产党领导中国人民夺取新民主主义革命 $^{[1]}$ 胜利、中国人民掌握国",
+      "after": "我国现行宪法可以追溯到1949年具有临时宪法作用的《中国人民政治协商会议共同纲领》和1954年一届全国人大一次会议通过的《中华人民共和国宪法》。这些文献都以国家根本法的形式，确认了近代100多年来中国人民为反对内外敌人、争取民族独立和人民自由幸福进行的英勇斗争，确认了中国共产党领导中国人民夺取新民主主义革命 $^{[1]}$ 胜利、中国人民掌握国家权力的历史变革。",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        1538
+      ],
+      "before": "提高国家文化软实力，要努力展示中华文化独特魅力。在5000多年文明发展进程中，中华民族创造了博大精深的灿烂文化，要使中华民族最基本的文化基因与当代文化相适应、与现代社会相协调，以人们喜闻乐见、具有广泛参与性的方式推广开来，把跨越时空、超越国度、富有永恒魅力、具有当代价值的文化精神弘扬起来，把继承传统优秀文化又弘扬时代精神、立足本国又面向世界的当代中国文化创新成果传播出去。要系统梳理传统文化资源，让收藏在禁宫里的文物、陈列在广阔大地上的遗产、书写在古籍里的文字都活起来。要以理服人，以文服人，以德服人，提高对外文化交流水平，完善人文交流机制，创新人文交流方式，综合运用大众传播、群体传播、人际传播",
+      "after": "提高国家文化软实力，要努力展示中华文化独特魅力。在5000多年文明发展进程中，中华民族创造了博大精深的灿烂文化，要使中华民族最基本的文化基因与当代文化相适应、与现代社会相协调，以人们喜闻乐见、具有广泛参与性的方式推广开来，把跨越时空、超越国度、富有永恒魅力、具有当代价值的文化精神弘扬起来，把继承传统优秀文化又弘扬时代精神、立足本国又面向世界的当代中国文化创新成果传播出去。要系统梳理传统文化资源，让收藏在禁宫里的文物、陈列在广阔大地上的遗产、书写在古籍里的文字都活起来。要以理服人，以文服人，以德服人，提高对外文化交流水平，完善人文交流机制，创新人文交流方式，综合运用大众传播、群体传播、人际传播等多种方式展示中华文化魅力。",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        1762
+      ],
+      "before": "——心有榜样，就是要学习英雄人物、先进人物、美好事物，在学习中养成好的思想品德追求。我国历史上有很多少年英雄的故事，在中国共产党领导人民进行的革命、建设、改革事业中也涌现了大批少年英雄，他们中不少人的名字同学们可能都听说过。过去电影《红孩子》、《小兵张嘎》、《鸡毛信》、《英雄小八路》、《草原英雄小姐妹》等说的就是一些少年英雄的故事。今天，好儿童、好少年就更多了。你们学校也有被评为“最美少年”的。另外，各行各业都有很多值得我们学习的榜样，包括航天英雄、奥运冠军、大科学家、劳动模范、青年志愿者，还有那些助人为乐、见义勇为、诚实守信、敬业奉献、孝老爱亲的好人，等等。榜样的力量是无穷的。大家要把他们立为心中的标杆，向他们看齐，像他们那样追求美好的思想品德。这就是孔子讲的：“见贤思齐焉，见不贤而内自省也。”[6]",
+      "after": "——心有榜样，就是要学习英雄人物、先进人物、美好事物，在学习中养成好的思想品德追求。我国历史上有很多少年英雄的故事，在中国共产党领导人民进行的革命、建设、改革事业中也涌现了大批少年英雄，他们中不少人的名字同学们可能都听说过。过去电影《红孩子》、《小兵张嘎》、《鸡毛信》、《英雄小八路》、《草原英雄小姐妹》等说的就是一些少年英雄的故事。今天，好儿童、好少年就更多了。你们学校也有被评为“最美少年”的。另外，各行各业都有很多值得我们学习的榜样，包括航天英雄、奥运冠军、大科学家、劳动模范、青年志愿者，还有那些助人为乐、见义勇为、诚实守信、敬业奉献、孝老爱亲的好人，等等。榜样的力量是无穷的。大家要把他们立为心中的标杆，向他们看齐，像他们那样追求美好的思想品德。这就是孔子讲的：“见贤思齐焉，见不贤而内自省也。”[6]——从小做起，就是要从自己做起、从身边做起、从小事做起，一点一滴积累，养成好思想、好品德。“少壮不努力，老大徒伤悲。”[7]千里之行，始于足下。每个人的生活都是由一件件小事组成的，养小德才能成大德。少年儿童不可能像大人那样为社会做很多事，但可以从小做起，每天都可以想一想，对祖国热爱吗？对集体热爱吗？学习努力吗？对同学们关心吗？对老师尊敬吗？在家孝敬父母吗？在社会上遵守社会公德吗？对好人好事有敬佩感吗？对坏人坏事有义愤感吗？这样多想一想，就会促使自己多做一做，日积月累，自己身上的好思想、好品德就会越来越多了。听说有的同学喜欢比吃穿，比有没有车接车送，比爸爸妈妈是干什么工作的，这样就比偏了。一定不能比这些。“自古雄才多磨难，从来纨绔少伟男”、“少年辛苦终身事，莫向光阴惰寸功”[8]。要比就比谁更有志气、谁更勤奋学习、谁更热爱劳动、谁更爱锻炼身体、谁更有爱心。",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        1788
+      ],
+      "before": "[5]《少年中国说》，是梁启超撰写的一篇文章。梁启超（1873—1929），",
+      "after": "[5]《少年中国说》，是梁启超撰写的一篇文章。梁启超（1873—1929），广东新会人。中国近代思想家、学者，戊戌维新运动领袖之一。",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        2045
+      ],
+      "before": "(2012年12月20日在会见香港特别行政区行政",
+      "after": "(2012年12月20日在会见香港特别行政区行政长官梁振英时的谈话要点）",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        2055
+      ],
+      "before": "(2012年12月20日在会见澳门特别行政区行政",
+      "after": "(2012年12月20日在会见澳门特别行政区行政长官崔世安时的谈话要点）",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        2117
+      ],
+      "before": "(2013年10月6日在会见台湾两岸共同市场基金会",
+      "after": "(2013年10月6日在会见台湾两岸共同市场基金会荣誉董事长萧万长一行时的谈话要点）",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        2225
+      ],
+      "before": "中华民族是爱好和平的民族。消除战争，实现和平，是近代以后中国人民最迫切、最深厚的愿望。走和平发展道路，是中华民族优秀文化传统的传承和发展，也是中国人民从近代以后苦难遭遇中得出的必然结论。中国人民对战争带来的苦难有着刻骨铭心的记忆，对和平有着孜孜不倦的追求，十分珍惜和平安定的生活。中国人民怕的就是动荡，求的就是稳定，盼的",
+      "after": "中华民族是爱好和平的民族。消除战争，实现和平，是近代以后中国人民最迫切、最深厚的愿望。走和平发展道路，是中华民族优秀文化传统的传承和发展，也是中国人民从近代以后苦难遭遇中得出的必然结论。中国人民对战争带来的苦难有着刻骨铭心的记忆，对和平有着孜孜不倦的追求，十分珍惜和平安定的生活。中国人民怕的就是动荡，求的就是稳定，盼的就是天下太平。",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        2285
+      ],
+      "before": "各国国情不同，核能事业处于不同发展阶段，面临的核安全挑战也不尽相同。一把钥匙开一把锁。在强调各国履行有关国际义务的同时，也要尊重各国根据本国国情采取最适合自己 的核安全政策和举措的权利，尊重各国保护核安全敏感信息的 权利，坚持公平原则，本着务实精神，积极稳妥推进国际核安",
+      "after": "各国国情不同，核能事业处于不同发展阶段，面临的核安全挑战也不尽相同。一把钥匙开一把锁。在强调各国履行有关国际义务的同时，也要尊重各国根据本国国情采取最适合自己 的核安全政策和举措的权利，尊重各国保护核安全敏感信息的 权利，坚持公平原则，本着务实精神，积极稳妥推进国际核安全进程。",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        2555
+      ],
+      "before": "无论国际风云如何变幻，中国始终支持欧洲一体化进程，始终支持一个团结、稳定、繁荣的欧盟在国际事务中发挥更大作用。中国即将发表第二份对欧盟政策文件，重申中国对欧盟和发展中欧关系的高度重视。去年，中欧共同制定了中欧合作",
+      "after": "无论国际风云如何变幻，中国始终支持欧洲一体化进程，始终支持一个团结、稳定、繁荣的欧盟在国际事务中发挥更大作用。中国即将发表第二份对欧盟政策文件，重申中国对欧盟和发展中欧关系的高度重视。去年，中欧共同制定了中欧合作2020 战略规划，在近百个领域提出了一系列具有雄心的合作目标。双方应该一道努力，尽早把蓝图变为现实，让未来 10 年的中欧关系更加美好。",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        2629
+      ],
+      "before": "世界上没有放之四海而皆准的发展模式，也没有一成不变的发展道路。中国和东盟国家人民勇于变革创新，不断开拓进取，探索和开辟顺应时代潮流、符合自身实际的发展道路，为",
+      "after": "世界上没有放之四海而皆准的发展模式，也没有一成不变的发展道路。中国和东盟国家人民勇于变革创新，不断开拓进取，探索和开辟顺应时代潮流、符合自身实际的发展道路，为经济社会发展打开了广阔前景。",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        2807
+      ],
+      "before": "——人文上，中拉要加强文明对话和文化交流，不仅“各美其美”，而且“美人之美，美美与共”[1]，成为不同文明和谐",
+      "after": "——人文上，中拉要加强文明对话和文化交流，不仅“各美其美”，而且“美人之美，美美与共”[1]，成为不同文明和谐共处、相互促进的典范。",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        2827
+      ],
+      "before": "阿盟秘书长阿拉比先生，各位代表团团长，",
+      "after": "阿盟秘书长阿拉比先生，各位代表团团长，女士们，先生们，朋友们：",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        2891
+      ],
+      "before": "[3] 见范晔《后汉书·西域传》。范晔（398—445），顺阳（今河南淅川",
+      "after": "[3] 见范晔《后汉书·西域传》。范晔（398—445），顺阳（今河南淅川东南）人。南北朝时期史学家。",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        3013
+      ],
+      "before": "尊敬的各位元首、政府首脑、议长、国际组织负责人、部长，博鳌亚洲论坛理事会各位成员，",
+      "after": "尊敬的各位元首、政府首脑、议长、国际组织负责人、部长，博鳌亚洲论坛理事会各位成员，各位来宾，",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        3145
+      ],
+      "before": "当前，上海合作组织发展既面临难得机遇，也面临严峻挑战。“三股势力”、贩毒、跨国有组织犯罪威胁着本地区安全稳定。受国际金融危机影响，各国经济发展都不同程度遇到困难，",
+      "after": "当前，上海合作组织发展既面临难得机遇，也面临严峻挑战。“三股势力”、贩毒、跨国有组织犯罪威胁着本地区安全稳定。受国际金融危机影响，各国经济发展都不同程度遇到困难，进入调整期和恢复期。",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        3391
+      ],
+      "before": "(2013年1月17日在新华社《网民呼吁遏制",
+      "after": "(2013年1月17日在新华社《网民呼吁遏制餐饮环节“舌尖上的浪费”》材料上的批示）",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        3441
+      ],
+      "before": "我讲这些情况，就是要全党都警醒起来。如果任由这些问题蔓延开来，后果不堪设想，那就有可能发生毛泽东同志所形象比喻的“霸王别姬”[11]了。更为严重的是，我们一些同志对这些问题见怪不怪，甚至觉得理所当然，“久入鲍肆而不闻其",
+      "after": "我讲这些情况，就是要全党都警醒起来。如果任由这些问题蔓延开来，后果不堪设想，那就有可能发生毛泽东同志所形象比喻的“霸王别姬”[11]了。更为严重的是，我们一些同志对这些问题见怪不怪，甚至觉得理所当然，“久入鲍肆而不闻其臭”[12]。这就更加危险了。",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        3463
+      ],
+      "before": "[8] 苏联卫国战争时期考涅楚克的剧作《前线》中有一个捕风捉影、捏",
+      "after": "[8] 苏联卫国战争时期考涅楚克的剧作《前线》中有一个捕风捉影、捏造事实的记者，名“客里空”。后被用来泛指虚构、浮夸的不良报道作风。",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        3541
+      ],
+      "before": "作风建设永远在路上。如果前热后冷、前紧后松，就会功亏一篑。各级领导干部都要树立和发扬好的作风，既严以修身、严以用权、严以律己，又谋事要实、创业要实、做人要实。严以修身，就是要加强党性修养，坚定理想信念，提升道德境界，追求高尚情操，自觉远离低级趣味，自觉抵制歪风邪气。严以用权，就是要坚持用权为民，按规则、按制度行使权力，把权力关进制度的笼子里，任何时候都不搞特权、不以权谋私。严以律己，就是要心存敬畏、手握戒尺，慎独慎微、勤于自省，遵守党纪国法，做到为政清廉。谋事要实，就是要从实际出发谋划事业和工作，使点子、政策、方案符合实际情况、符合客观规律、符合科学精神，不好高骛远，不脱离实际。创业要实，就是要脚踏实地、真抓实干，敢于担当责任，勇于直面矛盾，善于解决问题，努力创造经得起实践、人民、历史检验的实绩。做人要实，就是要对党、对组织、对人民、对同志忠诚",
+      "after": "作风建设永远在路上。如果前热后冷、前紧后松，就会功亏一篑。各级领导干部都要树立和发扬好的作风，既严以修身、严以用权、严以律己，又谋事要实、创业要实、做人要实。严以修身，就是要加强党性修养，坚定理想信念，提升道德境界，追求高尚情操，自觉远离低级趣味，自觉抵制歪风邪气。严以用权，就是要坚持用权为民，按规则、按制度行使权力，把权力关进制度的笼子里，任何时候都不搞特权、不以权谋私。严以律己，就是要心存敬畏、手握戒尺，慎独慎微、勤于自省，遵守党纪国法，做到为政清廉。谋事要实，就是要从实际出发谋划事业和工作，使点子、政策、方案符合实际情况、符合客观规律、符合科学精神，不好高骛远，不脱离实际。创业要实，就是要脚踏实地、真抓实干，敢于担当责任，勇于直面矛盾，善于解决问题，努力创造经得起实践、人民、历史检验的实绩。做人要实，就是要对党、对组织、对人民、对同志忠诚习近平谈治国理政",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        3605
+      ],
+      "before": "2013年，党中央高度重视党风廉政建设和反腐败斗争，中央纪委按照党中央决策部署，在强化党的纪律特别是政治纪律约束、强化执纪监督、强化查办腐败案件等方面攥紧拳头打出去，形成了鲜明的工作特点。经过各级党委、政府和纪检监察机关共同努力，党风廉政建设和反腐败斗争取得了新进展。我们坚持从中央政治局做起，以上带下，发挥了表率作用；坚持以解决突出问题为切入口，扶正祛邪，取得明显进展；坚决查处腐败案件，坚持“老虎”、“苍蝇”一起打，形成了对腐败分子的高压态势；坚持促进权力规范运行，强化监督，加强和改进巡视工作，畅通人民群众举报和监督渠道，得到了广大干部群",
+      "after": "2013年，党中央高度重视党风廉政建设和反腐败斗争，中央纪委按照党中央决策部署，在强化党的纪律特别是政治纪律约束、强化执纪监督、强化查办腐败案件等方面攥紧拳头打出去，形成了鲜明的工作特点。经过各级党委、政府和纪检监察机关共同努力，党风廉政建设和反腐败斗争取得了新进展。我们坚持从中央政治局做起，以上带下，发挥了表率作用；坚持以解决突出问题为切入口，扶正祛邪，取得明显进展；坚决查处腐败案件，坚持“老虎”、“苍蝇”一起打，形成了对腐败分子的高压态势；坚持促进权力规范运行，强化监督，加强和改进巡视工作，畅通人民群众举报和监督渠道，得到了广大干部群众积极评价。",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        3739
+      ],
+      "before": "我们党历来高度重视选贤任能，始终把选人用人作为关系党和人民事业的关键性、根本性问题来抓。治国之要，首在用人。也就是古人说的：“尚贤者，政之本也。”[1]“为政之要，莫先于用人。”[2]",
+      "after": "我们党历来高度重视选贤任能，始终把选人用人作为关系党和人民事业的关键性、根本性问题来抓。治国之要，首在用人。也就是古人说的：“尚贤者，政之本也。”[1]“为政之要，莫先于用人。”[2]近年来，各级党委和组织部门贯彻执行党的干部路线，选人用人主流是好的，但也存在这样那样的一些问题，如果不能很好解决，就会涣散党心、冷了人心。",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        3863
+      ],
+      "before": "——在文化建设上，要重视人才培养，注重培养民族精神，",
+      "after": "——在文化建设上，要重视人才培养，注重培养民族精神，特别是弘扬“用我们的血肉筑起我们新的长城”的国歌精神；",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4097
+      ],
+      "before": "阿拉伯 313, 314, 315, 316, 317, 318,",
+      "after": "阿拉伯 313, 314, 315, 316, 317, 318,319",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4116
+      ],
+      "before": "爱国主义 35, 40, 53, 56, 58, 59, 162, 164",
+      "after": "爱国主义 35, 40, 53, 56, 58, 59, 162, 164“爱惜羽毛”414",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4126
+      ],
+      "before": "澳门 42, 225, 226, 227, 228, 229, 427",
+      "after": "澳门 42, 225, 226, 227, 228, 229, 427澳门特别行政区 42,225,226,227,229",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4148
+      ],
+      "before": "把权力关进制度的笼子里 381, 385,",
+      "after": "把权力关进制度的笼子里 381, 385,388, 392",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4151
+      ],
+      "before": "霸权主义 30,266,267,272",
+      "after": "霸权主义 30,266,267,272“霸王别姬”370",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4159
+      ],
+      "before": "保障性住房 192, 193, 194",
+      "after": "保障性住房 192, 193, 194北大 166, 174, 175",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4163
+      ],
+      "before": "北京 180,304,341,352,425,427,429,430,440,443,445,446,447",
+      "after": "北京 180,304,341,352,425,427,429,430,440,443,445,446,447北京奥运会 304,427",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4167
+      ],
+      "before": "北京大学 166, 167, 175, 181",
+      "after": "北京大学 166, 167, 175, 181“本领恐慌”402",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4185
+      ],
+      "before": "博鳌亚洲论坛 113,328:348",
+      "after": "博鳌亚洲论坛 113,328:348博客 308",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4211
+      ],
+      "before": "产业结构 71, 112, 131, 209, 212",
+      "after": "产业结构 71, 112, 131, 209, 212长安 260",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4223
+      ],
+      "before": "城乡居民人均收入 56,265,274,326,",
+      "after": "城乡居民人均收入 56,265,274,326,332,345",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4230
+      ],
+      "before": "城镇化 112, 113, 121, 131, 209, 325, 345",
+      "after": "城镇化 112, 113, 121, 131, 209, 325, 345程宝怀 436",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4234
+      ],
+      "before": "惩治腐败 145,387,392,393,394",
+      "after": "惩治腐败 145,387,392,393,394惩治和预防腐败体系 388, 392, 394",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4238
+      ],
+      "before": "出口 255, 276, 332, 345, 347, 349",
+      "after": "出口 255, 276, 332, 345, 347, 349“出入相友，守望相助”170",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4242
+      ],
+      "before": "传统安全威胁 272,330,355",
+      "after": "传统安全威胁 272,330,355传统美德 106, 158, 160, 163, 164, 181",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4246
+      ],
+      "before": "传统文化 106, 155, 156, 161, 163, 164, 169, 170, 171, 405",
+      "after": "传统文化 106, 155, 156, 161, 163, 164, 169, 170, 171, 405创新驱动 112, 119, 120, 121, 122, 123, 124, 125, 126, 345, 351",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4254
+      ],
+      "before": "春节 102, 236, 431, 447",
+      "after": "春节 102, 236, 431, 447“从善如登，从恶如崩”53",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4258
+      ],
+      "before": "从严治党 4,15,43,142,365,377,388,390,393,426",
+      "after": "从严治党 4,15,43,142,365,377,388,390,393,426促进共同发展 17, 30, 162, 239, 266,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4261
+      ],
+      "before": "272, 273, 288, 299, 305, 330, 331,",
+      "after": "272, 273, 288, 299, 305, 330, 331,339, 341, 357",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4272
+      ],
+      "before": "《打击恐怖主义、分裂主义和极端主义上海公约》340",
+      "after": "《打击恐怖主义、分裂主义和极端主义上海公约》340打铁还需自身硬 4,378",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4278
+      ],
+      "before": "担当 101, 124, 149, 150, 172, 176, 202, 242, 243, 250, 299, 374, 381, 400,",
+      "after": "担当 101, 124, 149, 150, 172, 176, 202, 242, 243, 250, 299, 374, 381, 400,当代革命军人核心价值观 218",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4284
+      ],
+      "before": "党的领导、人民当家作主、依法治国 10,40,139,146",
+      "after": "党的领导、人民当家作主、依法治国 10,40,139,146党的群众路线教育实践活动 16,365,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4291
+      ],
+      "before": "党的十一届三中全会 71, 72, 136,",
+      "after": "党的十一届三中全会 71, 72, 136,153, 366, 399, 412",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4294
+      ],
+      "before": "党风廉政建设 16,83,385,386,388,",
+      "after": "党风廉政建设 16,83,385,386,388,389,390,393,394,395",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4299
+      ],
+      "before": "党同人民群众的血肉联系 16,28,68,82,366,367,378,394",
+      "after": "党同人民群众的血肉联系 16,28,68,82,366,367,378,394党性 15,154,376,381,389,391,395,417",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4303
+      ],
+      "before": "党要管党 4,15,43,365,390,393,",
+      "after": "党要管党 4,15,43,365,390,393,426",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4306
+      ],
+      "before": "党章 142,375,386,412,417,426",
+      "after": "党章 142,375,386,412,417,426党中央 8,23,38,48,119,142,154,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4309
+      ],
+      "before": "166,174,215,216,217,220,296,",
+      "after": "166,174,215,216,217,220,296,365,366,385,386,393,395,396,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4315
+      ],
+      "before": "道路自信 8,22,30,40,50,93,172",
+      "after": "道路自信 8,22,30,40,50,93,172德才兼备、以德为先 173,418",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4323
+      ],
+      "before": "邓小平 8,9,10,21,22,23,38,43,50,",
+      "after": "邓小平 8,9,10,21,22,23,38,43,50,69,71,72,90,93,136,142,144,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4325
+      ],
+      "before": "154,208,218,220,247,296,366,",
+      "after": "154,208,218,220,247,296,366,373,385,399,404,423",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4328
+      ],
+      "before": "邓小平理论 9, 21, 43, 50, 69, 72, 142,",
+      "after": "邓小平理论 9, 21, 43, 50, 69, 72, 142,144, 154, 208, 218, 220, 247, 373,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4332
+      ],
+      "before": "低碳发展 114,209,211,350",
+      "after": "低碳发展 114,209,211,350底线思维 202,417",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4342
+      ],
+      "before": "第二代中央领导集体 8,38,296,366,",
+      "after": "第二代中央领导集体 8,38,296,366,385",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4347
+      ],
+      "before": "第三代中央领导集体 8,23,38,296,",
+      "after": "第三代中央领导集体 8,23,38,296,366,385",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4350
+      ],
+      "before": "第一代中央领导集体 8,38,296",
+      "after": "第一代中央领导集体 8,38,296第一要务 11,326",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4354
+      ],
+      "before": "顶层设计 68, 88, 100, 106, 112, 126, 193, 317, 394",
+      "after": "顶层设计 68, 88, 100, 106, 112, 126, 193, 317, 394钉钉子的精神 399,400",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4358
+      ],
+      "before": "定力 29,30,105,170,171,247,415",
+      "after": "定力 29,30,105,170,171,247,415东罗马 262",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4362
+      ],
+      "before": "东盟 292, 293, 294, 295, 351, 358",
+      "after": "东盟 292, 293, 294, 295, 351, 358东南亚 260, 261, 293, 294",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4370
+      ],
+      "before": "独立自主的和平外交政策 30,248,",
+      "after": "独立自主的和平外交政策 30,248,266,288,326",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4375
+      ],
+      "before": "多边贸易体制 249,337,350",
+      "after": "多边贸易体制 249,337,350多党合作和政治协商制度 41,138",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4385
+      ],
+      "before": "二十国集团 325,335,336,337,338",
+      "after": "二十国集团 325,335,336,337,338二十国集团领导人峰会 335",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4389
+      ],
+      "before": "21 世纪海上丝绸之路 292, 293, 298,",
+      "after": "21 世纪海上丝绸之路 292, 293, 298,358",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4404
+      ],
+      "before": "反腐败 72, 83, 385, 386, 388, 389,",
+      "after": "反腐败 72, 83, 385, 386, 388, 389,390, 392, 393, 394, 395",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4407
+      ],
+      "before": "反腐倡廉 217,383,386,388,390,",
+      "after": "反腐倡廉 217,383,386,388,390,391,392",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4410
+      ],
+      "before": "反恐 203,251,340,357",
+      "after": "反恐 203,251,340,357非传统安全威胁 272,330,355",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4418
+      ],
+      "before": "非洲 132, 260, 303, 304, 305, 306,",
+      "after": "非洲 132, 260, 303, 304, 305, 306,307, 308, 309, 310, 314, 324, 325",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4437
+      ],
+      "before": "符拉迪沃斯托克 277福建 425,427,429,430,433,434,",
+      "after": "符拉迪沃斯托克 277福建 425,427,429,430,433,434,437,438,445",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4440
+      ],
+      "before": "福州 427, 429, 431, 432, 433, 437",
+      "after": "福州 427, 429, 431, 432, 433, 437阜平 189",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4446
+      ],
+      "before": "《复兴之路》展览 35,424,436",
+      "after": "《复兴之路》展览 35,424,436富强民主文明和谐 7,12,36,39,44,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4449
+      ],
+      "before": "54,56,169,170,265,274,326,332,",
+      "after": "54,56,169,170,265,274,326,332,365,424",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4454
+      ],
+      "before": "改革创新 13, 14, 40, 56, 93, 164, 175, 299, 319",
+      "after": "改革创新 13, 14, 40, 56, 93, 164, 175, 299, 319改革发展稳定 14, 44, 68, 73, 91, 111,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4457
+      ],
+      "before": "202, 203, 299, 368, 390, 394, 399,",
+      "after": "202, 203, 299, 368, 390, 394, 399,402, 411",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4460
+      ],
+      "before": "改革开放 4,7,9,12,13,21,22,23,",
+      "after": "改革开放 4,7,9,12,13,21,22,23,35,39,40,41,45,51,52,59,60,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4462
+      ],
+      "before": "61,67,68,69,70,71,72,74,75,",
+      "after": "61,67,68,69,70,71,72,74,75,78,81,86,87,91,92,95,97,100,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4464
+      ],
+      "before": "104,112,113,115,118,120,122,",
+      "after": "104,112,113,115,118,120,122,136,138,158,189,202,248,264,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4466
+      ],
+      "before": "309,332,343,346,347,348,351,",
+      "after": "309,332,343,346,347,348,351,366,367,385,399,401,402,412,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4470
+      ],
+      "before": "改善民生 78, 112, 189, 204, 225, 226, 324, 330, 339, 347, 356, 426",
+      "after": "改善民生 78, 112, 189, 204, 225, 226, 324, 330, 339, 347, 356, 426甘英 313",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4480
+      ],
+      "before": "革命、建设、改革 25, 29, 49, 63,",
+      "after": "革命、建设、改革 25, 29, 49, 63,167, 182, 366, 402, 414",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4489
+      ],
+      "before": "工人阶级 44, 45, 47, 48, 138",
+      "after": "工人阶级 44, 45, 47, 48, 138工业革命 120,169,258",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4493
+      ],
+      "before": "工业化 113, 121, 315, 324, 325",
+      "after": "工业化 113, 121, 315, 324, 325公共租赁住房 193,194",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4501
+      ],
+      "before": "公平正义 13,41,46,74,95,96,97,",
+      "after": "公平正义 13,41,46,74,95,96,97,118,140,141,145,147,148,150,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4503
+      ],
+      "before": "162,192,204,250,273,323,347",
+      "after": "162,192,204,250,273,323,347“公生明，廉生威”149",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4509
+      ],
+      "before": "公正司法 140, 144, 147, 149",
+      "after": "公正司法 140, 144, 147, 149“功成不必在我” 400, 432",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4521
+      ],
+      "before": "共产主义 11, 15, 23, 153, 412, 414",
+      "after": "共产主义 11, 15, 23, 153, 412, 414共产主义远大理想 11,23,412",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4525
+      ],
+      "before": "共同富裕 4,9,13,28,41,77,118,",
+      "after": "共同富裕 4,9,13,28,41,77,118,189",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4530
+      ],
+      "before": "古为今用 156, 160, 164",
+      "after": "古为今用 156, 160, 164故宫博物院 258",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4538
+      ],
+      "before": "国防和军队建设 215, 216, 218, 220, 221, 427",
+      "after": "国防和军队建设 215, 216, 218, 220, 221, 427国防和军队现代化 213,217",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4554
+      ],
+      "before": "国际金融危机 272, 293, 329, 335, 339, 358, 427",
+      "after": "国际金融危机 272, 293, 329, 335, 339, 358, 427国际原子能机构 256, 257",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4558
+      ],
+      "before": "国家安全 78, 80, 84, 85, 197, 198, 200, 201, 202, 203, 216, 354",
+      "after": "国家安全 78, 80, 84, 85, 197, 198, 200, 201, 202, 203, 216, 354国家安全委员会 84,200,201",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4570
+      ],
+      "before": "国家治理体系 90, 91, 92, 101, 104, 105, 106, 148, 150, 163, 200",
+      "after": "国家治理体系 90, 91, 92, 101, 104, 105, 106, 148, 150, 163, 200国家治理体系和治理能力现代化 90, 92, 101, 104, 105, 106, 148, 150, 200",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4574
+      ],
+      "before": "国家主席 38,101,271,303",
+      "after": "国家主席 38,101,271,303国内生产总值 56,265,274,275,309,326,332,336,337,345,419",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4584
+      ],
+      "before": "国务院 63,140,195,430,439",
+      "after": "国务院 63,140,195,430,439习近平谈治国理政",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4602
+      ],
+      "before": "哈萨克斯坦 256, 287, 353, 354",
+      "after": "哈萨克斯坦 256, 287, 353, 354海淀区民族小学 180",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4606
+      ],
+      "before": "海纳百川，有容乃大 259,294,331",
+      "after": "海纳百川，有容乃大 259,294,331海南岛 328",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4616
+      ],
+      "before": "行家里手 118, 156, 405",
+      "after": "行家里手 118, 156, 405河北 189,425,430,433,436",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4622
+      ],
+      "before": "“和而不同”. 170, 261, 265, 283",
+      "after": "“和而不同”. 170, 261, 265, 283和平发展 13, 30, 42, 57, 64, 162, 170,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4625
+      ],
+      "before": "230, 231, 232, 233, 234, 235, 236,",
+      "after": "230, 231, 232, 233, 234, 235, 236,239, 240, 242, 243, 245, 247, 248,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4627
+      ],
+      "before": "249, 257, 258, 264, 265, 266, 267,",
+      "after": "249, 257, 258, 264, 265, 266, 267,271, 274, 275, 279, 282, 288, 298,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4630
+      ],
+      "before": "和平发展道路 30, 42, 57, 64, 170,",
+      "after": "和平发展道路 30, 42, 57, 64, 170,233, 239, 245, 247, 248, 249, 264,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4632
+      ],
+      "before": "265, 266, 267, 274, 275, 279, 288,",
+      "after": "265, 266, 267, 274, 275, 279, 288,298, 358, 441",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4635
+      ],
+      "before": "和平、发展、合作、共赢 30,42,",
+      "after": "和平、发展、合作、共赢 30,42,266,272,279,329,354",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4638
+      ],
+      "before": "和平共处五项原则 30,248,357,358",
+      "after": "和平共处五项原则 30,248,357,358和谐社会 426",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4644
+      ],
+      "before": "核安全 201, 253, 254, 255, 256, 257",
+      "after": "核安全 201, 253, 254, 255, 256, 257核安全峰会 253",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4648
+      ],
+      "before": "核恐怖主义 254, 255, 257",
+      "after": "核恐怖主义 254, 255, 257核扩散 255,257",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4652
+      ],
+      "before": "核心价值观 45, 52, 106, 154, 159,",
+      "after": "核心价值观 45, 52, 106, 154, 159,163, 164, 165, 166, 167, 168, 169,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4654
+      ],
+      "before": "170, 171, 172, 173, 174, 180, 181,",
+      "after": "170, 171, 172, 173, 174, 180, 181,182, 184, 185, 198, 218",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4665
+      ],
+      "before": "宏观调控 75, 76, 77, 111, 117, 118, 338, 347",
+      "after": "宏观调控 75, 76, 77, 111, 117, 118, 338, 347胡锦涛 7,8,23,38,39,296,366,385,423",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4669
+      ],
+      "before": "互利共赢 42,57,242,248,255,289,",
+      "after": "互利共赢 42,57,242,248,255,289,290,298,314,316,325,326,330,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4671
+      ],
+      "before": "336,338,347,349,358,441",
+      "after": "336,338,347,349,358,441互联互通 114,293,298,333,348,351",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4675
+      ],
+      "before": "互联网 84, 121, 197, 198",
+      "after": "互联网 84, 121, 197, 198华盛顿 253",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4703
+      ],
+      "before": "基本纲领 12, 23, 72, 153, 386, 413",
+      "after": "基本纲领 12, 23, 72, 153, 386, 413基本公共服务 80, 82, 347",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4707
+      ],
+      "before": "基本国策 67,209,211,326,426",
+      "after": "基本国策 67,209,211,326,426基本国情 26,50,93,155,156,309,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4712
+      ],
+      "before": "基本经验 12,72,386,413",
+      "after": "基本经验 12,72,386,413基本理论 12, 154, 386, 413",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4716
+      ],
+      "before": "基本要求 12, 13, 14, 72, 138, 165,",
+      "after": "基本要求 12, 13, 14, 72, 138, 165,386, 387, 413",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4723
+      ],
+      "before": "基础性作用 75, 76, 117, 338, 347,",
+      "after": "基础性作用 75, 76, 117, 338, 347,391",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4732
+      ],
+      "before": "集体学习 6,67,116,144,160,163,181,192,202,208,247,390,426",
+      "after": "集体学习 6,67,116,144,160,163,181,192,202,208,247,390,426集体主义 53,162",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4736
+      ],
+      "before": "“己所不欲，勿施于人”170,266",
+      "after": "“己所不欲，勿施于人”170,266计划经济 94",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4755
+      ],
+      "before": "2013—2017年工作规划》394",
+      "after": "2013—2017年工作规划》394剑桥 174",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4761
+      ],
+      "before": "江泽民 8,23,38,296,366,385,423",
+      "after": "江泽民 8,23,38,296,366,385,423教育实践活动 16, 53, 365, 367, 368,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4764
+      ],
+      "before": "373, 374, 375, 377, 379",
+      "after": "373, 374, 375, 377, 379节能减排 131",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4768
+      ],
+      "before": "解放和发展社会生产力 4,9,13,92,",
+      "after": "解放和发展社会生产力 4,9,13,92,93,338,347",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4773
+      ],
+      "before": "解放思想 4,51,71,87,92,347,366,432",
+      "after": "解放思想 4,51,71,87,92,347,366,432金融危机 272, 293, 329, 335, 339, 358, 427",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4777
+      ],
+      "before": "金砖国家 323, 324, 325, 326, 409",
+      "after": "金砖国家 323, 324, 325, 326, 409经济基础 11, 14, 94",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4781
+      ],
+      "before": "经济建设 9,10,11,13,41,71,92,",
+      "after": "经济建设 9,10,11,13,41,71,92,93,94,96,153,211,221,326,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4785
+      ],
+      "before": "经济全球化 100, 197, 274, 279, 324",
+      "after": "经济全球化 100, 197, 274, 279, 324经济社会发展评价体系 210",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4789
+      ],
+      "before": "经济体制改革 74, 75, 93, 94, 95, 116,",
+      "after": "经济体制改革 74, 75, 93, 94, 95, 116,117",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4792
+      ],
+      "before": "经济总量 11,94,120,264,283,309,",
+      "after": "经济总量 11,94,120,264,283,309,338,353,440",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4801
+      ],
+      "before": "拒腐防变 15,43,386,390,391,392",
+      "after": "拒腐防变 15,43,386,390,391,392军民融合 221",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4811
+      ],
+      "before": "开放型经济 113, 114, 314, 326, 344, 347, 350",
+      "after": "开放型经济 113, 114, 314, 326, 344, 347, 350开放战略 42,57,326,338,347,358,441",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4823
+      ],
+      "before": "科技革命 119, 123, 346",
+      "after": "科技革命 119, 123, 346科技体制改革 125, 126",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4829
+      ],
+      "before": "科学发展 9,13,14,15,21,41,43,50,",
+      "after": "科学发展 9,13,14,15,21,41,43,50,69,70,72,84,93,111,142,144,154,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4831
+      ],
+      "before": "175,208,215,216,218,220,247,",
+      "after": "175,208,215,216,218,220,247,366,373,385,399,404,425,426",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4834
+      ],
+      "before": "科学发展观 9, 15, 21, 43, 50, 69, 72,",
+      "after": "科学发展观 9, 15, 21, 43, 50, 69, 72,142, 144, 154, 208, 215, 218, 220,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4836
+      ],
+      "before": "247, 366, 373, 385, 399, 404, 426",
+      "after": "247, 366, 373, 385, 399, 404, 426科学立法 140, 144",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4852
+      ],
+      "before": "空谈误国，实干兴邦 36, 44, 52, 57, 61, 399, 406, 436",
+      "after": "空谈误国，实干兴邦 36, 44, 52, 57, 61, 399, 406, 436孔子 181, 183, 277, 443",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4856
+      ],
+      "before": "恐怖主义 251, 254, 255, 256, 257, 272, 340, 355",
+      "after": "恐怖主义 251, 254, 255, 256, 257, 272, 340, 355库里申科 276",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4874
+      ],
+      "before": "“老虎”、“苍蝇”一起打 388, 392,",
+      "after": "“老虎”、“苍蝇”一起打 388, 392,393",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4883
+      ],
+      "before": "冷战 272, 273, 294, 354",
+      "after": "冷战 272, 273, 294, 354黎巴嫩 316",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4893
+      ],
+      "before": "理论创新 10,21,26,75,92",
+      "after": "理论创新 10,21,26,75,92理论自信 8,22,30,40,50,93,172",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4897
+      ],
+      "before": "理想信念 15,39,43,45,47,50,149,",
+      "after": "理想信念 15,39,43,45,47,50,149,154,160,381,391,394,405,413,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4909
+      ],
+      "before": "联合国 191, 211, 250, 251, 254, 258, 282, 309, 314, 324, 325, 342",
+      "after": "联合国 191, 211, 250, 251, 254, 258, 282, 309, 314, 324, 325, 342联合国安理会 250,254,282,342",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4929
+      ],
+      "before": "梁振英 225, 226, 227, 228",
+      "after": "梁振英 225, 226, 227, 228粮食安全 341",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4933
+      ],
+      "before": "两岸关系 42, 230, 231, 232, 233,",
+      "after": "两岸关系 42, 230, 231, 232, 233,234, 235, 236, 237, 239, 240, 242,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4937
+      ],
+      "before": "两岸经济合作框架协议 230,231",
+      "after": "两岸经济合作框架协议 230,231“两岸一家亲”232,236,242",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4951
+      ],
+      "before": "“两个一百年”49,64,71,100,113,",
+      "after": "“两个一百年”49,64,71,100,113,147, 160, 167, 175, 198, 202, 228,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4953
+      ],
+      "before": "248, 250, 296, 297, 299, 385, 390,",
+      "after": "248, 250, 296, 297, 299, 385, 390,403",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4958
+      ],
+      "before": "列宁 9,91,154,373,391,404",
+      "after": "列宁 9,91,154,373,391,404零和博弈 273,354",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4962
+      ],
+      "before": "领导水平 15,43,74,390,397",
+      "after": "领导水平 15,43,74,390,397刘云山 73",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4974
+      ],
+      "before": "路线图 73, 93, 100, 126, 234, 343",
+      "after": "路线图 73, 93, 100, 126, 234, 343罗塞夫 323",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4990
+      ],
+      "before": "马克思 9, 14, 15, 21, 22, 23, 25, 26,",
+      "after": "马克思 9, 14, 15, 21, 22, 23, 25, 26,27, 71, 91, 94, 116, 153, 154, 160,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4992
+      ],
+      "before": "166, 365, 366, 373, 386, 391, 403,",
+      "after": "166, 365, 366, 373, 386, 391, 403,404, 406, 413, 417",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4995
+      ],
+      "before": "马克思列宁主义 9,154,373,391,404",
+      "after": "马克思列宁主义 9,154,373,391,404马克思主义 9, 14, 15, 21, 22, 23, 25,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        4998
+      ],
+      "before": "26, 27, 71, 116, 153, 154, 160, 166,",
+      "after": "26, 27, 71, 116, 153, 154, 160, 166,365, 366, 373, 386, 391, 403, 404,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5004
+      ],
+      "before": "毛泽东 8,9,25,27,28,38,154,171,",
+      "after": "毛泽东 8,9,25,27,28,38,154,171,296,304,370,373,375,391,404,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5008
+      ],
+      "before": "毛泽东思想 9,25,154,373,391,404",
+      "after": "毛泽东思想 9,25,154,373,391,404贸易和投资自由化 324,333,351",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5014
+      ],
+      "before": "美国 256, 279, 280, 442, 444, 446",
+      "after": "美国 256, 279, 280, 442, 444, 446美国梦 279",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5018
+      ],
+      "before": "美丽中国 207, 208, 211, 326",
+      "after": "美丽中国 207, 208, 211, 326美洲 132",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5024
+      ],
+      "before": "密切联系群众 4,28,145,366,367,368,379,436",
+      "after": "密切联系群众 4,28,145,366,367,368,379,436民生 16,78,111,112,126,189,192,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5027
+      ],
+      "before": "198,204,225,226,227,242,283,",
+      "after": "198,204,225,226,227,242,283,317,324,330,339,347,356,419,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5033
+      ],
+      "before": "民主集中制 138, 139, 374, 388, 396",
+      "after": "民主集中制 138, 139, 374, 388, 396民主生活会 377",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5041
+      ],
+      "before": "民族精神 35, 39, 40, 46, 56, 160, 164, 181, 265, 405, 425",
+      "after": "民族精神 35, 39, 40, 46, 56, 160, 164, 181, 265, 405, 425民族区域自治制度 41,138",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5050
+      ],
+      "before": "命运共同体 201, 235, 261, 272, 292,",
+      "after": "命运共同体 201, 235, 261, 272, 292,295, 299, 305, 316, 330, 336, 350,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5086
+      ],
+      "before": "能源 119, 130, 131, 132, 209, 212, 254, 276, 280, 317, 341, 355",
+      "after": "能源 119, 130, 131, 132, 209, 212, 254, 276, 280, 317, 341, 355涅克拉索夫 102",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5090
+      ],
+      "before": "宁德 430, 431, 437, 440",
+      "after": "宁德 430, 431, 437, 440牛津 174",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5121
+      ],
+      "before": "批评和自我批评 366, 376, 377, 378",
+      "after": "批评和自我批评 366, 376, 377, 378贫困地区 189, 190, 425, 430",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5131
+      ],
+      "before": "普京 271, 275, 277, 323, 335, 443",
+      "after": "普京 271, 275, 277, 323, 335, 443普罗米修斯 254",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5143
+      ],
+      "before": "气候变化 212, 250, 251, 254, 347",
+      "after": "气候变化 212, 250, 251, 254, 347契诃夫 102,277",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5169
+      ],
+      "before": "清华 174, 429, 430, 441",
+      "after": "清华 174, 429, 430, 441清华大学 429, 430, 441",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5173
+      ],
+      "before": "清正廉洁 16,149,391,412,413",
+      "after": "清正廉洁 16,149,391,412,413求真务实 52,366,400,413,444",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5183
+      ],
+      "before": "全国人民代表大会 38,220,381",
+      "after": "全国人民代表大会 38,220,381全国宣传思想工作会议 153",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5189
+      ],
+      "before": "全面深化改革 12, 26, 30, 65, 70, 71,",
+      "after": "全面深化改革 12, 26, 30, 65, 70, 71,72, 73, 74, 75, 76, 80, 83, 86, 87, 88,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5191
+      ],
+      "before": "90, 93, 94, 95, 96, 98, 100, 101, 104,",
+      "after": "90, 93, 94, 95, 96, 98, 100, 101, 104,105, 106, 107, 116, 118, 175, 202,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5193
+      ],
+      "before": "228, 243, 314, 338, 346, 347, 399",
+      "after": "228, 243, 314, 338, 346, 347, 399全面深化改革领导小组 86,100,101",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5201
+      ],
+      "before": "全球经济治理 249,326,337",
+      "after": "全球经济治理 249,326,337全球治理体系 324",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5205
+      ],
+      "before": "全心全意为人民服务 4,5,24,27,28,",
+      "after": "全心全意为人民服务 4,5,24,27,28,96,367,413",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5212
+      ],
+      "before": "群众路线 16, 25, 27, 28, 82, 97, 365, 367, 368, 373, 379",
+      "after": "群众路线 16, 25, 27, 28, 82, 97, 365, 367, 368, 373, 379群众首创精神 97",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5218
+      ],
+      "before": "人大 135, 136, 140, 228, 396, 427, 435",
+      "after": "人大 135, 136, 140, 228, 396, 427, 435人类社会发展规律 12,405",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5222
+      ],
+      "before": "人类文明 3,39,156,203,258,259,",
+      "after": "人类文明 3,39,156,203,258,259,287,314",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5225
+      ],
+      "before": "人民币资本项目可兑换 338,347",
+      "after": "人民币资本项目可兑换 338,347人民代表大会制度 41,138",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5229
+      ],
+      "before": "人民当家作主 10, 13, 40, 136, 137,",
+      "after": "人民当家作主 10, 13, 40, 136, 137,139, 146, 147",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5232
+      ],
+      "before": "“人民对美好生活的向往，就是我们的奋斗目标”3,4,424",
+      "after": "“人民对美好生活的向往，就是我们的奋斗目标”3,4,424人民福祉 14,95,96,97,204,208",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5236
+      ],
+      "before": "人民民主 41, 136, 137, 138, 139",
+      "after": "人民民主 41, 136, 137, 138, 139人民民主专政 138",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5244
+      ],
+      "before": "人民主体地位 27,41,97,140",
+      "after": "人民主体地位 27,41,97,140日本 261,266",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5254
+      ],
+      "before": "融资 307,333,341,350",
+      "after": "融资 307,333,341,350儒家 260",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5260
+      ],
+      "before": "软实力 155, 160, 161, 162, 163,",
+      "after": "软实力 155, 160, 161, 162, 163,198",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5271
+      ],
+      "before": "“三个代表”重要思想 9,21,43,50,",
+      "after": "“三个代表”重要思想 9,21,43,50,69,72,142,144,154,208,218,220,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5273
+      ],
+      "before": "247,373,385,399,404",
+      "after": "247,373,385,399,404“三个进一步解放”92",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5279
+      ],
+      "before": "“三股势力”289,339,340,355,358",
+      "after": "“三股势力”289,339,340,355,358“三讲”教育 366",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5293
+      ],
+      "before": "陕北 425,428,429,430",
+      "after": "陕北 425,428,429,430陕西 262, 287, 425, 447",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5301
+      ],
+      "before": "上海 181,289,339,340,341,342,353,358,425,435,440,445",
+      "after": "上海 181,289,339,340,341,342,353,358,425,435,440,445上海合作组织 289,339,340,341,342,358",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5305
+      ],
+      "before": "《上海合作组织成员国长期睦邻友好合作条约》339,340",
+      "after": "《上海合作组织成员国长期睦邻友好合作条约》339,340上海合作组织成员国元首理事会 339",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5317
+      ],
+      "before": "社会建设 9,11,41,211,326,426",
+      "after": "社会建设 9,11,41,211,326,426社会稳定 68, 84, 118, 136, 148, 162, 203, 204",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5321
+      ],
+      "before": "社会主义初级阶段 10, 11, 12, 23, 26,",
+      "after": "社会主义初级阶段 10, 11, 12, 23, 26,41, 93, 189, 426",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5326
+      ],
+      "before": "社会主义法治国家 136, 138, 139",
+      "after": "社会主义法治国家 136, 138, 139社会主义核心价值观 45, 52, 154,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5329
+      ],
+      "before": "159, 163, 164, 165, 166, 167, 168,",
+      "after": "159, 163, 164, 165, 166, 167, 168,169, 170, 171, 172, 174, 180, 181,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5331
+      ],
+      "before": "182, 184, 185, 198",
+      "after": "182, 184, 185, 198社会主义核心价值体系 106, 154, 160",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5335
+      ],
+      "before": "社会主义建设规律 11, 12, 116, 405",
+      "after": "社会主义建设规律 11, 12, 116, 405社会主义民主政治 82,138",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5341
+      ],
+      "before": "社会主义市场经济 67, 75, 76, 77, 79,",
+      "after": "社会主义市场经济 67, 75, 76, 77, 79,94, 95, 112, 114, 116, 117, 118",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5344
+      ],
+      "before": "社会主义市场经济体制 75.76.77,",
+      "after": "社会主义市场经济体制 75.76.77,94, 95, 117, 118",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5347
+      ],
+      "before": "社会主义文化强国 151, 155, 160",
+      "after": "社会主义文化强国 151, 155, 160社会主义现代化 6,7,8,9,10,12,14,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5350
+      ],
+      "before": "21,36,39,43,44,49,51,54,56,58,",
+      "after": "21,36,39,43,44,49,51,54,56,58,60,61,81,90,92,104,136,158,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5352
+      ],
+      "before": "169,170,202,265,274,326,332,",
+      "after": "169,170,202,265,274,326,332,365,366,385,399,402,424",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5355
+      ],
+      "before": "深入学习实践科学发展观活动 366,",
+      "after": "深入学习实践科学发展观活动 366,426",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5362
+      ],
+      "before": "生产关系 11, 14, 45, 94",
+      "after": "生产关系 11, 14, 45, 94113, 119, 121, 125, 209, 324, 338, 347",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5367
+      ],
+      "before": "生态环境 72, 78, 85, 130, 207, 208, 209, 210, 211, 212, 347, 434, 440",
+      "after": "生态环境 72, 78, 85, 130, 207, 208, 209, 210, 211, 212, 347, 434, 440生态环境保护 85, 207, 208, 209, 347",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5371
+      ],
+      "before": "生态文明 9, 11, 41, 75, 85, 88, 91, 95,",
+      "after": "生态文明 9, 11, 41, 75, 85, 88, 91, 95,101, 205, 208, 209, 210, 211, 212,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5373
+      ],
+      "before": "326, 338, 347, 426",
+      "after": "326, 338, 347, 426生态文明贵阳国际论坛 211",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5383
+      ],
+      "before": "十八大 3,6,7,8,10,11,12,13,14,15,",
+      "after": "十八大 3,6,7,8,10,11,12,13,14,15,16,21,22,43,49,67,69,70,71,74,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5385
+      ],
+      "before": "76,95,111,119,135,138,142,144,",
+      "after": "76,95,111,119,135,138,142,144,159,167,207,208,215,218,220,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5387
+      ],
+      "before": "225,248,296,365,367,373,374,",
+      "after": "225,248,296,365,367,373,374,385,399,402,403,411,426,427",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5390
+      ],
+      "before": "十八大精神 6,7,21,22,43,49,69,",
+      "after": "十八大精神 6,7,21,22,43,49,69,111,135,142,144,208,215,218,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5394
+      ],
+      "before": "十八届三中全会 70, 72, 87, 90, 100,",
+      "after": "十八届三中全会 70, 72, 87, 90, 100,104, 116, 117, 126, 175, 200, 228",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5407
+      ],
+      "before": "十一届三中全会 71, 72, 100, 136,",
+      "after": "十一届三中全会 71, 72, 100, 136,153, 366, 399, 412",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5414
+      ],
+      "before": "时代精神 40, 46, 56, 106, 160, 161, 164, 169",
+      "after": "时代精神 40, 46, 56, 106, 160, 161, 164, 169时间表 73,100,126",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5418
+      ],
+      "before": "实践创新 21,54,75,92,94",
+      "after": "实践创新 21,54,75,92,94实践是检验真理的唯一标准 21",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5422
+      ],
+      "before": "实事求是 23, 25, 26, 87, 235, 366, 374, 377, 437",
+      "after": "实事求是 23, 25, 26, 87, 235, 366, 374, 377, 437食品安全 341",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5427
+      ],
+      "before": "75, 77, 95, 116, 117",
+      "after": "75, 77, 95, 116, 117世界多极化 274,354",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5449
+      ],
+      "before": "丝绸之路 260, 283, 287, 288, 289,",
+      "after": "丝绸之路 260, 283, 287, 288, 289,290, 292, 293, 298, 313, 314, 316,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5453
+      ],
+      "before": "丝绸之路经济带 283, 287, 289, 290, 298, 358",
+      "after": "丝绸之路经济带 283, 287, 289, 290, 298, 358丝路精神 313, 314, 315, 316, 319",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5471
+      ],
+      "before": "“四凤”48,368,374,375,377,393",
+      "after": "“四凤”48,368,374,375,377,393四个现代化401",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5491
+      ],
+      "before": "台湾 42, 230, 231, 232, 233, 234, 236, 237, 238, 239, 240, 242, 243, 427",
+      "after": "台湾 42, 230, 231, 232, 233, 234, 236, 237, 238, 239, 240, 242, 243, 427太平洋 290,341,349",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5495
+      ],
+      "before": "坦桑尼亚 303, 304, 308",
+      "after": "坦桑尼亚 303, 304, 308“腾笼换鸟”434",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5499
+      ],
+      "before": "提高党的领导水平和执政水平、提高拒腐防变和抵御风险能力 15, 43, 390",
+      "after": "提高党的领导水平和执政水平、提高拒腐防变和抵御风险能力 15, 43, 390天津 440",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5513
+      ],
+      "before": "投资 78, 79, 114, 115, 119, 120, 231,",
+      "after": "投资 78, 79, 114, 115, 119, 120, 231,276, 283, 290, 298, 304, 315, 317,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5515
+      ],
+      "before": "324, 332, 333, 337, 338, 341, 344,",
+      "after": "324, 332, 333, 337, 338, 341, 344,345, 347, 349, 351, 433, 437",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5552
+      ],
+      "before": "网络安全 197, 198, 199, 272, 281,",
+      "after": "网络安全 197, 198, 199, 272, 281,294, 355",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5563
+      ],
+      "before": "维护世界和平 17,30,248,262,265,",
+      "after": "维护世界和平 17,30,248,262,265,266,272,273,282,299,323",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5568
+      ],
+      "before": "为民务实清廉 16,368,373,376,379",
+      "after": "为民务实清廉 16,368,373,376,379为人民服务 4,5,24,27,28,58,96,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5571
+      ],
+      "before": "101,367,388,413,424",
+      "after": "101,367,388,413,424文化产业 155,160",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5577
+      ],
+      "before": "文化建设 9,10,11,41,160,211,326,",
+      "after": "文化建设 9,10,11,41,160,211,326,388,391,425",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5580
+      ],
+      "before": "文化强国 151, 155, 160",
+      "after": "文化强国 151, 155, 160文化软实力 155, 160, 161, 162, 163",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5584
+      ],
+      "before": "文化事业 139, 155, 160",
+      "after": "文化事业 139, 155, 160文化体制改革 155,160",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5594
+      ],
+      "before": "汶川特大地震 277,294,305,314,446",
+      "after": "汶川特大地震 277,294,305,314,446污染防治 210",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5626
+      ],
+      "before": "习近平 3,6,21,25,35,44,49,56,58,63,67,70,90,100,102,104,111,113,116,119,130,144,147,153,158,160,163,166,180,189,191,192,195,197,200,202,207,208,211,212,215,218,220,225,230,233,236,242,247,250,253,258,264,271,279,282,287,292,296,303,311,313,323,328,335,339,343,353,363,365,373,381,385,390,393,399,401,409,411,423,424,425,426,427,428,429,430,431,432,433,434,435,436,437,438,439,440,441,442,443,444,445,447",
+      "after": "习近平 3,6,21,25,35,44,49,56,58,63,67,70,90,100,102,104,111,113,116,119,130,144,147,153,158,160,163,166,180,189,191,192,195,197,200,202,207,208,211,212,215,218,220,225,230,233,236,242,247,250,253,258,264,271,279,282,287,292,296,303,311,313,323,328,335,339,343,353,363,365,373,381,385,390,393,399,401,409,411,423,424,425,426,427,428,429,430,431,432,433,434,435,436,437,438,439,440,441,442,443,444,445,447习近平谈治国理政",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5638
+      ],
+      "before": "先进性和纯洁性 14,365,367,368,373,385",
+      "after": "先进性和纯洁性 14,365,367,368,373,385“先天下之忧而忧，后天下之乐而乐”",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5645
+      ],
+      "before": "现代化建设 9, 11, 12, 17, 51, 60, 61,",
+      "after": "现代化建设 9, 11, 12, 17, 51, 60, 61,126, 136, 158, 202, 219, 326, 332,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5647
+      ],
+      "before": "366, 385, 399, 402",
+      "after": "366, 385, 399, 402宪法 38, 135, 136, 137, 138, 139, 140,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5650
+      ],
+      "before": "141, 142, 144, 145, 146, 147, 148,",
+      "after": "141, 142, 144, 145, 146, 147, 148,150, 425",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5653
+      ],
+      "before": "香港 42, 225, 226, 227, 228, 427",
+      "after": "香港 42, 225, 226, 227, 228, 427香港特别行政区行政长官 225, 226, 227, 228",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5659
+      ],
+      "before": "消费 79, 130, 131, 193, 209, 211, 333, 345, 346, 349, 364, 370",
+      "after": "消费 79, 130, 131, 193, 209, 211, 333, 345, 346, 349, 364, 370消费需求 333,345",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5665
+      ],
+      "before": "小康社会 6,7,8,12,14,17,21,36,",
+      "after": "小康社会 6,7,8,12,14,17,21,36,39,43,44,45,49,56,58,70,81,92,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5667
+      ],
+      "before": "119,142,144,161,175,189,200,",
+      "after": "119,142,144,161,175,189,200,207,226,265,274,314,326,332,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5675
+      ],
+      "before": "协调各方 13,86,118,142",
+      "after": "协调各方 13,86,118,142辛格 323",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5681
+      ],
+      "before": "新的历史特点的伟大斗争 16,155,411",
+      "after": "新的历史特点的伟大斗争 16,155,411新加坡 441,446",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5687
+      ],
+      "before": "新能源 119, 130, 131, 317, 341",
+      "after": "新能源 119, 130, 131, 317, 341新文化运动 167",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5697
+      ],
+      "before": "新型大国关系 269, 279, 280",
+      "after": "新型大国关系 269, 279, 280新型农业经营体系 81",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5703
+      ],
+      "before": "新中国 4,7,22,36,44,60,137,159,",
+      "after": "新中国 4,7,22,36,44,60,137,159,248,266,274,296,304,309,314,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5709
+      ],
+      "before": "信息化 113, 121, 197, 198, 199, 216, 219, 274, 325",
+      "after": "信息化 113, 121, 197, 198, 199, 216, 219, 274, 325星星火炬 185",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5723
+      ],
+      "before": "宣传思想工作 153, 155, 156",
+      "after": "宣传思想工作 153, 155, 156玄奘 260",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5735
+      ],
+      "before": "循环发展 114,209,211,350",
+      "after": "循环发展 114,209,211,350循环经济 209",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5743
+      ],
+      "before": "亚太经合组织 343,349,351,352",
+      "after": "亚太经合组织 343,349,351,352亚太经合组织工商领导人峰会 343",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5754
+      ],
+      "before": "亚洲 113, 114, 293, 295, 328, 329,",
+      "after": "亚洲 113, 114, 293, 295, 328, 329,330, 331, 332, 333, 334, 348, 349,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5756
+      ],
+      "before": "350, 351, 353, 354, 355, 356, 357,",
+      "after": "350, 351, 353, 354, 355, 356, 357,358, 359",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5763
+      ],
+      "before": "亚洲基础设施投资银行 293, 298,",
+      "after": "亚洲基础设施投资银行 293, 298,317, 351, 358",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5778
+      ],
+      "before": "严格执法 140, 144, 145, 147, 149",
+      "after": "严格执法 140, 144, 145, 147, 149“颜色革命”415",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5786
+      ],
+      "before": "“一带一路”132,316,317,318",
+      "after": "“一带一路”132,316,317,318一个中国 232, 234, 239, 243",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5800
+      ],
+      "before": "依法行政 118, 140, 142, 144",
+      "after": "依法行政 118, 140, 142, 144依法执政 92,104,141,142,144,146",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5804
+      ],
+      "before": "依法治国 10,40,41,138,139,141,",
+      "after": "依法治国 10,40,41,138,139,141,142,144,145,146,147,204,391,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5811
+      ],
+      "before": "以德治国 141, 145, 170, 391",
+      "after": "以德治国 141, 145, 170, 391以改革创新为核心的时代精神 40, 56, 164",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5817
+      ],
+      "before": "以人为本 13,97,154,201,326,346",
+      "after": "以人为本 13,97,154,201,326,346义乌 319",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5848
+      ],
+      "before": "与邻为善、以邻为伴 297,332,358",
+      "after": "与邻为善、以邻为伴 297,332,358“与人为善”170,377",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5852
+      ],
+      "before": "与时俱进 17,40,51,136,171,297,",
+      "after": "与时俱进 17,40,51,136,171,297,306,309,311,400",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5865
+      ],
+      "before": "责任重于泰山 5,102,196,409,416",
+      "after": "责任重于泰山 5,102,196,409,416责任追究制度 83,149,210",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5871
+      ],
+      "before": "战略伙伴关系 282, 288, 292, 304",
+      "after": "战略伙伴关系 282, 288, 292, 304战略思维 247,417",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5886
+      ],
+      "before": "浙江 319,425,431,434,435,438,",
+      "after": "浙江 319,425,431,434,435,438,439,440,445",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5891
+      ],
+      "before": "真抓实干 48,381,400,413,436",
+      "after": "真抓实干 48,381,400,413,436整党 366",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5895
+      ],
+      "before": "正定 430, 432, 433, 436, 437, 440",
+      "after": "正定 430, 432, 433, 436, 437, 440正规化建设 216, 218, 220",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5901
+      ],
+      "before": "正能量 64, 155, 158, 198, 228, 276,",
+      "after": "正能量 64, 155, 158, 198, 228, 276,312, 350, 442",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5906
+      ],
+      "before": "政府和市场关系 75, 76, 77, 95, 118,",
+      "after": "政府和市场关系 75, 76, 77, 95, 118,347",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5913
+      ],
+      "before": "政治纪律 216,376,386,387,393,",
+      "after": "政治纪律 216,376,386,387,393,395",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5916
+      ],
+      "before": "政治建设 9,10,11,41,211,216,218,",
+      "after": "政治建设 9,10,11,41,211,216,218,326,425",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5921
+      ],
+      "before": "政治体制改革 82,139,150,425",
+      "after": "政治体制改革 82,139,150,425政治协商制度 41,138",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5927
+      ],
+      "before": "执政党 146,365,366,403,409,442",
+      "after": "执政党 146,365,366,403,409,442执政理念 100, 101",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5931
+      ],
+      "before": "执政能力 14,74,105,142",
+      "after": "执政能力 14,74,105,142执政水平 15,28,43,92,104,390",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5935
+      ],
+      "before": "执政为民 43,101,367,424",
+      "after": "执政为民 43,101,367,424指南针 261,314",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5939
+      ],
+      "before": "“治大国若烹小鲜” 409, 410",
+      "after": "“治大国若烹小鲜” 409, 410治党 4, 14, 15, 43, 91, 142, 200, 365, 377, 388, 390, 393, 426",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5945
+      ],
+      "before": "治国 10, 13, 14, 27, 40, 41, 91, 138,",
+      "after": "治国 10, 13, 14, 27, 40, 41, 91, 138,139, 141, 142, 144, 145, 146, 147,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5947
+      ],
+      "before": "169, 170, 200, 204, 307, 315, 325,",
+      "after": "169, 170, 200, 204, 307, 315, 325,391, 411, 424, 425",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5950
+      ],
+      "before": "治国理政 13,27,138,142,307,315,325,424",
+      "after": "治国理政 13,27,138,142,307,315,325,424治军 14,91,218,219,221",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5958
+      ],
+      "before": "制度自信 8,22,30,40,50,93,106,172",
+      "after": "制度自信 8,22,30,40,50,93,106,172制造业 120, 121, 307, 317",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5968
+      ],
+      "before": "中东 132,314,316,442",
+      "after": "中东 132,314,316,442中俄关系 275, 276, 278, 442",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5978
+      ],
+      "before": "中共十八届一中全会 423, 424, 427",
+      "after": "中共十八届一中全会 423, 424, 427中共中央 43,63,70,100,111,233,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5981
+      ],
+      "before": "423,424,425,427,432,436",
+      "after": "423,424,425,427,432,436《中共中央关于全面深化改革若干重大问题的决定》70,100",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5987
+      ],
+      "before": "中共中央总书记 423,432,436",
+      "after": "中共中央总书记 423,432,436中国—阿联酋共同投资基金 317",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        5998
+      ],
+      "before": "中国道路 39,40,44,45,53",
+      "after": "中国道路 39,40,44,45,53中国工程院 119",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6002
+      ],
+      "before": "中国共产党 3,7,8,13,29,36,41,42,",
+      "after": "中国共产党 3,7,8,13,29,36,41,42,44,47,49,50,71,101,135,138,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6004
+      ],
+      "before": "166,182,274,309,332,365,367,",
+      "after": "166,182,274,309,332,365,367,423,424,426",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6007
+      ],
+      "before": "中国共产党第十八届中央委员会第一次全体会议 3",
+      "after": "中国共产党第十八届中央委员会第一次全体会议 3中国故事 60, 64, 156, 162, 299",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6011
+      ],
+      "before": "中国精神 40, 44, 45, 56",
+      "after": "中国精神 40, 44, 45, 56中国科学院 119",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6015
+      ],
+      "before": "中国力量 40, 44, 46, 57",
+      "after": "中国力量 40, 44, 46, 57中国梦 33, 36, 39, 40, 41, 44, 45, 48,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6018
+      ],
+      "before": "49, 50, 51, 53, 54, 56, 57, 58, 61, 64,",
+      "after": "49, 50, 51, 53, 54, 56, 57, 58, 61, 64,114, 119, 147, 158, 159, 160, 161,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6020
+      ],
+      "before": "171, 176, 185, 200, 202, 207, 211,",
+      "after": "171, 176, 185, 200, 202, 207, 211,227, 228, 230, 236, 240, 248, 265,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6022
+      ],
+      "before": "274, 275, 279, 296, 299, 310, 314,",
+      "after": "274, 275, 279, 296, 299, 310, 314,319, 332, 359, 365, 367, 385, 390,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6024
+      ],
+      "before": "403, 411, 423, 425, 426, 436",
+      "after": "403, 411, 423, 425, 426, 436. 中国人民解放军 42",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6033
+      ],
+      "before": "中国声音 3,60,64,156,162,299",
+      "after": "中国声音 3,60,64,156,162,299中国特色国家安全道路 200, 201",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6037
+      ],
+      "before": "中国特色社会主义 1,5,6,7,8,9,10,",
+      "after": "中国特色社会主义 1,5,6,7,8,9,10,11, 12, 13, 14, 15, 16, 17, 21, 22, 23,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6039
+      ],
+      "before": "25, 26, 30, 35, 39, 40, 42, 45, 47, 50,",
+      "after": "25, 26, 30, 35, 39, 40, 42, 45, 47, 50,52, 56, 60, 67, 71, 73, 78, 86, 87, 90,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6041
+      ],
+      "before": "92, 93, 94, 96, 101, 104, 105, 106,",
+      "after": "92, 93, 94, 96, 101, 104, 105, 106,116, 136, 137, 138, 139, 140, 142,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6043
+      ],
+      "before": "144, 153, 154, 156, 160, 161, 163,",
+      "after": "144, 153, 154, 156, 160, 161, 163,200, 208, 218, 220, 309, 365, 373,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6045
+      ],
+      "before": "390, 391, 399, 404, 405, 411, 413,",
+      "after": "390, 391, 399, 404, 405, 411, 413,414, 417, 425",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6049
+      ],
+      "before": "30.39,47,56,67,87,105,136,137,",
+      "after": "30.39,47,56,67,87,105,136,137,161,309,414",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6052
+      ],
+      "before": "中国特色社会主义法律体系 140, 144",
+      "after": "中国特色社会主义法律体系 140, 144中国特色社会主义共同理想 11, 15, 23",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6058
+      ],
+      "before": "中国特色社会主义理论体系 8,9.15,",
+      "after": "中国特色社会主义理论体系 8,9.15,30,136,218,391,417",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6061
+      ],
+      "before": "中国特色社会主义事业总体布局 11,",
+      "after": "中国特色社会主义事业总体布局 11,12",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6064
+      ],
+      "before": "中国特色社会主义伟大旗帜 6,7,8,",
+      "after": "中国特色社会主义伟大旗帜 6,7,8,50,142,154,218,220,373",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6067
+      ],
+      "before": "中国特色社会主义文化发展道路 160",
+      "after": "中国特色社会主义文化发展道路 160中国特色社会主义政治发展道路",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6072
+      ],
+      "before": "中国特色社会主义制度 8,9,10,30,",
+      "after": "中国特色社会主义制度 8,9,10,30,71,78,86,90,92,93,101,104,105,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6080
+      ],
+      "before": "中华民族 3, 4, 7, 8, 10, 11, 12, 14, 21,",
+      "after": "中华民族 3, 4, 7, 8, 10, 11, 12, 14, 21,29, 33, 35, 36, 39, 40, 42, 44, 46, 48,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6082
+      ],
+      "before": "49, 50, 51, 52, 53, 56, 58, 59, 61, 63,",
+      "after": "49, 50, 51, 52, 53, 56, 58, 59, 61, 63,64, 71, 92, 105, 106, 114, 119, 122,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6084
+      ],
+      "before": "127, 137, 147, 155, 156, 158, 159,",
+      "after": "127, 137, 147, 155, 156, 158, 159,160, 161, 162, 164, 167, 168, 169,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6086
+      ],
+      "before": "170, 171, 180, 181, 182, 185, 200,",
+      "after": "170, 171, 180, 181, 182, 185, 200,202, 207, 208, 211, 219, 226, 227,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6088
+      ],
+      "before": "228, 230, 231, 232, 233, 234, 236,",
+      "after": "228, 230, 231, 232, 233, 234, 236,237, 238, 240, 243, 247, 248, 260,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6090
+      ],
+      "before": "265, 274, 279, 280, 296, 297, 299,",
+      "after": "265, 274, 279, 280, 296, 297, 299,310, 314, 319, 332, 359, 363, 365,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6092
+      ],
+      "before": "385, 387, 390, 403, 405, 411, 423,",
+      "after": "385, 387, 390, 403, 405, 411, 423,424, 425",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6097
+      ],
+      "before": "中华民族伟大复兴 3,4,8,10,11,14,",
+      "after": "中华民族伟大复兴 3,4,8,10,11,14,21,33,35,36,39,44,46,48,49,50,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6099
+      ],
+      "before": "53,56,58,61,63,64,71,92,114,119,",
+      "after": "53,56,58,61,63,64,71,92,114,119,122,127,147,158,159,160,161,167,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6101
+      ],
+      "before": "169,185,200,202,207,211,219,226,",
+      "after": "169,185,200,202,207,211,219,226,227,228,230,231,232,233,234,236,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6103
+      ],
+      "before": "240,243,248,265,274,279,296,297,",
+      "after": "240,243,248,265,274,279,296,297,299,310,314,332,359,365,385,390,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6107
+      ],
+      "before": "中华民族伟大复兴的中国梦 33, 39,",
+      "after": "中华民族伟大复兴的中国梦 33, 39,44, 48, 49, 50, 53, 56, 61, 64, 114,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6109
+      ],
+      "before": "119, 147, 158, 159, 185, 202, 207,",
+      "after": "119, 147, 158, 159, 185, 202, 207,211, 227, 228, 230, 236, 240, 248,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6111
+      ],
+      "before": "265, 279, 296, 299, 310, 332, 359,",
+      "after": "265, 279, 296, 299, 310, 332, 359,365, 385, 390, 403, 411",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6114
+      ],
+      "before": "中华民族整体利益 231, 233, 234,",
+      "after": "中华民族整体利益 231, 233, 234,240, 243",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6117
+      ],
+      "before": "中华人民共和国 29,38,39,135,139,212,353,425",
+      "after": "中华人民共和国 29,38,39,135,139,212,353,425《中华人民共和国宪法》135",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6123
+      ],
+      "before": "中华文化 39, 63, 64, 155, 156, 161, 162, 164, 170, 235, 237, 260, 261",
+      "after": "中华文化 39, 63, 64, 155, 156, 161, 162, 164, 170, 235, 237, 260, 261中华文明 40, 64, 158, 170, 181, 258, 260, 261, 265",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6133
+      ],
+      "before": "中欧合作 2020 战略规划 283",
+      "after": "中欧合作 2020 战略规划 283中亚 132, 259, 287, 288, 289, 341",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6147
+      ],
+      "before": "中央军委 215, 216, 217, 220, 425, 427, 430",
+      "after": "中央军委 215, 216, 217, 220, 425, 427, 430中央全面深化改革领导小组 101",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6162
+      ],
+      "before": "中央政治局 3,6,67,70,72,73,74,",
+      "after": "中央政治局 3,6,67,70,72,73,74,116,144,160,163,181,192,202,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6164
+      ],
+      "before": "208,247,374,378,390,393,424,",
+      "after": "208,247,374,378,390,393,424,425,426,436",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6167
+      ],
+      "before": "中央政治局常委 3,73,424,425",
+      "after": "中央政治局常委 3,73,424,425中央政治局常委会 73",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6175
+      ],
+      "before": "周边国家 114, 296, 297, 298, 299, 332, 333, 348",
+      "after": "周边国家 114, 296, 297, 298, 299, 332, 333, 348周边外交 285, 296, 297, 298, 299",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6189
+      ],
+      "before": "住房保障和供应体系建设 192, 193",
+      "after": "住房保障和供应体系建设 192, 193转变经济发展方式 13,77,80,111,",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6202
+      ],
+      "before": "自由贸易区 283, 293, 298, 317, 348,",
+      "after": "自由贸易区 283, 293, 298, 317, 348,350",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6207
+      ],
+      "before": "自主创新 121, 122, 123, 127, 197, 198",
+      "after": "自主创新 121, 122, 123, 127, 197, 198宗旨意识 375,391,415,417",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6213
+      ],
+      "before": "总揽全局 13,86,118,142",
+      "after": "总揽全局 13,86,118,142总目标 90, 101, 104, 105",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6219
+      ],
+      "before": "总体国家安全观 200, 201, 202",
+      "after": "总体国家安全观 200, 201, 202总依据10",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6229
+      ],
+      "before": "最大公约数 161, 168, 316",
+      "after": "最大公约数 161, 168, 316尊重劳动、尊重知识、尊重人才、尊重创造 46",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6243
+      ],
+      "before": "ISBN 978-7-119-09087-0",
+      "after": "ISBN 978-7-119-09087-0I. ①习…II. ①习…III. ①习近平－讲话－学习参考",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6247
+      ],
+      "before": "资料②中国特色社会主义－社会主义建设模式－学习参考",
+      "after": "资料②中国特色社会主义－社会主义建设模式－学习参考资料 IV. ① D2-0 ② D616",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6255
+      ],
+      "before": "© 2014 外文出版社有限责任公司",
+      "after": "© 2014 外文出版社有限责任公司出版发行：外文出版社有限责任公司",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6263
+      ],
+      "before": "网址：http://www.flp.com.cn",
+      "after": "网址：http://www.flp.com.cn电子邮箱：flp@cipg.org.cn",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6273
+      ],
+      "before": "开 本：787mm×1092mm 1/16",
+      "after": "开 本：787mm×1092mm 1/16印 张：34",
+      "reason": "疑似 OCR 断行"
+    },
+    {
+      "rule": "merge_broken_paragraphs",
+      "action": "merge_lines",
+      "source_lines": [
+        6283
+      ],
+      "before": "书号：ISBN 978-7-119-09087-0",
+      "after": "书号：ISBN 978-7-119-09087-0定 价：80.00 元",
+      "reason": "疑似 OCR 断行"
+    }
+  ]
+}

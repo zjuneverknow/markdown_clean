@@ -1,0 +1,1518 @@
+{
+  "input_characters": 251933,
+  "output_characters": 248292,
+  "deleted_characters": 3641,
+  "delete_ratio": 0.014452,
+  "counters": {
+    "html_comments_removed": 6,
+    "image_links_removed": 46,
+    "image_captions_preserved": 45,
+    "exact_lines_removed": 3,
+    "headings_normalized": 50,
+    "blank_lines_collapsed": 9
+  },
+  "warnings": [],
+  "total_changes": 150,
+  "change_examples": [
+    {
+      "rule": "html_comments_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1
+      ],
+      "before": "<!-- Source pages 1-100 -->",
+      "after": "",
+      "reason": "HTML 注释"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        3
+      ],
+      "before": "![](images/ecd4c899da62b9e4ab9627bf10240d67440a906e43f68a6f7b136aeddabf9f8d.jpg)",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        11
+      ],
+      "before": "![](images/1c7957f53c021b2f271281965d2f8ba1bbe13ec8514777f5011e7b64a228a3af.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        12
+      ],
+      "before": "贺迈平",
+      "after": "> 图片说明：贺迈平",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        279
+      ],
+      "before": "![](images/107dc00a20efea34a7f22b38ba6e814e16495c93570a69ca57cc0b57d06ff55c.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        280
+      ],
+      "before": "1977 年，读大学时的习近平。",
+      "after": "> 图片说明：1977 年，读大学时的习近平。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        282
+      ],
+      "before": "![](images/e0617bda8e635bd24e9df3f39f0a8fd70dd28412d1462a940c000a59c801eeab.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        283
+      ],
+      "before": "1972 年，插队回京探亲时的习近平。",
+      "after": "> 图片说明：1972 年，插队回京探亲时的习近平。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        285
+      ],
+      "before": "![](images/66c759a477fe3a06e187e95e2e5136174fd83faf91552f4b30f38e82d5df3242.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        286
+      ],
+      "before": "1979年，在中央军委办公厅工作时的习近平。",
+      "after": "> 图片说明：1979年，在中央军委办公厅工作时的习近平。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        288
+      ],
+      "before": "![](images/b8bef682e450e442398b8fc587af56a2dc01bfbb6f35b736fc7582c6f262b95c.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        289
+      ],
+      "before": "1983年，时任河北省正定县委书记的习近平临时在大街上摆桌子听取老百姓意见。",
+      "after": "> 图片说明：1983年，时任河北省正定县委书记的习近平临时在大街上摆桌子听取老百姓意见。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        291
+      ],
+      "before": "![](images/72088875bf5898e063854a9017fdb92d731bde0c5f4c7c39bcabc218044dacf2.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        292
+      ],
+      "before": "时任福建省厦门市副市长的习近平到国外考察。",
+      "after": "> 图片说明：时任福建省厦门市副市长的习近平到国外考察。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        294
+      ],
+      "before": "![](images/d3e736721c586729d9e2ffdbf40de436c020a222105fb661fd2ee0b8d4949fa2.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        295
+      ],
+      "before": "1989 年，时任福建省宁德地委书记的习近平在农村参加劳动。",
+      "after": "> 图片说明：1989 年，时任福建省宁德地委书记的习近平在农村参加劳动。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        297
+      ],
+      "before": "![](images/fe73737261acc8285207d300213e72ed85ea7cab0af391d991cc0fef2cbef086.jpg)",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        299
+      ],
+      "before": "1995 年 12 月，时任福建省委副书记、福州市委书记的习近平在闽侯县参加闽江下游防洪堤加固工程劳动。",
+      "after": "> 图片说明：1995 年 12 月，时任福建省委副书记、福州市委书记的习近平在闽侯县参加闽江下游防洪堤加固工程劳动。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        301
+      ],
+      "before": "![](images/e27d9f804a3ac487252b26ce731a863775c9b19b5d0648b8e32f24e47d5a9f4e.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        302
+      ],
+      "before": "2007 年 1 月，时任浙江省委书记的习近平在浙江省庆元县屏都镇敬老院为老人们炒菜。",
+      "after": "> 图片说明：2007 年 1 月，时任浙江省委书记的习近平在浙江省庆元县屏都镇敬老院为老人们炒菜。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        304
+      ],
+      "before": "![](images/64620f68941a2a5a243eb8283d189d322ee516c32decca7bbcbdd33e0c3b804c.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        305
+      ],
+      "before": "2007年9月，时任上海市委书记的习近平在上海市闵行区启音学校与听障学生亲切交谈。",
+      "after": "> 图片说明：2007年9月，时任上海市委书记的习近平在上海市闵行区启音学校与听障学生亲切交谈。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        307
+      ],
+      "before": "![](images/b6250b3fe3c71a9924e6ca95edf92530c842c1f0742eac61a6667715b7c010b1.jpg)",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        309
+      ],
+      "before": "2008年1月贵州雨雪冰冻灾害时，时任中共中央政治局常委、中央书记处书记的习近平到铜仁地区万山特区高楼坪乡老山口村受灾的侗族村民唐召维家看望慰问。",
+      "after": "> 图片说明：2008年1月贵州雨雪冰冻灾害时，时任中共中央政治局常委、中央书记处书记的习近平到铜仁地区万山特区高楼坪乡老山口村受灾的侗族村民唐召维家看望慰问。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        311
+      ],
+      "before": "![](images/a33b4ad95d88d9493b0de465a5bd298a67f3533442fa128a44f76d94c78afa80.jpg)",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        313
+      ],
+      "before": "2012年2月，时任中华人民共和国副主席的习近平访美时到艾奥瓦州老朋友家里与27年前结交的美国老朋友茶叙。",
+      "after": "> 图片说明：2012年2月，时任中华人民共和国副主席的习近平访美时到艾奥瓦州老朋友家里与27年前结交的美国老朋友茶叙。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        315
+      ],
+      "before": "![](images/312e576cac3d8e81a873c2d8f3c37dcf153cebddbaac6f06e4d189e836d28561.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        316
+      ],
+      "before": "2012 年 2 月，时任中华人民共和国副主席的习近平访问爱尔兰，在参观爱尔兰盖尔式运动协会时应邀开球。",
+      "after": "> 图片说明：2012 年 2 月，时任中华人民共和国副主席的习近平访问爱尔兰，在参观爱尔兰盖尔式运动协会时应邀开球。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        318
+      ],
+      "before": "![](images/14a59294ee001d4259a7a56a1f80aeb01ae9016f8e893c5173924d6b8fced35e.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        319
+      ],
+      "before": "习近平和夫人彭丽媛合影。",
+      "after": "> 图片说明：习近平和夫人彭丽媛合影。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        321
+      ],
+      "before": "![](images/6957baa0726c4e1a7e43cd6d06ae1418d6c252015e84b3cef0d1e67c93d65200.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        322
+      ],
+      "before": "习近平在福州带女儿玩耍。",
+      "after": "> 图片说明：习近平在福州带女儿玩耍。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        324
+      ],
+      "before": "![](images/62a8a218efba22c06b76ed75e48a820ff747d34e7dc140402200f36ee8169c67.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        325
+      ],
+      "before": "习近平与父亲习仲勋、夫人彭丽媛、女儿的家庭照。",
+      "after": "> 图片说明：习近平与父亲习仲勋、夫人彭丽媛、女儿的家庭照。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        327
+      ],
+      "before": "![](images/9d7754273fc09ffda92edede3c7cab66ed47d07b2ce2f8643e840ad85965e647.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        328
+      ],
+      "before": "习近平陪母亲齐心散步。",
+      "after": "> 图片说明：习近平陪母亲齐心散步。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "html_comments_removed",
+      "action": "delete_line",
+      "source_lines": [
+        836
+      ],
+      "before": "<!-- Source pages 101-200 -->",
+      "after": "",
+      "reason": "HTML 注释"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1422
+      ],
+      "before": "![](images/77b41ae77fda3c8d67470c5bd968d0022c96cd9459e9f86e84528c5fe1aeada8.jpg)",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1424
+      ],
+      "before": "2012年11月15日，刚刚在中国共产党第十八届中央委员会第一次全体会议上当选的中共中央总书记习近平和中共中央政治局常委李克强、张德江、俞正声、刘云山、王岐山、张高丽在北京人民大会堂同采访十八大的中外记者亲切见面。",
+      "after": "> 图片说明：2012年11月15日，刚刚在中国共产党第十八届中央委员会第一次全体会议上当选的中共中央总书记习近平和中共中央政治局常委李克强、张德江、俞正声、刘云山、王岐山、张高丽在北京人民大会堂同采访十八大的中外记者亲切见面。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1426
+      ],
+      "before": "![](images/f56dce85c3fe9cf34f52b5f0882350879843f75401beea10346c3de3ebbd37bb.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1427
+      ],
+      "before": "2012年11月15日，在北京人民大会堂会见出席中共十八大代表、特邀代表和列席人员时，习近平和胡锦涛亲切握手。",
+      "after": "> 图片说明：2012年11月15日，在北京人民大会堂会见出席中共十八大代表、特邀代表和列席人员时，习近平和胡锦涛亲切握手。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1429
+      ],
+      "before": "![](images/774ad7bdff9b2733d6828cca1e59cf515da65eec81b9ea73914ab7685385e564.jpg)",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1431
+      ],
+      "before": "2012年11月29日，习近平和李克强、张德江、俞正声、刘云山、王岐山、张高丽等来到中国国家博物馆，参观《复兴之路》展览，首次提出实现中华民族伟大复兴的中国梦。",
+      "after": "> 图片说明：2012年11月29日，习近平和李克强、张德江、俞正声、刘云山、王岐山、张高丽等来到中国国家博物馆，参观《复兴之路》展览，首次提出实现中华民族伟大复兴的中国梦。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1433
+      ],
+      "before": "![](images/8ce32442c6765a391c1c7589807a210535a9de2460a641e3e7f004bb51b52fd8.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1434
+      ],
+      "before": "2012年12月8日，习近平在深圳考察期间，在莲花山公园与当年参与特区建设的老同志交谈，强调结合新的时代条件把改革开放继续推向前进。",
+      "after": "> 图片说明：2012年12月8日，习近平在深圳考察期间，在莲花山公园与当年参与特区建设的老同志交谈，强调结合新的时代条件把改革开放继续推向前进。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1436
+      ],
+      "before": "![](images/a8db5edfc79ae8cc4a7a24bdba9ba85d98217844247e6b03c7d625692fc5cb93.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1437
+      ],
+      "before": "2013年2月4日，习近平来到甘肃省兰州市五泉菜市场了解节日供应情况，在一经营户的摊位前了解蔬菜价格、供应、销售情况。",
+      "after": "> 图片说明：2013年2月4日，习近平来到甘肃省兰州市五泉菜市场了解节日供应情况，在一经营户的摊位前了解蔬菜价格、供应、销售情况。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1439
+      ],
+      "before": "![](images/9a734a75a715c0646b8bde5e25fc3e429e362400f6e5ea6c118318f04f0cd1ba.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1440
+      ],
+      "before": "2013年3月14日，习近平在第十二届全国人民代表大会第一次会议上当选中华人民共和国主席。3月17日，习近平在闭幕会上发表重要讲话。",
+      "after": "> 图片说明：2013年3月14日，习近平在第十二届全国人民代表大会第一次会议上当选中华人民共和国主席。3月17日，习近平在闭幕会上发表重要讲话。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1442
+      ],
+      "before": "![](images/9c538b1ea5bd3c9d02723fa3e4b0814af4206b6a3ae451a9bc40ca2b38d2fcbb.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1443
+      ],
+      "before": "2013年4月9日，习近平在海南考察工作时，在亚龙湾兰德玫瑰风情产业园高兴地戴上黎族群众递上的斗笠。",
+      "after": "> 图片说明：2013年4月9日，习近平在海南考察工作时，在亚龙湾兰德玫瑰风情产业园高兴地戴上黎族群众递上的斗笠。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1445
+      ],
+      "before": "![](images/32fa9cff9bb787638e74e11e53edfc6f5337b0d043badb76046147cfdc5d0d13.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1446
+      ],
+      "before": "2013年6月11日，习近平在酒泉卫星发射中心观看神舟十号载人飞船发射，向即将出征的航天员聂海胜、张晓光、王亚平挥手致意。",
+      "after": "> 图片说明：2013年6月11日，习近平在酒泉卫星发射中心观看神舟十号载人飞船发射，向即将出征的航天员聂海胜、张晓光、王亚平挥手致意。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1448
+      ],
+      "before": "![](images/79d3bfed6b16c120f8d050a0273dc68c93f3e71562140f087f654ccf9b988763.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1449
+      ],
+      "before": "2013年7月21日，习近平在湖北调研全面深化改革问题和经济运行情况时，冒雨来到武汉新港阳逻集装箱港区考察。",
+      "after": "> 图片说明：2013年7月21日，习近平在湖北调研全面深化改革问题和经济运行情况时，冒雨来到武汉新港阳逻集装箱港区考察。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1451
+      ],
+      "before": "![](images/c5eb019df8f2b498279f1f79a06c8569f76410b489769486a1f515b453d957d5.jpg)",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1453
+      ],
+      "before": "2013年8月28日，习近平在中国第一艘航空母舰——辽宁舰上检阅水兵仪仗队。",
+      "after": "> 图片说明：2013年8月28日，习近平在中国第一艘航空母舰——辽宁舰上检阅水兵仪仗队。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1455
+      ],
+      "before": "![](images/cf253e98054fc4cf3e9eacbb49ef1fa6b3c865e06997802e15fa7e00159eb455.jpg)",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1457
+      ],
+      "before": "2013年11月3日，习近平在湖南考察时，在湘西土家族苗族自治州花垣县排碧乡十八洞村同村干部和村民座谈。",
+      "after": "> 图片说明：2013年11月3日，习近平在湖南考察时，在湘西土家族苗族自治州花垣县排碧乡十八洞村同村干部和村民座谈。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1459
+      ],
+      "before": "![](images/6349bc6d4b0495ac1f90d38e8db44a93b1407edb1ebfc6581acd372cf5accdae.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1460
+      ],
+      "before": "2013年11月25日，习近平在地处山东沂蒙老区的临沭县曹庄镇朱村亲切地拉着83岁的“老支前”王克昌的手去他家看望。",
+      "after": "> 图片说明：2013年11月25日，习近平在地处山东沂蒙老区的临沭县曹庄镇朱村亲切地拉着83岁的“老支前”王克昌的手去他家看望。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1462
+      ],
+      "before": "![](images/38b999826329bbda3baffea0553331d5fe1e336e28ab6e51197e8e702be6775a.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1463
+      ],
+      "before": "2014年1月26日，习近平来到中国边疆的内蒙古阿尔山，冒着零下30多摄氏度的严寒，迎风踏雪慰问在边防线上巡逻执勤的官兵。",
+      "after": "> 图片说明：2014年1月26日，习近平来到中国边疆的内蒙古阿尔山，冒着零下30多摄氏度的严寒，迎风踏雪慰问在边防线上巡逻执勤的官兵。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1465
+      ],
+      "before": "![](images/7b338db31385c58fb2cbc8f1cd36010fcbfc163dd2fa5fad70b7afb0556c1947.jpg)",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1467
+      ],
+      "before": "2014年4月9日，习近平视察中国人民武装警察部队特种警察学院并为“猎鹰突击队”授旗。",
+      "after": "> 图片说明：2014年4月9日，习近平视察中国人民武装警察部队特种警察学院并为“猎鹰突击队”授旗。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1469
+      ],
+      "before": "![](images/82fe0cb14f2e1ee6fda21a5058ddc9ad0955f4412f5788c67a7c81508752dea3.jpg)",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1471
+      ],
+      "before": "2014年4月28日，习近平在新疆考察时，在疏附县托克扎克镇阿亚格曼干村村民阿卜都克尤木·肉孜家同村民座谈。",
+      "after": "> 图片说明：2014年4月28日，习近平在新疆考察时，在疏附县托克扎克镇阿亚格曼干村村民阿卜都克尤木·肉孜家同村民座谈。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1473
+      ],
+      "before": "![](images/638ca0d877ab9f9f63990248d7c94c3e000babb34ed34d047b92edb1a0aa2cfc.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1474
+      ],
+      "before": "2014年5月9日，习近平在河南考察时，在尉氏县张市镇高标准粮田察看小麦长势。",
+      "after": "> 图片说明：2014年5月9日，习近平在河南考察时，在尉氏县张市镇高标准粮田察看小麦长势。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "html_comments_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1476
+      ],
+      "before": "<!-- Source pages 201-300 -->",
+      "after": "",
+      "reason": "HTML 注释"
+    },
+    {
+      "rule": "html_comments_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2245
+      ],
+      "before": "<!-- Source pages 301-400 -->",
+      "after": "",
+      "reason": "HTML 注释"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2909
+      ],
+      "before": "![](images/a8aef91d2398e295e7c15204dbcc00984f5657cf19b876cb434bec5fb3d7d051.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        2910
+      ],
+      "before": "2013年3月22日，习近平在俄罗斯莫斯科克里姆林宫与俄罗斯总统普京举行会谈。",
+      "after": "> 图片说明：2013年3月22日，习近平在俄罗斯莫斯科克里姆林宫与俄罗斯总统普京举行会谈。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2912
+      ],
+      "before": "![](images/a6ce5a21502270211cd811719bef16944cea96ceb5219805f9420d9c217d4225.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        2913
+      ],
+      "before": "2013年3月25日，习近平在坦桑尼亚达累斯萨拉姆尼雷尔国际会议中心发表演讲。",
+      "after": "> 图片说明：2013年3月25日，习近平在坦桑尼亚达累斯萨拉姆尼雷尔国际会议中心发表演讲。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2915
+      ],
+      "before": "![](images/8eb1466e98ea7ede58b689d233b8602271b06f1e6e68c83dc3f3c6caa6ea6df8.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        2916
+      ],
+      "before": "2013年3月27日，习近平在南非德班出席金砖国家领导人第五次会晤。",
+      "after": "> 图片说明：2013年3月27日，习近平在南非德班出席金砖国家领导人第五次会晤。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2918
+      ],
+      "before": "![](images/4bf7117107c819370b1c1958eff08678987ba97a8888c6181d6f5b44b9f79b5c.jpg)",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        2920
+      ],
+      "before": "2013年4月7日，习近平在海南博鳌同出席博鳌亚洲论坛2013年年会的外国领导人和国际组织负责人合影。",
+      "after": "> 图片说明：2013年4月7日，习近平在海南博鳌同出席博鳌亚洲论坛2013年年会的外国领导人和国际组织负责人合影。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2922
+      ],
+      "before": "![](images/f00bc7d621e681693a825c207bd7c80af5bc0c298e1f4fe809a7e7bd87bd8700.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        2923
+      ],
+      "before": "2013年6月3日，正在哥斯达黎加进行国事访问的习近平和夫人彭丽媛走访当地农户萨莫拉一家。",
+      "after": "> 图片说明：2013年6月3日，正在哥斯达黎加进行国事访问的习近平和夫人彭丽媛走访当地农户萨莫拉一家。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2925
+      ],
+      "before": "![](images/e029453930845832ff28f7e47f79ea6bb96f95c016c14f4d1966110c66d4b6e1.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        2926
+      ],
+      "before": "2013年6月7日，习近平在美国加利福尼亚州安纳伯格庄园同美国总统奥巴马举行中美元首会晤。",
+      "after": "> 图片说明：2013年6月7日，习近平在美国加利福尼亚州安纳伯格庄园同美国总统奥巴马举行中美元首会晤。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2928
+      ],
+      "before": "![](images/324bbf1ff4802abb95a500beb12c1d4755b3dc4ef41a0e19cb4b12e979a518ee.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        2929
+      ],
+      "before": "2013年9月6日，习近平在俄罗斯圣彼得堡出席二十国集团领导人第八次峰会。",
+      "after": "> 图片说明：2013年9月6日，习近平在俄罗斯圣彼得堡出席二十国集团领导人第八次峰会。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2931
+      ],
+      "before": "![](images/136e2b0d4e2fe2d0bcb31c6a1bd1c045a898bb3b5917c7ea22800184f6a95bf4.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        2932
+      ],
+      "before": "2013年9月13日，习近平在吉尔吉斯斯坦比什凯克出席上海合作组织成员国元首理事会第十三次会议。",
+      "after": "> 图片说明：2013年9月13日，习近平在吉尔吉斯斯坦比什凯克出席上海合作组织成员国元首理事会第十三次会议。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2934
+      ],
+      "before": "![](images/3e9995b245cebf9378aaff9b0ef13f6170e62314733824741b9516445ffc2917.jpg)",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        2936
+      ],
+      "before": "2013年10月8日，习近平在印度尼西亚巴厘岛出席亚太经合组织第二十一次领导人非正式会议。",
+      "after": "> 图片说明：2013年10月8日，习近平在印度尼西亚巴厘岛出席亚太经合组织第二十一次领导人非正式会议。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2938
+      ],
+      "before": "![](images/5ed76bba9eab9bee4f72ca5307bfc0436021810d95e577eb1baa364e95b26094.jpg)",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        2940
+      ],
+      "before": "2014 年 3 月 22 日，习近平和夫人彭丽媛在荷兰阿姆斯特丹出席荷兰国王威廉—亚历山大举行的盛大国宴。",
+      "after": "> 图片说明：2014 年 3 月 22 日，习近平和夫人彭丽媛在荷兰阿姆斯特丹出席荷兰国王威廉—亚历山大举行的盛大国宴。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2942
+      ],
+      "before": "![](images/1c2a0ee23fb3f9a3b0bb6e5cb471b3329483feea58891bff5afb123a4c61c734.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        2943
+      ],
+      "before": "2014年3月26日，习近平和夫人彭丽媛在法国参观里昂中法大学旧址，为中国一里昂关系促进中心、里昂中法大学历史博物馆揭牌。",
+      "after": "> 图片说明：2014年3月26日，习近平和夫人彭丽媛在法国参观里昂中法大学旧址，为中国一里昂关系促进中心、里昂中法大学历史博物馆揭牌。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2945
+      ],
+      "before": "![](images/eab486084823b8f6bdf4f3e087e4e04b37a277a8cdef4e771d082123269681f4.jpg)",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        2947
+      ],
+      "before": "2014年5月20日，习近平在上海国际会议中心举行宴会，代表中国政府和人民，欢迎前来出席亚洲相互协作与信任措施会议第四次峰会的各国贵宾。",
+      "after": "> 图片说明：2014年5月20日，习近平在上海国际会议中心举行宴会，代表中国政府和人民，欢迎前来出席亚洲相互协作与信任措施会议第四次峰会的各国贵宾。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "html_comments_removed",
+      "action": "delete_line",
+      "source_lines": [
+        3131
+      ],
+      "before": "<!-- Source pages 401-500 -->",
+      "after": "",
+      "reason": "HTML 注释"
+    },
+    {
+      "rule": "html_comments_removed",
+      "action": "delete_line",
+      "source_lines": [
+        3991
+      ],
+      "before": "<!-- Source pages 501-536 -->",
+      "after": "",
+      "reason": "HTML 注释"
+    },
+    {
+      "rule": "exact_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        5614
+      ],
+      "before": "## X",
+      "after": "",
+      "reason": "配置的精确噪声行"
+    },
+    {
+      "rule": "exact_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        5739
+      ],
+      "before": "## Y",
+      "after": "",
+      "reason": "配置的精确噪声行"
+    },
+    {
+      "rule": "exact_lines_removed",
+      "action": "delete_line",
+      "source_lines": [
+        5859
+      ],
+      "before": "## z",
+      "after": "",
+      "reason": "配置的精确噪声行"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        412
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        484
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        536
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        564
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        634
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        676
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        730
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        800
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        1014
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        1090
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        1132
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        1156
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        1192
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        1268
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        1310
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        1372
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        1508
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        1648
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        1778
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        1845
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        1889
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        1999
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        2019
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        2087
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        2121
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        2189
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        2259
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        2367
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        2419
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        2503
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        2559
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        2609
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        2661
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        2785
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        2817
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        2885
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        3005
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        3075
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        3187
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        3291
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        3375
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        3447
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        3519
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        3569
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        3593
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        3627
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        3673
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        3721
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        3801
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        4077
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    }
+  ]
+}

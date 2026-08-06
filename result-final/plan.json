@@ -1,0 +1,72 @@
+{
+  "safety": {
+    "max_delete_ratio": 0.35,
+    "max_single_section_chars": 20000,
+    "abort_on_missing_section_end": true
+  },
+  "rules": {
+    "remove_html_comments": true,
+    "remove_images": true,
+    "remove_image_file_noise": true,
+    "preserve_image_captions": true,
+    "image_caption_max_chars": 120,
+    "remove_ocr_noise": true,
+    "ocr_noise_patterns": [],
+    "remove_exact_lines": [
+      "X",
+      "Y",
+      "z"
+    ],
+    "remove_line_patterns": [],
+    "remove_sections": [
+      {
+        "name": "front_matter",
+        "start_heading_patterns": [
+          "^目录$"
+        ],
+        "allowed_heading_levels": [
+          2
+        ],
+        "require_following_patterns": [],
+        "end_rule": "next_heading_same_or_higher_level"
+      }
+    ],
+    "remove_front_matter": true,
+    "front_matter_anchor_heading_patterns": [
+      "^目录$"
+    ],
+    "front_matter_body_start_heading_patterns": [
+      "^一、坚持和发展 中国特色社会主义$"
+    ],
+    "remove_inline_patterns": [],
+    "remove_meaningless_headings": false,
+    "meaningless_heading_patterns": [],
+    "remove_plain_meaningless_lines": false,
+    "normalize_headings": false,
+    "heading_rules": [],
+    "default_heading_level": null,
+    "demote_heading_patterns": [
+      "^注释$",
+      "^一、坚持和发展 中国特色社会主义$",
+      "^三、全面深化改革$",
+      "^四、促进经济持续健康发展$",
+      "^五、建设法治中国$",
+      "^八、建设生态文明$",
+      "^十一、走和平发展道路$",
+      "^十六、密切党同人民群众联系$",
+      "^十八、提高党的领导水平$",
+      "^二、实现中华民族伟大复兴的中国梦$",
+      "^习近平谈治国理政$",
+      "^习近平 谈治国理政$"
+    ],
+    "italicize_date_lines": false,
+    "date_patterns": [],
+    "remove_trailing_heading_marks": [],
+    "merge_broken_paragraphs": false,
+    "merge_min_left_chars": 18,
+    "merge_across_single_blank": true,
+    "terminal_chars": "。！？!?；;：:”’）)】》…",
+    "max_blank_lines": 1,
+    "trim_trailing_spaces": true
+  }
+}

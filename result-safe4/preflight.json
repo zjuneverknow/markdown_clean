@@ -1,0 +1,15 @@
+{
+  "heading_count": 207,
+  "section_rule_matches": [],
+  "heading_rule_matches": {
+    "meaningless": 0,
+    "demote": 50
+  },
+  "front_matter_anchor_matches": 0,
+  "front_matter_body_start_matches_after_anchor": 0,
+  "markdown_image_links": 46,
+  "image_filename_noise_lines": 46,
+  "zero_match_rules": [],
+  "destructive_line_rule_matches": [],
+  "unsafe_rules": []
+}

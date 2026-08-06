@@ -1,0 +1,4508 @@
+{
+  "input_characters": 251933,
+  "output_characters": 243553,
+  "deleted_characters": 8380,
+  "delete_ratio": 0.033263,
+  "counters": {
+    "front_matter_lines_removed": 329,
+    "html_comments_removed": 5,
+    "image_links_removed": 28,
+    "image_captions_preserved": 28,
+    "headings_normalized": 59,
+    "blank_lines_collapsed": 5
+  },
+  "warnings": [],
+  "total_changes": 449,
+  "change_examples": [
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        1
+      ],
+      "before": "<!-- Source pages 1-100 -->",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        2
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        3
+      ],
+      "before": "![](images/ecd4c899da62b9e4ab9627bf10240d67440a906e43f68a6f7b136aeddabf9f8d.jpg)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        4
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        5
+      ],
+      "before": "## 习近平",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        6
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        7
+      ],
+      "before": "谈治国理政",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        8
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        9
+      ],
+      "before": "# 习近平谈治国理政",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        10
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        11
+      ],
+      "before": "![](images/1c7957f53c021b2f271281965d2f8ba1bbe13ec8514777f5011e7b64a228a3af.jpg)  ",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        12
+      ],
+      "before": "贺迈平",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        13
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        14
+      ],
+      "before": "## 出版说明",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        15
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        16
+      ],
+      "before": "中共十八大以来，以习近平为总书记的新一届中央领导集体，带领全党全国各族人民积极应对前进道路上的困难和挑战，坚定不移深化改革开放，大力推进国家治理体系和治理能力现代化建设，凝聚起实现中华民族伟大复兴中国梦的强大力量，开启了中国改革开放和现代化建设的新征程。在中国共产党领导下，中国人民正在奋力开拓中国特色社会主义更为广阔的发展前景。国际社会越来越多地把目光投向中国、聚焦中国。当代中国将发生什么变化，发展的中国将给世界带来什么影响，越来越成为国际社会广泛关注的问题。",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        17
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        18
+      ],
+      "before": "习近平作为中国党和国家的最高领导人，围绕治国理政发表了大量讲话，提出了许多新思想、新观点、新论断，深刻回答了新的历史条件下党和国家发展的重大理论和现实问题，集中展示了中共新一届中央领导集体的治国理念和执政方略。为回应国际社会关切，增进国际社会对中国发展理念、发展道路、内外政策的认识和理解，中国国务院新闻办公室会同中共中央文献研究室、中国外文出版发行事业局编辑了《习近平谈治国理政》一书。",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        19
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        20
+      ],
+      "before": "本书收入的是习近平在2012年11月15日至2014年6月13日这段时间内的重要著作，共有讲话、谈话、演讲、答问、批示、贺信等79篇。",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        21
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        22
+      ],
+      "before": "针对国际社会对当代中国问题的主要关注点，本书将所选篇目分为18个专题，每个专题内容按时间顺序编排。为便于读者阅读，进一步增进对中国社会制度和历史文化的了解，本书编辑时作了必要的注释，附在篇末。",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        23
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        24
+      ],
+      "before": "本书还收入习近平各个时期特别是中共十八大以来的图片45幅，以帮助读者了解他的工作和生活。",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        25
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        26
+      ],
+      "before": "本书编辑组",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        27
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        28
+      ],
+      "before": "2014年6月",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        29
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        30
+      ],
+      "before": "## 目录",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        31
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        32
+      ],
+      "before": "一、坚持和发展中国特色社会主义",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        33
+      ],
+      "before": "人民对美好生活的向往，就是我们的奋斗目标 …… 3",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        34
+      ],
+      "before": "(2012年11月15日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        35
+      ],
+      "before": "紧紧围绕坚持和发展中国特色社会主义",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        36
+      ],
+      "before": "学习宣传贯彻党的十八大精神 …… 6",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        37
+      ],
+      "before": "(2012年11月17日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        38
+      ],
+      "before": "毫不动摇坚持和发展中国特色社会主义 …… 21",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        39
+      ],
+      "before": "(2013年1月5日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        40
+      ],
+      "before": "坚持和运用好毛泽东思想活的灵魂 …… 25",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        41
+      ],
+      "before": "(2013年12月26日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        42
+      ],
+      "before": "二、实现中华民族伟大复兴的中国梦",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        43
+      ],
+      "before": "实现中华民族伟大复兴是",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        44
+      ],
+      "before": "中华民族近代以来最伟大的梦想 …… 35",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        45
+      ],
+      "before": "(2012年11月29日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        46
+      ],
+      "before": "在第十二届全国人民代表大会第一次会议上的讲话 …… 38",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        47
+      ],
+      "before": "(2013年3月17日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        48
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        49
+      ],
+      "before": "实干才能梦想成真 …… 44",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        50
+      ],
+      "before": "(2013年4月28日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        51
+      ],
+      "before": "在实现中国梦的生动实践中放飞青春梦想 …… 49",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        52
+      ],
+      "before": "(2013年5月4日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        53
+      ],
+      "before": "实现中国梦不仅造福中国人民，而且造福世界人民 …… 56",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        54
+      ],
+      "before": "(2013年5月)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        55
+      ],
+      "before": "创新正当其时，圆梦适得其势 …… 58",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        56
+      ],
+      "before": "(2013年10月21日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        57
+      ],
+      "before": "实现中华民族伟大复兴",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        58
+      ],
+      "before": "是海内外中华儿女共同的梦 …… 63",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        59
+      ],
+      "before": "(2014年6月6日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        60
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        61
+      ],
+      "before": "## 三、全面深化改革",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        62
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        63
+      ],
+      "before": "改革开放只有进行时没有完成时 …… 67",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        64
+      ],
+      "before": "(2012年12月31日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        65
+      ],
+      "before": "关于《中共中央关于全面深化改革",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        66
+      ],
+      "before": "若干重大问题的决定》的说明 …… 70",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        67
+      ],
+      "before": "(2013年11月9日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        68
+      ],
+      "before": "切实把思想统一到党的十八届三中全会精神上来 …… 90",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        69
+      ],
+      "before": "(2013年11月12日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        70
+      ],
+      "before": "改革再难也要向前推进 …… 100",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        71
+      ],
+      "before": "(2014年2月7日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        72
+      ],
+      "before": "不断提高运用中国特色社会主义制度",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        73
+      ],
+      "before": "有效治理国家的能力 …… 104",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        74
+      ],
+      "before": "(2014年2月17日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        75
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        76
+      ],
+      "before": "## 四、促进经济持续健康发展",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        77
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        78
+      ],
+      "before": "经济增长必须是实实在在和没有水分的增长 …… 111",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        79
+      ],
+      "before": "(2012年11月30日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        80
+      ],
+      "before": "提高开放型经济水平 …… 113",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        81
+      ],
+      "before": "(2013年4月8日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        82
+      ],
+      "before": "“看不见的手”和“看得见的手”都要用好 …… 116",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        83
+      ],
+      "before": "(2014年5月26日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        84
+      ],
+      "before": "加快从要素驱动、投资规模驱动发展为主",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        85
+      ],
+      "before": "向以创新驱动发展为主的转变 …… 119",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        86
+      ],
+      "before": "(2014年6月9日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        87
+      ],
+      "before": "积极推动我国能源生产和消费革命 …… 130",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        88
+      ],
+      "before": "(2014年6月13日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        89
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        90
+      ],
+      "before": "## 五、建设法治中国",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        91
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        92
+      ],
+      "before": "在首都各界纪念现行宪法公布",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        93
+      ],
+      "before": "施行30周年大会上的讲话 …… 135",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        94
+      ],
+      "before": "(2012年12月4日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        95
+      ],
+      "before": "坚持法治国家、法治政府、法治社会一体建设 …… 144",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        96
+      ],
+      "before": "(2013年2月23日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        97
+      ],
+      "before": "促进社会公平正义，保障人民安居乐业 …… 147",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        98
+      ],
+      "before": "(2014年1月7日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        99
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        100
+      ],
+      "before": "六、建设社会主义文化强国",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        101
+      ],
+      "before": "把宣传思想工作做得更好 …… 153",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        102
+      ],
+      "before": "(2013年8月19日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        103
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        104
+      ],
+      "before": "为实现中国梦凝聚有力道德支撑 …… 158",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        105
+      ],
+      "before": "(2013年9月26日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        106
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        107
+      ],
+      "before": "提高国家文化软实力 …… 160",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        108
+      ],
+      "before": "(2013年12月30日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        109
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        110
+      ],
+      "before": "培育和弘扬社会主义核心价值观 …… 163",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        111
+      ],
+      "before": "(2014年2月24日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        112
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        113
+      ],
+      "before": "青年要自觉践行社会主义核心价值观 …… 166",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        114
+      ],
+      "before": "(2014年5月4日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        115
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        116
+      ],
+      "before": "从小积极培育和践行社会主义核心价值观 …… 180",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        117
+      ],
+      "before": "(2014年5月30日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        118
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        119
+      ],
+      "before": "七、推进社会事业和社会管理改革发展",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        120
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        121
+      ],
+      "before": "推动贫困地区脱贫致富、加快发展 …… 189",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        122
+      ],
+      "before": "(2012年12月29日、30日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        123
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        124
+      ],
+      "before": "让十三亿人民享有更好更公平的教育 …… 191",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        125
+      ],
+      "before": "(2013年9月25日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        126
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        127
+      ],
+      "before": "加快推进住房保障和供应体系建设 …… 192",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        128
+      ],
+      "before": "(2013年10月29日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        129
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        130
+      ],
+      "before": "始终把人民群众生命安全放在第一位 …… 195",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        131
+      ],
+      "before": "(2013年11月24日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        132
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        133
+      ],
+      "before": "努力把我国建设成为网络强国 …… 197",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        134
+      ],
+      "before": "(2014年2月27日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        135
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        136
+      ],
+      "before": "坚持总体国家安全观，走中国特色国家安全道路 …… 200",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        137
+      ],
+      "before": "(2014年4月15日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        138
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        139
+      ],
+      "before": "切实维护国家安全和社会安定 …… 202",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        140
+      ],
+      "before": "(2014年4月25日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        141
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        142
+      ],
+      "before": "## 八、建设生态文明",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        143
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        144
+      ],
+      "before": "为建设美丽中国创造更好生态条件 …… 207",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        145
+      ],
+      "before": "(2013年4月2日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        146
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        147
+      ],
+      "before": "努力走向社会主义生态文明新时代 …… 208",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        148
+      ],
+      "before": "(2013年5月24日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        149
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        150
+      ],
+      "before": "为子孙后代留下天蓝、地绿、水清的",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        151
+      ],
+      "before": "生产生活环境 …… 211",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        152
+      ],
+      "before": "(2013年7月18日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        153
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        154
+      ],
+      "before": "九、推进国防和军队现代化",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        155
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        156
+      ],
+      "before": "把国防和军队建设不断推向前进 …… 215",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        157
+      ],
+      "before": "(2012年11月16日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        158
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        159
+      ],
+      "before": "努力建设巩固国防和强大军队 …… 218",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        160
+      ],
+      "before": "(2012年12月8日、10日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        161
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        162
+      ],
+      "before": "建设一支听党指挥、能打胜仗、",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        163
+      ],
+      "before": "作风优良的人民军队 …… 220",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        164
+      ],
+      "before": "(2013年3月11日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        165
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        166
+      ],
+      "before": "十、丰富“一国两制”实践和推进祖国统一",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        167
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        168
+      ],
+      "before": "香港、澳门与祖国内地的命运始终紧密相连 …… 225",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        169
+      ],
+      "before": "(2012年12月20日、2013年3月18日、",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        170
+      ],
+      "before": "2013年12月18日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        171
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        172
+      ],
+      "before": "共同开创中华民族美好未来 …… 230",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        173
+      ],
+      "before": "(2013年4月8日、10月6日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        174
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        175
+      ],
+      "before": "从中华民族整体利益的高度把握两岸关系大局 …… 233",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        176
+      ],
+      "before": "(2013年6月13日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        177
+      ],
+      "before": "共圆中华民族伟大复兴的中国梦 …… 236",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        178
+      ],
+      "before": "(2014年2月18日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        179
+      ],
+      "before": "担当起开拓两岸关系前景、",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        180
+      ],
+      "before": "实现民族伟大复兴的重任 …… 242",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        181
+      ],
+      "before": "(2014年5月7日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        182
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        183
+      ],
+      "before": "## 十一、走和平发展道路",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        184
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        185
+      ],
+      "before": "更好统筹国内国际两个大局，",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        186
+      ],
+      "before": "夯实走和平发展道路的基础 …… 247",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        187
+      ],
+      "before": "(2013年1月28日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        188
+      ],
+      "before": "走出一条和衷共济、合作共赢的新路子 …… 250",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        189
+      ],
+      "before": "(2013年6月19日、2014年5月19日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        190
+      ],
+      "before": "坚持理性、协调、并进的核安全观 …… 253",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        191
+      ],
+      "before": "(2014年3月24日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        192
+      ],
+      "before": "文明因交流而多彩，文明因互鉴而丰富 …… 258",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        193
+      ],
+      "before": "(2014年3月27日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        194
+      ],
+      "before": "走和平发展道路是中国人民对实现",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        195
+      ],
+      "before": "自身发展目标的自信和自觉 …… 264",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        196
+      ],
+      "before": "(2014年3月28日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        197
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        198
+      ],
+      "before": "十二、推动构建新型大国关系",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        199
+      ],
+      "before": "顺应时代前进潮流，促进世界和平发展 …… 271",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        200
+      ],
+      "before": "(2013年3月23日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        201
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        202
+      ],
+      "before": "构建中美新型大国关系 …… 279",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        203
+      ],
+      "before": "(2013年6月7日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        204
+      ],
+      "before": "在亚欧大陆架起一座友谊和合作之桥 …… 282",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        205
+      ],
+      "before": "(2014年4月1日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        206
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        207
+      ],
+      "before": "十三、做好周边外交工作",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        208
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        209
+      ],
+      "before": "共同建设“丝绸之路经济带” …… 287",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        210
+      ],
+      "before": "(2013年9月7日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        211
+      ],
+      "before": "共同建设二十一世纪“海上丝绸之路” …… 292",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        212
+      ],
+      "before": "(2013年10月3日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        213
+      ],
+      "before": "坚持亲、诚、惠、容的周边外交理念 …… 296",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        214
+      ],
+      "before": "(2013年10月24日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        215
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        216
+      ],
+      "before": "十四、加强与发展中国家团结合作",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        217
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        218
+      ],
+      "before": "永远做可靠朋友和真诚伙伴 …… 303",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        219
+      ],
+      "before": "(2013年3月25日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        220
+      ],
+      "before": "推动中拉关系实现新的更大发展 …… 311",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        221
+      ],
+      "before": "(2013年6月5日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        222
+      ],
+      "before": "弘扬丝路精神，深化中阿合作 …… 313",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        223
+      ],
+      "before": "(2014年6月5日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        224
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        225
+      ],
+      "before": "十五、积极参与多边事务",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        226
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        227
+      ],
+      "before": "携手合作，共同发展 …… 323",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        228
+      ],
+      "before": "(2013年3月27日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        229
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        230
+      ],
+      "before": "共同创造亚洲和世界的美好未来 …… 328",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        231
+      ],
+      "before": "(2013年4月7日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        232
+      ],
+      "before": "共同维护和发展开放型世界经济 …… 335",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        233
+      ],
+      "before": "(2013年9月5日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        234
+      ],
+      "before": "弘扬“上海精神”，促进共同发展 …… 339",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        235
+      ],
+      "before": "(2013年9月13日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        236
+      ],
+      "before": "深化改革开放，共创美好亚太 …… 343",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        237
+      ],
+      "before": "(2013年10月7日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        238
+      ],
+      "before": "积极树立亚洲安全观，共创安全合作新局面 …… 353",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        239
+      ],
+      "before": "(2014年5月21日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        240
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        241
+      ],
+      "before": "## 十六、密切党同人民群众联系",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        242
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        243
+      ],
+      "before": "厉行勤俭节约，反对铺张浪费 …… 363",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        244
+      ],
+      "before": "(2013年1月17日、2月22日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        245
+      ],
+      "before": "群众路线是党的生命线和根本工作路线 …… 365",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        246
+      ],
+      "before": "(2013年6月18日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        247
+      ],
+      "before": "准确把握党的群众路线教育实践活动的",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        248
+      ],
+      "before": "指导思想和目标要求 …… 373",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        249
+      ],
+      "before": "(2013年6月18日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        250
+      ],
+      "before": "树立和发扬“三严三实”的作风 …… 381",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        251
+      ],
+      "before": "(2014年3月9日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        252
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        253
+      ],
+      "before": "十七、推进反腐倡廉建设",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        254
+      ],
+      "before": "把权力关进制度的笼子里 …… 385",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        255
+      ],
+      "before": "(2013年1月22日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        256
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        257
+      ],
+      "before": "运用历史智慧推进反腐倡廉建设 …… 390",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        258
+      ],
+      "before": "(2013年4月19日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        259
+      ],
+      "before": "深入推进党风廉政建设和反腐败斗争 …… 393",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        260
+      ],
+      "before": "(2014年1月14日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        261
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        262
+      ],
+      "before": "## 十八、提高党的领导水平",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        263
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        264
+      ],
+      "before": "发扬钉钉子的精神，一张好的蓝图一干到底 …… 399",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        265
+      ],
+      "before": "(2013年2月28日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        266
+      ],
+      "before": "依靠学习走向未来 …… 401",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        267
+      ],
+      "before": "(2013年3月1日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        268
+      ],
+      "before": "“治大国若烹小鲜” …… 409",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        269
+      ],
+      "before": "(2013年3月19日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        270
+      ],
+      "before": "着力培养选拔党和人民需要的好干部 …… 411",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        271
+      ],
+      "before": "(2013年6月28日)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        272
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        273
+      ],
+      "before": "## 附录",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        274
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        275
+      ],
+      "before": "“人民群众是我们力量的源泉”",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        276
+      ],
+      "before": "——记中共中央总书记习近平 …… 423",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        277
+      ],
+      "before": "索引 …… 449",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        278
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        279
+      ],
+      "before": "![](images/107dc00a20efea34a7f22b38ba6e814e16495c93570a69ca57cc0b57d06ff55c.jpg)  ",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        280
+      ],
+      "before": "1977 年，读大学时的习近平。",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        281
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        282
+      ],
+      "before": "![](images/e0617bda8e635bd24e9df3f39f0a8fd70dd28412d1462a940c000a59c801eeab.jpg)  ",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        283
+      ],
+      "before": "1972 年，插队回京探亲时的习近平。",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        284
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        285
+      ],
+      "before": "![](images/66c759a477fe3a06e187e95e2e5136174fd83faf91552f4b30f38e82d5df3242.jpg)  ",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        286
+      ],
+      "before": "1979年，在中央军委办公厅工作时的习近平。",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        287
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        288
+      ],
+      "before": "![](images/b8bef682e450e442398b8fc587af56a2dc01bfbb6f35b736fc7582c6f262b95c.jpg)  ",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        289
+      ],
+      "before": "1983年，时任河北省正定县委书记的习近平临时在大街上摆桌子听取老百姓意见。",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        290
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        291
+      ],
+      "before": "![](images/72088875bf5898e063854a9017fdb92d731bde0c5f4c7c39bcabc218044dacf2.jpg)  ",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        292
+      ],
+      "before": "时任福建省厦门市副市长的习近平到国外考察。",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        293
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        294
+      ],
+      "before": "![](images/d3e736721c586729d9e2ffdbf40de436c020a222105fb661fd2ee0b8d4949fa2.jpg)  ",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        295
+      ],
+      "before": "1989 年，时任福建省宁德地委书记的习近平在农村参加劳动。",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        296
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        297
+      ],
+      "before": "![](images/fe73737261acc8285207d300213e72ed85ea7cab0af391d991cc0fef2cbef086.jpg)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        298
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        299
+      ],
+      "before": "1995 年 12 月，时任福建省委副书记、福州市委书记的习近平在闽侯县参加闽江下游防洪堤加固工程劳动。",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        300
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        301
+      ],
+      "before": "![](images/e27d9f804a3ac487252b26ce731a863775c9b19b5d0648b8e32f24e47d5a9f4e.jpg)  ",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        302
+      ],
+      "before": "2007 年 1 月，时任浙江省委书记的习近平在浙江省庆元县屏都镇敬老院为老人们炒菜。",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        303
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        304
+      ],
+      "before": "![](images/64620f68941a2a5a243eb8283d189d322ee516c32decca7bbcbdd33e0c3b804c.jpg)  ",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        305
+      ],
+      "before": "2007年9月，时任上海市委书记的习近平在上海市闵行区启音学校与听障学生亲切交谈。",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        306
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        307
+      ],
+      "before": "![](images/b6250b3fe3c71a9924e6ca95edf92530c842c1f0742eac61a6667715b7c010b1.jpg)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        308
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        309
+      ],
+      "before": "2008年1月贵州雨雪冰冻灾害时，时任中共中央政治局常委、中央书记处书记的习近平到铜仁地区万山特区高楼坪乡老山口村受灾的侗族村民唐召维家看望慰问。",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        310
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        311
+      ],
+      "before": "![](images/a33b4ad95d88d9493b0de465a5bd298a67f3533442fa128a44f76d94c78afa80.jpg)",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        312
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        313
+      ],
+      "before": "2012年2月，时任中华人民共和国副主席的习近平访美时到艾奥瓦州老朋友家里与27年前结交的美国老朋友茶叙。",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        314
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        315
+      ],
+      "before": "![](images/312e576cac3d8e81a873c2d8f3c37dcf153cebddbaac6f06e4d189e836d28561.jpg)  ",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        316
+      ],
+      "before": "2012 年 2 月，时任中华人民共和国副主席的习近平访问爱尔兰，在参观爱尔兰盖尔式运动协会时应邀开球。",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        317
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        318
+      ],
+      "before": "![](images/14a59294ee001d4259a7a56a1f80aeb01ae9016f8e893c5173924d6b8fced35e.jpg)  ",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        319
+      ],
+      "before": "习近平和夫人彭丽媛合影。",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        320
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        321
+      ],
+      "before": "![](images/6957baa0726c4e1a7e43cd6d06ae1418d6c252015e84b3cef0d1e67c93d65200.jpg)  ",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        322
+      ],
+      "before": "习近平在福州带女儿玩耍。",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        323
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        324
+      ],
+      "before": "![](images/62a8a218efba22c06b76ed75e48a820ff747d34e7dc140402200f36ee8169c67.jpg)  ",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        325
+      ],
+      "before": "习近平与父亲习仲勋、夫人彭丽媛、女儿的家庭照。",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        326
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        327
+      ],
+      "before": "![](images/9d7754273fc09ffda92edede3c7cab66ed47d07b2ce2f8643e840ad85965e647.jpg)  ",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        328
+      ],
+      "before": "习近平陪母亲齐心散步。",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "remove_front_matter",
+      "action": "delete_front_matter_line",
+      "source_lines": [
+        329
+      ],
+      "before": "",
+      "after": "",
+      "reason": "LLM 规则确认的前置外围区位于正文首章之前"
+    },
+    {
+      "rule": "html_comments_removed",
+      "action": "delete_line",
+      "source_lines": [
+        836
+      ],
+      "before": "<!-- Source pages 101-200 -->",
+      "after": "",
+      "reason": "HTML 注释"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1422
+      ],
+      "before": "![](images/77b41ae77fda3c8d67470c5bd968d0022c96cd9459e9f86e84528c5fe1aeada8.jpg)",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1424
+      ],
+      "before": "2012年11月15日，刚刚在中国共产党第十八届中央委员会第一次全体会议上当选的中共中央总书记习近平和中共中央政治局常委李克强、张德江、俞正声、刘云山、王岐山、张高丽在北京人民大会堂同采访十八大的中外记者亲切见面。",
+      "after": "> 图片说明：2012年11月15日，刚刚在中国共产党第十八届中央委员会第一次全体会议上当选的中共中央总书记习近平和中共中央政治局常委李克强、张德江、俞正声、刘云山、王岐山、张高丽在北京人民大会堂同采访十八大的中外记者亲切见面。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1426
+      ],
+      "before": "![](images/f56dce85c3fe9cf34f52b5f0882350879843f75401beea10346c3de3ebbd37bb.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1427
+      ],
+      "before": "2012年11月15日，在北京人民大会堂会见出席中共十八大代表、特邀代表和列席人员时，习近平和胡锦涛亲切握手。",
+      "after": "> 图片说明：2012年11月15日，在北京人民大会堂会见出席中共十八大代表、特邀代表和列席人员时，习近平和胡锦涛亲切握手。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1429
+      ],
+      "before": "![](images/774ad7bdff9b2733d6828cca1e59cf515da65eec81b9ea73914ab7685385e564.jpg)",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1431
+      ],
+      "before": "2012年11月29日，习近平和李克强、张德江、俞正声、刘云山、王岐山、张高丽等来到中国国家博物馆，参观《复兴之路》展览，首次提出实现中华民族伟大复兴的中国梦。",
+      "after": "> 图片说明：2012年11月29日，习近平和李克强、张德江、俞正声、刘云山、王岐山、张高丽等来到中国国家博物馆，参观《复兴之路》展览，首次提出实现中华民族伟大复兴的中国梦。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1433
+      ],
+      "before": "![](images/8ce32442c6765a391c1c7589807a210535a9de2460a641e3e7f004bb51b52fd8.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1434
+      ],
+      "before": "2012年12月8日，习近平在深圳考察期间，在莲花山公园与当年参与特区建设的老同志交谈，强调结合新的时代条件把改革开放继续推向前进。",
+      "after": "> 图片说明：2012年12月8日，习近平在深圳考察期间，在莲花山公园与当年参与特区建设的老同志交谈，强调结合新的时代条件把改革开放继续推向前进。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1436
+      ],
+      "before": "![](images/a8db5edfc79ae8cc4a7a24bdba9ba85d98217844247e6b03c7d625692fc5cb93.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1437
+      ],
+      "before": "2013年2月4日，习近平来到甘肃省兰州市五泉菜市场了解节日供应情况，在一经营户的摊位前了解蔬菜价格、供应、销售情况。",
+      "after": "> 图片说明：2013年2月4日，习近平来到甘肃省兰州市五泉菜市场了解节日供应情况，在一经营户的摊位前了解蔬菜价格、供应、销售情况。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1439
+      ],
+      "before": "![](images/9a734a75a715c0646b8bde5e25fc3e429e362400f6e5ea6c118318f04f0cd1ba.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1440
+      ],
+      "before": "2013年3月14日，习近平在第十二届全国人民代表大会第一次会议上当选中华人民共和国主席。3月17日，习近平在闭幕会上发表重要讲话。",
+      "after": "> 图片说明：2013年3月14日，习近平在第十二届全国人民代表大会第一次会议上当选中华人民共和国主席。3月17日，习近平在闭幕会上发表重要讲话。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1442
+      ],
+      "before": "![](images/9c538b1ea5bd3c9d02723fa3e4b0814af4206b6a3ae451a9bc40ca2b38d2fcbb.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1443
+      ],
+      "before": "2013年4月9日，习近平在海南考察工作时，在亚龙湾兰德玫瑰风情产业园高兴地戴上黎族群众递上的斗笠。",
+      "after": "> 图片说明：2013年4月9日，习近平在海南考察工作时，在亚龙湾兰德玫瑰风情产业园高兴地戴上黎族群众递上的斗笠。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1445
+      ],
+      "before": "![](images/32fa9cff9bb787638e74e11e53edfc6f5337b0d043badb76046147cfdc5d0d13.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1446
+      ],
+      "before": "2013年6月11日，习近平在酒泉卫星发射中心观看神舟十号载人飞船发射，向即将出征的航天员聂海胜、张晓光、王亚平挥手致意。",
+      "after": "> 图片说明：2013年6月11日，习近平在酒泉卫星发射中心观看神舟十号载人飞船发射，向即将出征的航天员聂海胜、张晓光、王亚平挥手致意。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1448
+      ],
+      "before": "![](images/79d3bfed6b16c120f8d050a0273dc68c93f3e71562140f087f654ccf9b988763.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1449
+      ],
+      "before": "2013年7月21日，习近平在湖北调研全面深化改革问题和经济运行情况时，冒雨来到武汉新港阳逻集装箱港区考察。",
+      "after": "> 图片说明：2013年7月21日，习近平在湖北调研全面深化改革问题和经济运行情况时，冒雨来到武汉新港阳逻集装箱港区考察。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1451
+      ],
+      "before": "![](images/c5eb019df8f2b498279f1f79a06c8569f76410b489769486a1f515b453d957d5.jpg)",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1453
+      ],
+      "before": "2013年8月28日，习近平在中国第一艘航空母舰——辽宁舰上检阅水兵仪仗队。",
+      "after": "> 图片说明：2013年8月28日，习近平在中国第一艘航空母舰——辽宁舰上检阅水兵仪仗队。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1455
+      ],
+      "before": "![](images/cf253e98054fc4cf3e9eacbb49ef1fa6b3c865e06997802e15fa7e00159eb455.jpg)",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1457
+      ],
+      "before": "2013年11月3日，习近平在湖南考察时，在湘西土家族苗族自治州花垣县排碧乡十八洞村同村干部和村民座谈。",
+      "after": "> 图片说明：2013年11月3日，习近平在湖南考察时，在湘西土家族苗族自治州花垣县排碧乡十八洞村同村干部和村民座谈。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1459
+      ],
+      "before": "![](images/6349bc6d4b0495ac1f90d38e8db44a93b1407edb1ebfc6581acd372cf5accdae.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1460
+      ],
+      "before": "2013年11月25日，习近平在地处山东沂蒙老区的临沭县曹庄镇朱村亲切地拉着83岁的“老支前”王克昌的手去他家看望。",
+      "after": "> 图片说明：2013年11月25日，习近平在地处山东沂蒙老区的临沭县曹庄镇朱村亲切地拉着83岁的“老支前”王克昌的手去他家看望。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1462
+      ],
+      "before": "![](images/38b999826329bbda3baffea0553331d5fe1e336e28ab6e51197e8e702be6775a.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1463
+      ],
+      "before": "2014年1月26日，习近平来到中国边疆的内蒙古阿尔山，冒着零下30多摄氏度的严寒，迎风踏雪慰问在边防线上巡逻执勤的官兵。",
+      "after": "> 图片说明：2014年1月26日，习近平来到中国边疆的内蒙古阿尔山，冒着零下30多摄氏度的严寒，迎风踏雪慰问在边防线上巡逻执勤的官兵。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1465
+      ],
+      "before": "![](images/7b338db31385c58fb2cbc8f1cd36010fcbfc163dd2fa5fad70b7afb0556c1947.jpg)",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1467
+      ],
+      "before": "2014年4月9日，习近平视察中国人民武装警察部队特种警察学院并为“猎鹰突击队”授旗。",
+      "after": "> 图片说明：2014年4月9日，习近平视察中国人民武装警察部队特种警察学院并为“猎鹰突击队”授旗。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1469
+      ],
+      "before": "![](images/82fe0cb14f2e1ee6fda21a5058ddc9ad0955f4412f5788c67a7c81508752dea3.jpg)",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1471
+      ],
+      "before": "2014年4月28日，习近平在新疆考察时，在疏附县托克扎克镇阿亚格曼干村村民阿卜都克尤木·肉孜家同村民座谈。",
+      "after": "> 图片说明：2014年4月28日，习近平在新疆考察时，在疏附县托克扎克镇阿亚格曼干村村民阿卜都克尤木·肉孜家同村民座谈。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1473
+      ],
+      "before": "![](images/638ca0d877ab9f9f63990248d7c94c3e000babb34ed34d047b92edb1a0aa2cfc.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        1474
+      ],
+      "before": "2014年5月9日，习近平在河南考察时，在尉氏县张市镇高标准粮田察看小麦长势。",
+      "after": "> 图片说明：2014年5月9日，习近平在河南考察时，在尉氏县张市镇高标准粮田察看小麦长势。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "html_comments_removed",
+      "action": "delete_line",
+      "source_lines": [
+        1476
+      ],
+      "before": "<!-- Source pages 201-300 -->",
+      "after": "",
+      "reason": "HTML 注释"
+    },
+    {
+      "rule": "html_comments_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2245
+      ],
+      "before": "<!-- Source pages 301-400 -->",
+      "after": "",
+      "reason": "HTML 注释"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2909
+      ],
+      "before": "![](images/a8aef91d2398e295e7c15204dbcc00984f5657cf19b876cb434bec5fb3d7d051.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        2910
+      ],
+      "before": "2013年3月22日，习近平在俄罗斯莫斯科克里姆林宫与俄罗斯总统普京举行会谈。",
+      "after": "> 图片说明：2013年3月22日，习近平在俄罗斯莫斯科克里姆林宫与俄罗斯总统普京举行会谈。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2912
+      ],
+      "before": "![](images/a6ce5a21502270211cd811719bef16944cea96ceb5219805f9420d9c217d4225.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        2913
+      ],
+      "before": "2013年3月25日，习近平在坦桑尼亚达累斯萨拉姆尼雷尔国际会议中心发表演讲。",
+      "after": "> 图片说明：2013年3月25日，习近平在坦桑尼亚达累斯萨拉姆尼雷尔国际会议中心发表演讲。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2915
+      ],
+      "before": "![](images/8eb1466e98ea7ede58b689d233b8602271b06f1e6e68c83dc3f3c6caa6ea6df8.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        2916
+      ],
+      "before": "2013年3月27日，习近平在南非德班出席金砖国家领导人第五次会晤。",
+      "after": "> 图片说明：2013年3月27日，习近平在南非德班出席金砖国家领导人第五次会晤。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2918
+      ],
+      "before": "![](images/4bf7117107c819370b1c1958eff08678987ba97a8888c6181d6f5b44b9f79b5c.jpg)",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        2920
+      ],
+      "before": "2013年4月7日，习近平在海南博鳌同出席博鳌亚洲论坛2013年年会的外国领导人和国际组织负责人合影。",
+      "after": "> 图片说明：2013年4月7日，习近平在海南博鳌同出席博鳌亚洲论坛2013年年会的外国领导人和国际组织负责人合影。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2922
+      ],
+      "before": "![](images/f00bc7d621e681693a825c207bd7c80af5bc0c298e1f4fe809a7e7bd87bd8700.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        2923
+      ],
+      "before": "2013年6月3日，正在哥斯达黎加进行国事访问的习近平和夫人彭丽媛走访当地农户萨莫拉一家。",
+      "after": "> 图片说明：2013年6月3日，正在哥斯达黎加进行国事访问的习近平和夫人彭丽媛走访当地农户萨莫拉一家。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2925
+      ],
+      "before": "![](images/e029453930845832ff28f7e47f79ea6bb96f95c016c14f4d1966110c66d4b6e1.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        2926
+      ],
+      "before": "2013年6月7日，习近平在美国加利福尼亚州安纳伯格庄园同美国总统奥巴马举行中美元首会晤。",
+      "after": "> 图片说明：2013年6月7日，习近平在美国加利福尼亚州安纳伯格庄园同美国总统奥巴马举行中美元首会晤。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2928
+      ],
+      "before": "![](images/324bbf1ff4802abb95a500beb12c1d4755b3dc4ef41a0e19cb4b12e979a518ee.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        2929
+      ],
+      "before": "2013年9月6日，习近平在俄罗斯圣彼得堡出席二十国集团领导人第八次峰会。",
+      "after": "> 图片说明：2013年9月6日，习近平在俄罗斯圣彼得堡出席二十国集团领导人第八次峰会。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2931
+      ],
+      "before": "![](images/136e2b0d4e2fe2d0bcb31c6a1bd1c045a898bb3b5917c7ea22800184f6a95bf4.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        2932
+      ],
+      "before": "2013年9月13日，习近平在吉尔吉斯斯坦比什凯克出席上海合作组织成员国元首理事会第十三次会议。",
+      "after": "> 图片说明：2013年9月13日，习近平在吉尔吉斯斯坦比什凯克出席上海合作组织成员国元首理事会第十三次会议。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2934
+      ],
+      "before": "![](images/3e9995b245cebf9378aaff9b0ef13f6170e62314733824741b9516445ffc2917.jpg)",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        2936
+      ],
+      "before": "2013年10月8日，习近平在印度尼西亚巴厘岛出席亚太经合组织第二十一次领导人非正式会议。",
+      "after": "> 图片说明：2013年10月8日，习近平在印度尼西亚巴厘岛出席亚太经合组织第二十一次领导人非正式会议。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2938
+      ],
+      "before": "![](images/5ed76bba9eab9bee4f72ca5307bfc0436021810d95e577eb1baa364e95b26094.jpg)",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        2940
+      ],
+      "before": "2014 年 3 月 22 日，习近平和夫人彭丽媛在荷兰阿姆斯特丹出席荷兰国王威廉—亚历山大举行的盛大国宴。",
+      "after": "> 图片说明：2014 年 3 月 22 日，习近平和夫人彭丽媛在荷兰阿姆斯特丹出席荷兰国王威廉—亚历山大举行的盛大国宴。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2942
+      ],
+      "before": "![](images/1c2a0ee23fb3f9a3b0bb6e5cb471b3329483feea58891bff5afb123a4c61c734.jpg)  ",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        2943
+      ],
+      "before": "2014年3月26日，习近平和夫人彭丽媛在法国参观里昂中法大学旧址，为中国一里昂关系促进中心、里昂中法大学历史博物馆揭牌。",
+      "after": "> 图片说明：2014年3月26日，习近平和夫人彭丽媛在法国参观里昂中法大学旧址，为中国一里昂关系促进中心、里昂中法大学历史博物馆揭牌。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "image_links_removed",
+      "action": "delete_line",
+      "source_lines": [
+        2945
+      ],
+      "before": "![](images/eab486084823b8f6bdf4f3e087e4e04b37a277a8cdef4e771d082123269681f4.jpg)",
+      "after": "",
+      "reason": "Markdown 图片链接"
+    },
+    {
+      "rule": "preserve_image_caption",
+      "action": "rewrite_line",
+      "source_lines": [
+        2947
+      ],
+      "before": "2014年5月20日，习近平在上海国际会议中心举行宴会，代表中国政府和人民，欢迎前来出席亚洲相互协作与信任措施会议第四次峰会的各国贵宾。",
+      "after": "> 图片说明：2014年5月20日，习近平在上海国际会议中心举行宴会，代表中国政府和人民，欢迎前来出席亚洲相互协作与信任措施会议第四次峰会的各国贵宾。",
+      "reason": "图片后的短文本"
+    },
+    {
+      "rule": "html_comments_removed",
+      "action": "delete_line",
+      "source_lines": [
+        3131
+      ],
+      "before": "<!-- Source pages 401-500 -->",
+      "after": "",
+      "reason": "HTML 注释"
+    },
+    {
+      "rule": "html_comments_removed",
+      "action": "delete_line",
+      "source_lines": [
+        3991
+      ],
+      "before": "<!-- Source pages 501-536 -->",
+      "after": "",
+      "reason": "HTML 注释"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        330
+      ],
+      "before": "## 一、坚持和发展 中国特色社会主义",
+      "after": "**一、坚持和发展 中国特色社会主义**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        412
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        484
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        536
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        550
+      ],
+      "before": "## 二、实现中华民族伟大复兴的中国梦",
+      "after": "**二、实现中华民族伟大复兴的中国梦**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        564
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        634
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        676
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        730
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        800
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        834
+      ],
+      "before": "## 三、全面深化改革",
+      "after": "**三、全面深化改革**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        1014
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        1090
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        1132
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        1156
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        1192
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        1268
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        1310
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        1314
+      ],
+      "before": "## 五、建设法治中国",
+      "after": "**五、建设法治中国**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        1372
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        1508
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        1648
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        1778
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        1845
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        1889
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        1929
+      ],
+      "before": "## 八、建设生态文明",
+      "after": "**八、建设生态文明**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        1999
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        2019
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        2087
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        2121
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        2189
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        2217
+      ],
+      "before": "## 十一、走和平发展道路",
+      "after": "**十一、走和平发展道路**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        2259
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        2367
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        2419
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        2503
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        2559
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        2609
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        2661
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        2785
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        2817
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        2885
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        3005
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        3075
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        3187
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        3291
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        3375
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        3447
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        3519
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        3569
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        3593
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        3627
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        3633
+      ],
+      "before": "## 十八、提高党的领导水平",
+      "after": "**十八、提高党的领导水平**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        3673
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        3721
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        3801
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        4077
+      ],
+      "before": "## 注释",
+      "after": "**注释**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        6253
+      ],
+      "before": "## 习近平谈治国理政",
+      "after": "**习近平谈治国理政**",
+      "reason": "配置的标题整理"
+    },
+    {
+      "rule": "normalize_headings",
+      "action": "rewrite_heading",
+      "source_lines": [
+        6287
+      ],
+      "before": "# 习近平 谈治国理政",
+      "after": "**习近平 谈治国理政**",
+      "reason": "配置的标题整理"
+    }
+  ]
+}

@@ -1,0 +1,2072 @@
+[
+  {
+    "id": "h0001",
+    "line": 5,
+    "end_line": 8,
+    "level": 2,
+    "title": "习近平",
+    "parent_id": null,
+    "block_lines": 3,
+    "block_chars": 5
+  },
+  {
+    "id": "h0002",
+    "line": 9,
+    "end_line": 13,
+    "level": 1,
+    "title": "习近平谈治国理政",
+    "parent_id": null,
+    "block_lines": 4,
+    "block_chars": 85
+  },
+  {
+    "id": "h0003",
+    "line": 14,
+    "end_line": 29,
+    "level": 2,
+    "title": "出版说明",
+    "parent_id": "h0002",
+    "block_lines": 15,
+    "block_chars": 645
+  },
+  {
+    "id": "h0004",
+    "line": 30,
+    "end_line": 60,
+    "level": 2,
+    "title": "目录",
+    "parent_id": "h0002",
+    "block_lines": 30,
+    "block_chars": 438
+  },
+  {
+    "id": "h0005",
+    "line": 61,
+    "end_line": 75,
+    "level": 2,
+    "title": "三、全面深化改革",
+    "parent_id": "h0002",
+    "block_lines": 14,
+    "block_chars": 191
+  },
+  {
+    "id": "h0006",
+    "line": 76,
+    "end_line": 89,
+    "level": 2,
+    "title": "四、促进经济持续健康发展",
+    "parent_id": "h0002",
+    "block_lines": 13,
+    "block_chars": 187
+  },
+  {
+    "id": "h0007",
+    "line": 90,
+    "end_line": 141,
+    "level": 2,
+    "title": "五、建设法治中国",
+    "parent_id": "h0002",
+    "block_lines": 51,
+    "block_chars": 592
+  },
+  {
+    "id": "h0008",
+    "line": 142,
+    "end_line": 182,
+    "level": 2,
+    "title": "八、建设生态文明",
+    "parent_id": "h0002",
+    "block_lines": 40,
+    "block_chars": 462
+  },
+  {
+    "id": "h0009",
+    "line": 183,
+    "end_line": 240,
+    "level": 2,
+    "title": "十一、走和平发展道路",
+    "parent_id": "h0002",
+    "block_lines": 57,
+    "block_chars": 748
+  },
+  {
+    "id": "h0010",
+    "line": 241,
+    "end_line": 261,
+    "level": 2,
+    "title": "十六、密切党同人民群众联系",
+    "parent_id": "h0002",
+    "block_lines": 20,
+    "block_chars": 260
+  },
+  {
+    "id": "h0011",
+    "line": 262,
+    "end_line": 272,
+    "level": 2,
+    "title": "十八、提高党的领导水平",
+    "parent_id": "h0002",
+    "block_lines": 10,
+    "block_chars": 127
+  },
+  {
+    "id": "h0012",
+    "line": 273,
+    "end_line": 329,
+    "level": 2,
+    "title": "附录",
+    "parent_id": "h0002",
+    "block_lines": 56,
+    "block_chars": 1867
+  },
+  {
+    "id": "h0013",
+    "line": 330,
+    "end_line": 331,
+    "level": 2,
+    "title": "一、坚持和发展 中国特色社会主义",
+    "parent_id": "h0002",
+    "block_lines": 1,
+    "block_chars": 0
+  },
+  {
+    "id": "h0014",
+    "line": 332,
+    "end_line": 351,
+    "level": 1,
+    "title": "人民对美好生活的向往，就是我们的奋斗目标\\*",
+    "parent_id": null,
+    "block_lines": 19,
+    "block_chars": 1291
+  },
+  {
+    "id": "h0015",
+    "line": 352,
+    "end_line": 411,
+    "level": 1,
+    "title": "紧紧围绕坚持和发展 中国特色社会主义 学习宣传贯彻党的十八大精神\\*",
+    "parent_id": null,
+    "block_lines": 59,
+    "block_chars": 7137
+  },
+  {
+    "id": "h0016",
+    "line": 412,
+    "end_line": 465,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0015",
+    "block_lines": 53,
+    "block_chars": 2887
+  },
+  {
+    "id": "h0017",
+    "line": 466,
+    "end_line": 483,
+    "level": 1,
+    "title": "毫不动摇坚持和发展中国特色社会主义\\*",
+    "parent_id": null,
+    "block_lines": 17,
+    "block_chars": 1793
+  },
+  {
+    "id": "h0018",
+    "line": 484,
+    "end_line": 489,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0017",
+    "block_lines": 5,
+    "block_chars": 293
+  },
+  {
+    "id": "h0019",
+    "line": 490,
+    "end_line": 535,
+    "level": 1,
+    "title": "坚持和运用好 毛泽东思想活的灵魂\\*",
+    "parent_id": null,
+    "block_lines": 45,
+    "block_chars": 3421
+  },
+  {
+    "id": "h0020",
+    "line": 536,
+    "end_line": 549,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0019",
+    "block_lines": 13,
+    "block_chars": 651
+  },
+  {
+    "id": "h0021",
+    "line": 550,
+    "end_line": 551,
+    "level": 2,
+    "title": "二、实现中华民族伟大复兴的中国梦",
+    "parent_id": "h0019",
+    "block_lines": 1,
+    "block_chars": 0
+  },
+  {
+    "id": "h0022",
+    "line": 552,
+    "end_line": 563,
+    "level": 1,
+    "title": "实现中华民族伟大复兴 是中华民族近代以来 最伟大的梦想\\*",
+    "parent_id": null,
+    "block_lines": 11,
+    "block_chars": 905
+  },
+  {
+    "id": "h0023",
+    "line": 564,
+    "end_line": 573,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0022",
+    "block_lines": 9,
+    "block_chars": 388
+  },
+  {
+    "id": "h0024",
+    "line": 574,
+    "end_line": 591,
+    "level": 1,
+    "title": "在第十二届全国人民代表大会 第一次会议上的讲话",
+    "parent_id": null,
+    "block_lines": 17,
+    "block_chars": 449
+  },
+  {
+    "id": "h0025",
+    "line": 592,
+    "end_line": 615,
+    "level": 2,
+    "title": "各位代表!",
+    "parent_id": "h0024",
+    "block_lines": 23,
+    "block_chars": 1600
+  },
+  {
+    "id": "h0026",
+    "line": 616,
+    "end_line": 625,
+    "level": 2,
+    "title": "各位代表!",
+    "parent_id": "h0024",
+    "block_lines": 9,
+    "block_chars": 641
+  },
+  {
+    "id": "h0027",
+    "line": 626,
+    "end_line": 633,
+    "level": 2,
+    "title": "各位代表!",
+    "parent_id": "h0024",
+    "block_lines": 7,
+    "block_chars": 411
+  },
+  {
+    "id": "h0028",
+    "line": 634,
+    "end_line": 637,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0024",
+    "block_lines": 3,
+    "block_chars": 57
+  },
+  {
+    "id": "h0029",
+    "line": 638,
+    "end_line": 675,
+    "level": 1,
+    "title": "实干才能梦想成真\\*",
+    "parent_id": null,
+    "block_lines": 37,
+    "block_chars": 2619
+  },
+  {
+    "id": "h0030",
+    "line": 676,
+    "end_line": 679,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0029",
+    "block_lines": 3,
+    "block_chars": 106
+  },
+  {
+    "id": "h0031",
+    "line": 680,
+    "end_line": 729,
+    "level": 1,
+    "title": "在实现中国梦的生动实践中 放飞青春梦想\\*",
+    "parent_id": null,
+    "block_lines": 49,
+    "block_chars": 3536
+  },
+  {
+    "id": "h0032",
+    "line": 730,
+    "end_line": 745,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0031",
+    "block_lines": 15,
+    "block_chars": 539
+  },
+  {
+    "id": "h0033",
+    "line": 746,
+    "end_line": 767,
+    "level": 1,
+    "title": "实现中国梦不仅造福中国人民，而且造福世界人民\\*",
+    "parent_id": null,
+    "block_lines": 21,
+    "block_chars": 705
+  },
+  {
+    "id": "h0034",
+    "line": 768,
+    "end_line": 799,
+    "level": 1,
+    "title": "创新正当其时， 圆梦适得其势\\*",
+    "parent_id": null,
+    "block_lines": 31,
+    "block_chars": 2310
+  },
+  {
+    "id": "h0035",
+    "line": 800,
+    "end_line": 817,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0034",
+    "block_lines": 17,
+    "block_chars": 623
+  },
+  {
+    "id": "h0036",
+    "line": 818,
+    "end_line": 833,
+    "level": 1,
+    "title": "实现中华民族伟大复兴 是海内外中华儿女共同的梦\\*",
+    "parent_id": null,
+    "block_lines": 15,
+    "block_chars": 912
+  },
+  {
+    "id": "h0037",
+    "line": 834,
+    "end_line": 837,
+    "level": 2,
+    "title": "三、全面深化改革",
+    "parent_id": "h0036",
+    "block_lines": 3,
+    "block_chars": 29
+  },
+  {
+    "id": "h0038",
+    "line": 838,
+    "end_line": 849,
+    "level": 1,
+    "title": "改革开放只有进行时没有完成时\\*",
+    "parent_id": null,
+    "block_lines": 11,
+    "block_chars": 1247
+  },
+  {
+    "id": "h0039",
+    "line": 850,
+    "end_line": 855,
+    "level": 1,
+    "title": "关于《中共中央关于全面深化改革若干重大问题的决定》的说明\\*",
+    "parent_id": null,
+    "block_lines": 5,
+    "block_chars": 56
+  },
+  {
+    "id": "h0040",
+    "line": 856,
+    "end_line": 887,
+    "level": 2,
+    "title": "一、关于全会决定起草过程",
+    "parent_id": "h0039",
+    "block_lines": 31,
+    "block_chars": 2036
+  },
+  {
+    "id": "h0041",
+    "line": 888,
+    "end_line": 993,
+    "level": 2,
+    "title": "二、关于全会决定的总体框架和重点问题",
+    "parent_id": "h0039",
+    "block_lines": 105,
+    "block_chars": 7565
+  },
+  {
+    "id": "h0042",
+    "line": 994,
+    "end_line": 1013,
+    "level": 2,
+    "title": "三、关于讨论中要注意的几个问题",
+    "parent_id": "h0039",
+    "block_lines": 19,
+    "block_chars": 1245
+  },
+  {
+    "id": "h0043",
+    "line": 1014,
+    "end_line": 1031,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0039",
+    "block_lines": 17,
+    "block_chars": 749
+  },
+  {
+    "id": "h0044",
+    "line": 1032,
+    "end_line": 1089,
+    "level": 1,
+    "title": "切实把思想统一到 党的十八届三中全会精神上来\\*",
+    "parent_id": null,
+    "block_lines": 57,
+    "block_chars": 5194
+  },
+  {
+    "id": "h0045",
+    "line": 1090,
+    "end_line": 1101,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0044",
+    "block_lines": 11,
+    "block_chars": 493
+  },
+  {
+    "id": "h0046",
+    "line": 1102,
+    "end_line": 1131,
+    "level": 1,
+    "title": "改革再难也要向前推进\\*",
+    "parent_id": null,
+    "block_lines": 29,
+    "block_chars": 1708
+  },
+  {
+    "id": "h0047",
+    "line": 1132,
+    "end_line": 1135,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0046",
+    "block_lines": 3,
+    "block_chars": 29
+  },
+  {
+    "id": "h0048",
+    "line": 1136,
+    "end_line": 1155,
+    "level": 1,
+    "title": "不断提高运用 中国特色社会主义制度 有效治理国家的能力\\*",
+    "parent_id": null,
+    "block_lines": 19,
+    "block_chars": 1908
+  },
+  {
+    "id": "h0049",
+    "line": 1156,
+    "end_line": 1161,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0048",
+    "block_lines": 5,
+    "block_chars": 144
+  },
+  {
+    "id": "h0050",
+    "line": 1162,
+    "end_line": 1171,
+    "level": 1,
+    "title": "经济增长必须是 实实在在和没有水分的增长\\*",
+    "parent_id": null,
+    "block_lines": 9,
+    "block_chars": 831
+  },
+  {
+    "id": "h0051",
+    "line": 1172,
+    "end_line": 1191,
+    "level": 1,
+    "title": "提高开放型经济水平\\*",
+    "parent_id": null,
+    "block_lines": 19,
+    "block_chars": 1038
+  },
+  {
+    "id": "h0052",
+    "line": 1192,
+    "end_line": 1195,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0051",
+    "block_lines": 3,
+    "block_chars": 124
+  },
+  {
+    "id": "h0053",
+    "line": 1196,
+    "end_line": 1213,
+    "level": 1,
+    "title": "“看不见的手”和“看得见的手” 都要用好\\*",
+    "parent_id": null,
+    "block_lines": 17,
+    "block_chars": 1519
+  },
+  {
+    "id": "h0054",
+    "line": 1214,
+    "end_line": 1267,
+    "level": 1,
+    "title": "加快从要素驱动、 投资规模驱动发展为主 向以创新驱动发展为主的转变\\*",
+    "parent_id": null,
+    "block_lines": 53,
+    "block_chars": 5838
+  },
+  {
+    "id": "h0055",
+    "line": 1268,
+    "end_line": 1297,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0054",
+    "block_lines": 29,
+    "block_chars": 816
+  },
+  {
+    "id": "h0056",
+    "line": 1298,
+    "end_line": 1309,
+    "level": 1,
+    "title": "积极推动我国 能源生产和消费革命\\*",
+    "parent_id": null,
+    "block_lines": 11,
+    "block_chars": 1166
+  },
+  {
+    "id": "h0057",
+    "line": 1310,
+    "end_line": 1313,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0056",
+    "block_lines": 3,
+    "block_chars": 34
+  },
+  {
+    "id": "h0058",
+    "line": 1314,
+    "end_line": 1315,
+    "level": 2,
+    "title": "五、建设法治中国",
+    "parent_id": "h0056",
+    "block_lines": 1,
+    "block_chars": 0
+  },
+  {
+    "id": "h0059",
+    "line": 1316,
+    "end_line": 1367,
+    "level": 1,
+    "title": "在首都各界纪念现行宪法公布 施行 30 周年大会上的讲话",
+    "parent_id": null,
+    "block_lines": 51,
+    "block_chars": 4801
+  },
+  {
+    "id": "h0060",
+    "line": 1368,
+    "end_line": 1371,
+    "level": 2,
+    "title": "同志们、朋友们！",
+    "parent_id": "h0059",
+    "block_lines": 3,
+    "block_chars": 159
+  },
+  {
+    "id": "h0061",
+    "line": 1372,
+    "end_line": 1379,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0059",
+    "block_lines": 7,
+    "block_chars": 343
+  },
+  {
+    "id": "h0062",
+    "line": 1380,
+    "end_line": 1395,
+    "level": 1,
+    "title": "坚持法治国家、法治政府、 法治社会一体建设\\*",
+    "parent_id": null,
+    "block_lines": 15,
+    "block_chars": 1222
+  },
+  {
+    "id": "h0063",
+    "line": 1396,
+    "end_line": 1477,
+    "level": 1,
+    "title": "促进社会公平正义， 保障人民安居乐业\\*",
+    "parent_id": null,
+    "block_lines": 81,
+    "block_chars": 4249
+  },
+  {
+    "id": "h0064",
+    "line": 1478,
+    "end_line": 1479,
+    "level": 2,
+    "title": "六、建设社会主义文化强国",
+    "parent_id": "h0063",
+    "block_lines": 1,
+    "block_chars": 0
+  },
+  {
+    "id": "h0065",
+    "line": 1480,
+    "end_line": 1507,
+    "level": 1,
+    "title": "把宣传思想工作做得更好\\*",
+    "parent_id": null,
+    "block_lines": 27,
+    "block_chars": 2282
+  },
+  {
+    "id": "h0066",
+    "line": 1508,
+    "end_line": 1511,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0065",
+    "block_lines": 3,
+    "block_chars": 60
+  },
+  {
+    "id": "h0067",
+    "line": 1512,
+    "end_line": 1525,
+    "level": 1,
+    "title": "为实现中国梦凝聚有力道德支撑\\*",
+    "parent_id": null,
+    "block_lines": 13,
+    "block_chars": 750
+  },
+  {
+    "id": "h0068",
+    "line": 1526,
+    "end_line": 1545,
+    "level": 1,
+    "title": "提高国家文化软实力\\*",
+    "parent_id": null,
+    "block_lines": 19,
+    "block_chars": 1478
+  },
+  {
+    "id": "h0069",
+    "line": 1546,
+    "end_line": 1563,
+    "level": 1,
+    "title": "培育和弘扬 社会主义核心价值观\\*",
+    "parent_id": null,
+    "block_lines": 17,
+    "block_chars": 1581
+  },
+  {
+    "id": "h0070",
+    "line": 1564,
+    "end_line": 1585,
+    "level": 1,
+    "title": "青年要自觉践行社会主义核心价值观\\*",
+    "parent_id": null,
+    "block_lines": 21,
+    "block_chars": 906
+  },
+  {
+    "id": "h0071",
+    "line": 1586,
+    "end_line": 1633,
+    "level": 2,
+    "title": "同学们、老师们！",
+    "parent_id": "h0070",
+    "block_lines": 47,
+    "block_chars": 4381
+  },
+  {
+    "id": "h0072",
+    "line": 1634,
+    "end_line": 1647,
+    "level": 2,
+    "title": "同学们、老师们！",
+    "parent_id": "h0070",
+    "block_lines": 13,
+    "block_chars": 976
+  },
+  {
+    "id": "h0073",
+    "line": 1648,
+    "end_line": 1737,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0070",
+    "block_lines": 89,
+    "block_chars": 2058
+  },
+  {
+    "id": "h0074",
+    "line": 1738,
+    "end_line": 1777,
+    "level": 1,
+    "title": "从小积极培育和践行社会主义核心价值观\\*",
+    "parent_id": null,
+    "block_lines": 39,
+    "block_chars": 3062
+  },
+  {
+    "id": "h0075",
+    "line": 1778,
+    "end_line": 1806,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0074",
+    "block_lines": 28,
+    "block_chars": 967
+  },
+  {
+    "id": "h0076",
+    "line": 1807,
+    "end_line": 1818,
+    "level": 1,
+    "title": "推动贫困地区 脱贫致富、加快发展\\*",
+    "parent_id": null,
+    "block_lines": 11,
+    "block_chars": 659
+  },
+  {
+    "id": "h0077",
+    "line": 1819,
+    "end_line": 1826,
+    "level": 1,
+    "title": "让十三亿人民享有 更好更公平的教育 \\*",
+    "parent_id": null,
+    "block_lines": 7,
+    "block_chars": 279
+  },
+  {
+    "id": "h0078",
+    "line": 1827,
+    "end_line": 1844,
+    "level": 1,
+    "title": "加快推进 住房保障和供应体系建设\\*",
+    "parent_id": null,
+    "block_lines": 17,
+    "block_chars": 1317
+  },
+  {
+    "id": "h0079",
+    "line": 1845,
+    "end_line": 1848,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0078",
+    "block_lines": 3,
+    "block_chars": 53
+  },
+  {
+    "id": "h0080",
+    "line": 1849,
+    "end_line": 1866,
+    "level": 1,
+    "title": "始终把人民群众生命安全 放在第一位\\*",
+    "parent_id": null,
+    "block_lines": 17,
+    "block_chars": 929
+  },
+  {
+    "id": "h0081",
+    "line": 1867,
+    "end_line": 1888,
+    "level": 1,
+    "title": "努力把我国建设成为网络强国\\*",
+    "parent_id": null,
+    "block_lines": 21,
+    "block_chars": 1260
+  },
+  {
+    "id": "h0082",
+    "line": 1889,
+    "end_line": 1892,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0081",
+    "block_lines": 3,
+    "block_chars": 46
+  },
+  {
+    "id": "h0083",
+    "line": 1893,
+    "end_line": 1906,
+    "level": 1,
+    "title": "坚持总体国家安全观， 走中国特色国家安全道路\\*",
+    "parent_id": null,
+    "block_lines": 13,
+    "block_chars": 798
+  },
+  {
+    "id": "h0084",
+    "line": 1907,
+    "end_line": 1928,
+    "level": 1,
+    "title": "切实维护国家安全和社会安定\\*",
+    "parent_id": null,
+    "block_lines": 21,
+    "block_chars": 1337
+  },
+  {
+    "id": "h0085",
+    "line": 1929,
+    "end_line": 1930,
+    "level": 2,
+    "title": "八、建设生态文明",
+    "parent_id": "h0084",
+    "block_lines": 1,
+    "block_chars": 0
+  },
+  {
+    "id": "h0086",
+    "line": 1931,
+    "end_line": 1940,
+    "level": 1,
+    "title": "为建设美丽中国 创造更好生态条件\\*",
+    "parent_id": null,
+    "block_lines": 9,
+    "block_chars": 336
+  },
+  {
+    "id": "h0087",
+    "line": 1941,
+    "end_line": 1960,
+    "level": 1,
+    "title": "努力走向 社会主义生态文明新时代\\*",
+    "parent_id": null,
+    "block_lines": 19,
+    "block_chars": 1273
+  },
+  {
+    "id": "h0088",
+    "line": 1961,
+    "end_line": 1978,
+    "level": 1,
+    "title": "为子孙后代留下天蓝、地绿、水清的生产生活环境\\*",
+    "parent_id": null,
+    "block_lines": 17,
+    "block_chars": 553
+  },
+  {
+    "id": "h0089",
+    "line": 1979,
+    "end_line": 1980,
+    "level": 2,
+    "title": "九、推进国防和军队现代化",
+    "parent_id": "h0088",
+    "block_lines": 1,
+    "block_chars": 0
+  },
+  {
+    "id": "h0090",
+    "line": 1981,
+    "end_line": 1998,
+    "level": 1,
+    "title": "把国防和军队建设不断推向前进\\*",
+    "parent_id": null,
+    "block_lines": 17,
+    "block_chars": 1237
+  },
+  {
+    "id": "h0091",
+    "line": 1999,
+    "end_line": 2008,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0090",
+    "block_lines": 9,
+    "block_chars": 52
+  },
+  {
+    "id": "h0092",
+    "line": 2009,
+    "end_line": 2018,
+    "level": 1,
+    "title": "努力建设巩固国防和强大军队\\*",
+    "parent_id": null,
+    "block_lines": 9,
+    "block_chars": 873
+  },
+  {
+    "id": "h0093",
+    "line": 2019,
+    "end_line": 2022,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0092",
+    "block_lines": 3,
+    "block_chars": 45
+  },
+  {
+    "id": "h0094",
+    "line": 2023,
+    "end_line": 2034,
+    "level": 1,
+    "title": "建设一支听党指挥、能打胜仗、作风优良的人民军队\\*",
+    "parent_id": null,
+    "block_lines": 11,
+    "block_chars": 807
+  },
+  {
+    "id": "h0095",
+    "line": 2035,
+    "end_line": 2048,
+    "level": 1,
+    "title": "香港、澳门与祖国内地的命运始终紧密相连\\*",
+    "parent_id": null,
+    "block_lines": 13,
+    "block_chars": 535
+  },
+  {
+    "id": "h0096",
+    "line": 2049,
+    "end_line": 2058,
+    "level": 2,
+    "title": "二",
+    "parent_id": "h0095",
+    "block_lines": 9,
+    "block_chars": 278
+  },
+  {
+    "id": "h0097",
+    "line": 2059,
+    "end_line": 2068,
+    "level": 2,
+    "title": "三",
+    "parent_id": "h0095",
+    "block_lines": 9,
+    "block_chars": 345
+  },
+  {
+    "id": "h0098",
+    "line": 2069,
+    "end_line": 2078,
+    "level": 2,
+    "title": "四",
+    "parent_id": "h0095",
+    "block_lines": 9,
+    "block_chars": 329
+  },
+  {
+    "id": "h0099",
+    "line": 2079,
+    "end_line": 2086,
+    "level": 2,
+    "title": "五",
+    "parent_id": "h0095",
+    "block_lines": 7,
+    "block_chars": 335
+  },
+  {
+    "id": "h0100",
+    "line": 2087,
+    "end_line": 2090,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0095",
+    "block_lines": 3,
+    "block_chars": 167
+  },
+  {
+    "id": "h0101",
+    "line": 2091,
+    "end_line": 2120,
+    "level": 1,
+    "title": "共同开创中华民族美好未来\\*",
+    "parent_id": null,
+    "block_lines": 29,
+    "block_chars": 1243
+  },
+  {
+    "id": "h0102",
+    "line": 2121,
+    "end_line": 2124,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0101",
+    "block_lines": 3,
+    "block_chars": 27
+  },
+  {
+    "id": "h0103",
+    "line": 2125,
+    "end_line": 2140,
+    "level": 1,
+    "title": "从中华民族整体利益的高度把握两岸关系大局\\*",
+    "parent_id": null,
+    "block_lines": 15,
+    "block_chars": 1441
+  },
+  {
+    "id": "h0104",
+    "line": 2141,
+    "end_line": 2188,
+    "level": 1,
+    "title": "共圆中华民族 伟大复兴的中国梦\\*",
+    "parent_id": null,
+    "block_lines": 47,
+    "block_chars": 2634
+  },
+  {
+    "id": "h0105",
+    "line": 2189,
+    "end_line": 2200,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0104",
+    "block_lines": 11,
+    "block_chars": 495
+  },
+  {
+    "id": "h0106",
+    "line": 2201,
+    "end_line": 2216,
+    "level": 1,
+    "title": "担当起开拓两岸关系前景、实现民族伟大复兴的重任\\*",
+    "parent_id": null,
+    "block_lines": 15,
+    "block_chars": 701
+  },
+  {
+    "id": "h0107",
+    "line": 2217,
+    "end_line": 2218,
+    "level": 2,
+    "title": "十一、走和平发展道路",
+    "parent_id": "h0106",
+    "block_lines": 1,
+    "block_chars": 0
+  },
+  {
+    "id": "h0108",
+    "line": 2219,
+    "end_line": 2236,
+    "level": 1,
+    "title": "更好统筹国内国际两个大局，夯实走和平发展道路的基础\\*",
+    "parent_id": null,
+    "block_lines": 17,
+    "block_chars": 1294
+  },
+  {
+    "id": "h0109",
+    "line": 2237,
+    "end_line": 2250,
+    "level": 1,
+    "title": "走出一条和衷共济、 合作共赢的新路子\\*",
+    "parent_id": null,
+    "block_lines": 13,
+    "block_chars": 407
+  },
+  {
+    "id": "h0110",
+    "line": 2251,
+    "end_line": 2258,
+    "level": 2,
+    "title": "二",
+    "parent_id": "h0109",
+    "block_lines": 7,
+    "block_chars": 462
+  },
+  {
+    "id": "h0111",
+    "line": 2259,
+    "end_line": 2262,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0109",
+    "block_lines": 3,
+    "block_chars": 161
+  },
+  {
+    "id": "h0112",
+    "line": 2263,
+    "end_line": 2306,
+    "level": 1,
+    "title": "坚持理性、协调、并进的核安全观\\*",
+    "parent_id": null,
+    "block_lines": 43,
+    "block_chars": 1966
+  },
+  {
+    "id": "h0113",
+    "line": 2307,
+    "end_line": 2318,
+    "level": 2,
+    "title": "各位同事！",
+    "parent_id": "h0112",
+    "block_lines": 11,
+    "block_chars": 410
+  },
+  {
+    "id": "h0114",
+    "line": 2319,
+    "end_line": 2324,
+    "level": 2,
+    "title": "各位同事！",
+    "parent_id": "h0112",
+    "block_lines": 5,
+    "block_chars": 71
+  },
+  {
+    "id": "h0115",
+    "line": 2325,
+    "end_line": 2366,
+    "level": 1,
+    "title": "文明因交流而多彩，文明因互鉴而丰富\\*",
+    "parent_id": null,
+    "block_lines": 41,
+    "block_chars": 2812
+  },
+  {
+    "id": "h0116",
+    "line": 2367,
+    "end_line": 2392,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0115",
+    "block_lines": 25,
+    "block_chars": 948
+  },
+  {
+    "id": "h0117",
+    "line": 2393,
+    "end_line": 2418,
+    "level": 1,
+    "title": "走和平发展道路 是中国人民对实现自身发展目标 的自信和自觉\\*",
+    "parent_id": null,
+    "block_lines": 25,
+    "block_chars": 1935
+  },
+  {
+    "id": "h0118",
+    "line": 2419,
+    "end_line": 2426,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0117",
+    "block_lines": 7,
+    "block_chars": 122
+  },
+  {
+    "id": "h0119",
+    "line": 2427,
+    "end_line": 2428,
+    "level": 2,
+    "title": "十二、推动构建新型大国关系",
+    "parent_id": "h0117",
+    "block_lines": 1,
+    "block_chars": 0
+  },
+  {
+    "id": "h0120",
+    "line": 2429,
+    "end_line": 2502,
+    "level": 1,
+    "title": "顺应时代前进潮流，促进世界和平发展\\*",
+    "parent_id": null,
+    "block_lines": 73,
+    "block_chars": 4114
+  },
+  {
+    "id": "h0121",
+    "line": 2503,
+    "end_line": 2514,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0120",
+    "block_lines": 11,
+    "block_chars": 391
+  },
+  {
+    "id": "h0122",
+    "line": 2515,
+    "end_line": 2540,
+    "level": 1,
+    "title": "构建中美新型大国关系\\*",
+    "parent_id": null,
+    "block_lines": 25,
+    "block_chars": 1097
+  },
+  {
+    "id": "h0123",
+    "line": 2541,
+    "end_line": 2558,
+    "level": 1,
+    "title": "在亚欧大陆架起一座友谊和合作之桥\\*",
+    "parent_id": null,
+    "block_lines": 17,
+    "block_chars": 1083
+  },
+  {
+    "id": "h0124",
+    "line": 2559,
+    "end_line": 2562,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0123",
+    "block_lines": 3,
+    "block_chars": 32
+  },
+  {
+    "id": "h0125",
+    "line": 2563,
+    "end_line": 2564,
+    "level": 2,
+    "title": "十三、做好周边外交工作",
+    "parent_id": "h0123",
+    "block_lines": 1,
+    "block_chars": 0
+  },
+  {
+    "id": "h0126",
+    "line": 2565,
+    "end_line": 2608,
+    "level": 1,
+    "title": "共同建设“丝绸之路经济带”\\*",
+    "parent_id": null,
+    "block_lines": 43,
+    "block_chars": 2063
+  },
+  {
+    "id": "h0127",
+    "line": 2609,
+    "end_line": 2616,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0126",
+    "block_lines": 7,
+    "block_chars": 311
+  },
+  {
+    "id": "h0128",
+    "line": 2617,
+    "end_line": 2660,
+    "level": 1,
+    "title": "共同建设 二十一世纪“海上丝绸之路”\\*",
+    "parent_id": null,
+    "block_lines": 43,
+    "block_chars": 1824
+  },
+  {
+    "id": "h0129",
+    "line": 2661,
+    "end_line": 2666,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0128",
+    "block_lines": 5,
+    "block_chars": 112
+  },
+  {
+    "id": "h0130",
+    "line": 2667,
+    "end_line": 2694,
+    "level": 1,
+    "title": "坚持亲、诚、惠、容的 周边外交理念\\*",
+    "parent_id": null,
+    "block_lines": 27,
+    "block_chars": 2078
+  },
+  {
+    "id": "h0131",
+    "line": 2695,
+    "end_line": 2696,
+    "level": 2,
+    "title": "十四、加强与发展中国家团结合作",
+    "parent_id": "h0130",
+    "block_lines": 1,
+    "block_chars": 0
+  },
+  {
+    "id": "h0132",
+    "line": 2697,
+    "end_line": 2770,
+    "level": 1,
+    "title": "永远做可靠朋友和真诚伙伴\\*",
+    "parent_id": null,
+    "block_lines": 73,
+    "block_chars": 3780
+  },
+  {
+    "id": "h0133",
+    "line": 2771,
+    "end_line": 2784,
+    "level": 2,
+    "title": "女士们、先生们！",
+    "parent_id": "h0132",
+    "block_lines": 13,
+    "block_chars": 596
+  },
+  {
+    "id": "h0134",
+    "line": 2785,
+    "end_line": 2794,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0132",
+    "block_lines": 9,
+    "block_chars": 350
+  },
+  {
+    "id": "h0135",
+    "line": 2795,
+    "end_line": 2816,
+    "level": 1,
+    "title": "推动中拉关系 实现新的更大发展\\*",
+    "parent_id": null,
+    "block_lines": 21,
+    "block_chars": 557
+  },
+  {
+    "id": "h0136",
+    "line": 2817,
+    "end_line": 2820,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0135",
+    "block_lines": 3,
+    "block_chars": 147
+  },
+  {
+    "id": "h0137",
+    "line": 2821,
+    "end_line": 2884,
+    "level": 1,
+    "title": "弘扬丝路精神，深化中阿合作\\*",
+    "parent_id": null,
+    "block_lines": 63,
+    "block_chars": 3948
+  },
+  {
+    "id": "h0138",
+    "line": 2885,
+    "end_line": 2948,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0137",
+    "block_lines": 63,
+    "block_chars": 2122
+  },
+  {
+    "id": "h0139",
+    "line": 2949,
+    "end_line": 2950,
+    "level": 1,
+    "title": "十五、积极参与多边事务",
+    "parent_id": null,
+    "block_lines": 1,
+    "block_chars": 0
+  },
+  {
+    "id": "h0140",
+    "line": 2951,
+    "end_line": 2986,
+    "level": 1,
+    "title": "携手合作，共同发展\\*",
+    "parent_id": null,
+    "block_lines": 35,
+    "block_chars": 1461
+  },
+  {
+    "id": "h0141",
+    "line": 2987,
+    "end_line": 3004,
+    "level": 2,
+    "title": "各位同事！",
+    "parent_id": "h0140",
+    "block_lines": 17,
+    "block_chars": 581
+  },
+  {
+    "id": "h0142",
+    "line": 3005,
+    "end_line": 3008,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0140",
+    "block_lines": 3,
+    "block_chars": 106
+  },
+  {
+    "id": "h0143",
+    "line": 3009,
+    "end_line": 3074,
+    "level": 1,
+    "title": "共同创造 亚洲和世界的美好未来\\*",
+    "parent_id": null,
+    "block_lines": 65,
+    "block_chars": 3436
+  },
+  {
+    "id": "h0144",
+    "line": 3075,
+    "end_line": 3080,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0143",
+    "block_lines": 5,
+    "block_chars": 82
+  },
+  {
+    "id": "h0145",
+    "line": 3081,
+    "end_line": 3124,
+    "level": 1,
+    "title": "共同维护和发展 开放型世界经济\\*",
+    "parent_id": null,
+    "block_lines": 43,
+    "block_chars": 1982
+  },
+  {
+    "id": "h0146",
+    "line": 3125,
+    "end_line": 3132,
+    "level": 2,
+    "title": "各位同事！",
+    "parent_id": "h0145",
+    "block_lines": 7,
+    "block_chars": 97
+  },
+  {
+    "id": "h0147",
+    "line": 3133,
+    "end_line": 3186,
+    "level": 1,
+    "title": "弘扬“上海精神”，促进共同发展\\*",
+    "parent_id": null,
+    "block_lines": 53,
+    "block_chars": 1806
+  },
+  {
+    "id": "h0148",
+    "line": 3187,
+    "end_line": 3190,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0147",
+    "block_lines": 3,
+    "block_chars": 81
+  },
+  {
+    "id": "h0149",
+    "line": 3191,
+    "end_line": 3290,
+    "level": 1,
+    "title": "深化改革开放， 共创美好亚太\\*",
+    "parent_id": null,
+    "block_lines": 99,
+    "block_chars": 5337
+  },
+  {
+    "id": "h0150",
+    "line": 3291,
+    "end_line": 3296,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0149",
+    "block_lines": 5,
+    "block_chars": 83
+  },
+  {
+    "id": "h0151",
+    "line": 3297,
+    "end_line": 3374,
+    "level": 1,
+    "title": "积极树立亚洲安全观，共创安全合作新局面\\*",
+    "parent_id": null,
+    "block_lines": 77,
+    "block_chars": 3503
+  },
+  {
+    "id": "h0152",
+    "line": 3375,
+    "end_line": 3384,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0151",
+    "block_lines": 9,
+    "block_chars": 134
+  },
+  {
+    "id": "h0153",
+    "line": 3385,
+    "end_line": 3394,
+    "level": 1,
+    "title": "厉行勤俭节约，反对铺张浪费\\*",
+    "parent_id": null,
+    "block_lines": 9,
+    "block_chars": 336
+  },
+  {
+    "id": "h0154",
+    "line": 3395,
+    "end_line": 3400,
+    "level": 2,
+    "title": "二",
+    "parent_id": "h0153",
+    "block_lines": 5,
+    "block_chars": 318
+  },
+  {
+    "id": "h0155",
+    "line": 3401,
+    "end_line": 3446,
+    "level": 1,
+    "title": "群众路线 是党的生命线和根本工作路线\\*",
+    "parent_id": null,
+    "block_lines": 45,
+    "block_chars": 3667
+  },
+  {
+    "id": "h0156",
+    "line": 3447,
+    "end_line": 3476,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0155",
+    "block_lines": 29,
+    "block_chars": 830
+  },
+  {
+    "id": "h0157",
+    "line": 3477,
+    "end_line": 3518,
+    "level": 1,
+    "title": "准确把握 党的群众路线教育实践活动的 指导思想和目标要求\\*",
+    "parent_id": null,
+    "block_lines": 41,
+    "block_chars": 4014
+  },
+  {
+    "id": "h0158",
+    "line": 3519,
+    "end_line": 3536,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0157",
+    "block_lines": 17,
+    "block_chars": 612
+  },
+  {
+    "id": "h0159",
+    "line": 3537,
+    "end_line": 3548,
+    "level": 1,
+    "title": "树立和发扬 “三严三实”的作风\\*",
+    "parent_id": null,
+    "block_lines": 11,
+    "block_chars": 476
+  },
+  {
+    "id": "h0160",
+    "line": 3549,
+    "end_line": 3568,
+    "level": 1,
+    "title": "把权力关进制度的笼子里\\*",
+    "parent_id": null,
+    "block_lines": 19,
+    "block_chars": 2595
+  },
+  {
+    "id": "h0161",
+    "line": 3569,
+    "end_line": 3572,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0160",
+    "block_lines": 3,
+    "block_chars": 50
+  },
+  {
+    "id": "h0162",
+    "line": 3573,
+    "end_line": 3592,
+    "level": 1,
+    "title": "运用历史智慧 推进反腐倡廉建设\\*",
+    "parent_id": null,
+    "block_lines": 19,
+    "block_chars": 1268
+  },
+  {
+    "id": "h0163",
+    "line": 3593,
+    "end_line": 3598,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0162",
+    "block_lines": 5,
+    "block_chars": 350
+  },
+  {
+    "id": "h0164",
+    "line": 3599,
+    "end_line": 3626,
+    "level": 1,
+    "title": "深入推进党风廉政建设和反腐败斗争\\*",
+    "parent_id": null,
+    "block_lines": 27,
+    "block_chars": 2059
+  },
+  {
+    "id": "h0165",
+    "line": 3627,
+    "end_line": 3632,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0164",
+    "block_lines": 5,
+    "block_chars": 124
+  },
+  {
+    "id": "h0166",
+    "line": 3633,
+    "end_line": 3634,
+    "level": 2,
+    "title": "十八、提高党的领导水平",
+    "parent_id": "h0164",
+    "block_lines": 1,
+    "block_chars": 0
+  },
+  {
+    "id": "h0167",
+    "line": 3635,
+    "end_line": 3640,
+    "level": 1,
+    "title": "发扬钉钉子的精神， 一张好的蓝图一干到底\\*",
+    "parent_id": null,
+    "block_lines": 5,
+    "block_chars": 885
+  },
+  {
+    "id": "h0168",
+    "line": 3641,
+    "end_line": 3672,
+    "level": 1,
+    "title": "依靠学习走向未来\\*",
+    "parent_id": null,
+    "block_lines": 31,
+    "block_chars": 4285
+  },
+  {
+    "id": "h0169",
+    "line": 3673,
+    "end_line": 3704,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0168",
+    "block_lines": 31,
+    "block_chars": 549
+  },
+  {
+    "id": "h0170",
+    "line": 3705,
+    "end_line": 3720,
+    "level": 1,
+    "title": "“治大国若烹小鲜”\\*",
+    "parent_id": null,
+    "block_lines": 15,
+    "block_chars": 866
+  },
+  {
+    "id": "h0171",
+    "line": 3721,
+    "end_line": 3730,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0170",
+    "block_lines": 9,
+    "block_chars": 160
+  },
+  {
+    "id": "h0172",
+    "line": 3731,
+    "end_line": 3800,
+    "level": 1,
+    "title": "着力培养选拔 党和人民需要的好干部\\*",
+    "parent_id": null,
+    "block_lines": 69,
+    "block_chars": 5747
+  },
+  {
+    "id": "h0173",
+    "line": 3801,
+    "end_line": 3820,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0172",
+    "block_lines": 19,
+    "block_chars": 299
+  },
+  {
+    "id": "h0174",
+    "line": 3821,
+    "end_line": 3848,
+    "level": 1,
+    "title": "“人民群众是我们力量的源泉” ——记中共中央总书记习近平",
+    "parent_id": null,
+    "block_lines": 27,
+    "block_chars": 800
+  },
+  {
+    "id": "h0175",
+    "line": 3849,
+    "end_line": 3888,
+    "level": 2,
+    "title": "“人民对美好生活的向往，就是我们的奋斗目标”",
+    "parent_id": "h0174",
+    "block_lines": 39,
+    "block_chars": 1998
+  },
+  {
+    "id": "h0176",
+    "line": 3889,
+    "end_line": 3930,
+    "level": 2,
+    "title": "“像爱自己的父母那样爱老百姓”",
+    "parent_id": "h0174",
+    "block_lines": 41,
+    "block_chars": 2680
+  },
+  {
+    "id": "h0177",
+    "line": 3931,
+    "end_line": 3962,
+    "level": 2,
+    "title": "“功成不必在我”",
+    "parent_id": "h0174",
+    "block_lines": 31,
+    "block_chars": 2263
+  },
+  {
+    "id": "h0178",
+    "line": 3963,
+    "end_line": 4004,
+    "level": 2,
+    "title": "“干在实处，走在前列”",
+    "parent_id": "h0174",
+    "block_lines": 41,
+    "block_chars": 3021
+  },
+  {
+    "id": "h0179",
+    "line": 4005,
+    "end_line": 4044,
+    "level": 2,
+    "title": "“谋求自己过得好，必须也让别人过得好”",
+    "parent_id": "h0174",
+    "block_lines": 39,
+    "block_chars": 2331
+  },
+  {
+    "id": "h0180",
+    "line": 4045,
+    "end_line": 4076,
+    "level": 2,
+    "title": "“清清白白做人”",
+    "parent_id": "h0174",
+    "block_lines": 31,
+    "block_chars": 1996
+  },
+  {
+    "id": "h0181",
+    "line": 4077,
+    "end_line": 4090,
+    "level": 2,
+    "title": "注释",
+    "parent_id": "h0174",
+    "block_lines": 13,
+    "block_chars": 643
+  },
+  {
+    "id": "h0182",
+    "line": 4091,
+    "end_line": 4092,
+    "level": 2,
+    "title": "索引",
+    "parent_id": "h0174",
+    "block_lines": 1,
+    "block_chars": 0
+  },
+  {
+    "id": "h0183",
+    "line": 4093,
+    "end_line": 4131,
+    "level": 2,
+    "title": "A",
+    "parent_id": "h0174",
+    "block_lines": 38,
+    "block_chars": 272
+  },
+  {
+    "id": "h0184",
+    "line": 4132,
+    "end_line": 4194,
+    "level": 2,
+    "title": "B",
+    "parent_id": "h0174",
+    "block_lines": 62,
+    "block_chars": 409
+  },
+  {
+    "id": "h0185",
+    "line": 4195,
+    "end_line": 4265,
+    "level": 2,
+    "title": "C",
+    "parent_id": "h0174",
+    "block_lines": 70,
+    "block_chars": 707
+  },
+  {
+    "id": "h0186",
+    "line": 4266,
+    "end_line": 4378,
+    "level": 2,
+    "title": "D",
+    "parent_id": "h0174",
+    "block_lines": 112,
+    "block_chars": 1227
+  },
+  {
+    "id": "h0187",
+    "line": 4379,
+    "end_line": 4391,
+    "level": 2,
+    "title": "E",
+    "parent_id": "h0174",
+    "block_lines": 12,
+    "block_chars": 82
+  },
+  {
+    "id": "h0188",
+    "line": 4392,
+    "end_line": 4451,
+    "level": 2,
+    "title": "F",
+    "parent_id": "h0174",
+    "block_lines": 59,
+    "block_chars": 496
+  },
+  {
+    "id": "h0189",
+    "line": 4452,
+    "end_line": 4597,
+    "level": 2,
+    "title": "G",
+    "parent_id": "h0174",
+    "block_lines": 145,
+    "block_chars": 1536
+  },
+  {
+    "id": "h0190",
+    "line": 4598,
+    "end_line": 4696,
+    "level": 2,
+    "title": "H",
+    "parent_id": "h0174",
+    "block_lines": 98,
+    "block_chars": 1052
+  },
+  {
+    "id": "h0191",
+    "line": 4697,
+    "end_line": 4806,
+    "level": 2,
+    "title": "J",
+    "parent_id": "h0174",
+    "block_lines": 109,
+    "block_chars": 980
+  },
+  {
+    "id": "h0192",
+    "line": 4807,
+    "end_line": 4859,
+    "level": 2,
+    "title": "K",
+    "parent_id": "h0174",
+    "block_lines": 52,
+    "block_chars": 567
+  },
+  {
+    "id": "h0193",
+    "line": 4860,
+    "end_line": 4983,
+    "level": 2,
+    "title": "L",
+    "parent_id": "h0174",
+    "block_lines": 123,
+    "block_chars": 951
+  },
+  {
+    "id": "h0194",
+    "line": 4984,
+    "end_line": 5065,
+    "level": 2,
+    "title": "M",
+    "parent_id": "h0174",
+    "block_lines": 81,
+    "block_chars": 926
+  },
+  {
+    "id": "h0195",
+    "line": 5066,
+    "end_line": 5099,
+    "level": 2,
+    "title": "N",
+    "parent_id": "h0174",
+    "block_lines": 33,
+    "block_chars": 223
+  },
+  {
+    "id": "h0196",
+    "line": 5100,
+    "end_line": 5114,
+    "level": 2,
+    "title": "0",
+    "parent_id": "h0174",
+    "block_lines": 14,
+    "block_chars": 99
+  },
+  {
+    "id": "h0197",
+    "line": 5115,
+    "end_line": 5136,
+    "level": 2,
+    "title": "p",
+    "parent_id": "h0174",
+    "block_lines": 21,
+    "block_chars": 140
+  },
+  {
+    "id": "h0198",
+    "line": 5137,
+    "end_line": 5215,
+    "level": 2,
+    "title": "Q",
+    "parent_id": "h0174",
+    "block_lines": 78,
+    "block_chars": 689
+  },
+  {
+    "id": "h0199",
+    "line": 5216,
+    "end_line": 5262,
+    "level": 2,
+    "title": "R",
+    "parent_id": "h0174",
+    "block_lines": 46,
+    "block_chars": 384
+  },
+  {
+    "id": "h0200",
+    "line": 5263,
+    "end_line": 5484,
+    "level": 2,
+    "title": "S",
+    "parent_id": "h0174",
+    "block_lines": 221,
+    "block_chars": 2294
+  },
+  {
+    "id": "h0201",
+    "line": 5485,
+    "end_line": 5535,
+    "level": 2,
+    "title": "T",
+    "parent_id": "h0174",
+    "block_lines": 50,
+    "block_chars": 483
+  },
+  {
+    "id": "h0202",
+    "line": 5536,
+    "end_line": 5613,
+    "level": 2,
+    "title": "W",
+    "parent_id": "h0174",
+    "block_lines": 77,
+    "block_chars": 550
+  },
+  {
+    "id": "h0203",
+    "line": 5614,
+    "end_line": 5738,
+    "level": 2,
+    "title": "X",
+    "parent_id": "h0174",
+    "block_lines": 124,
+    "block_chars": 1477
+  },
+  {
+    "id": "h0204",
+    "line": 5739,
+    "end_line": 5858,
+    "level": 2,
+    "title": "Y",
+    "parent_id": "h0174",
+    "block_lines": 119,
+    "block_chars": 935
+  },
+  {
+    "id": "h0205",
+    "line": 5859,
+    "end_line": 6252,
+    "level": 2,
+    "title": "z",
+    "parent_id": "h0174",
+    "block_lines": 393,
+    "block_chars": 4732
+  },
+  {
+    "id": "h0206",
+    "line": 6253,
+    "end_line": 6286,
+    "level": 2,
+    "title": "习近平谈治国理政",
+    "parent_id": "h0174",
+    "block_lines": 33,
+    "block_chars": 242
+  },
+  {
+    "id": "h0207",
+    "line": 6287,
+    "end_line": 6287,
+    "level": 1,
+    "title": "习近平 谈治国理政",
+    "parent_id": null,
+    "block_lines": 0,
+    "block_chars": 0
+  }
+]

@@ -1,0 +1,64 @@
+{
+  "safety": {
+    "max_delete_ratio": 0.35,
+    "max_single_section_chars": 20000,
+    "abort_on_missing_section_end": true
+  },
+  "rules": {
+    "remove_html_comments": true,
+    "remove_images": true,
+    "remove_image_file_noise": true,
+    "preserve_image_captions": true,
+    "image_caption_max_chars": 120,
+    "remove_ocr_noise": true,
+    "ocr_noise_patterns": [
+      "^[a-zA-Z]$"
+    ],
+    "remove_exact_lines": [],
+    "remove_line_patterns": [
+      "^\\(\\d{4}年\\d{1,2}月\\d{1,2}日\\)$",
+      "^各位[\\u4e00-\\u9fa5]+!$",
+      "^同志们[\\u4e00-\\u9fa5]*!$",
+      "^X$",
+      "^Y$",
+      "^z$"
+    ],
+    "remove_sections": [],
+    "remove_front_matter": false,
+    "front_matter_anchor_heading_patterns": [],
+    "front_matter_body_start_heading_patterns": [],
+    "remove_inline_patterns": [],
+    "remove_meaningless_headings": true,
+    "meaningless_heading_patterns": [
+      "^[a-zA-Z]$"
+    ],
+    "remove_plain_meaningless_lines": true,
+    "normalize_headings": false,
+    "heading_rules": [
+      {
+        "pattern": "^人民对美好生活的向往，就是我们的奋斗目标\\*$",
+        "target_level": 2
+      },
+      {
+        "pattern": "^紧紧围绕坚持和发展 中国特色社会主义 学习宣传贯彻党的十八大精神\\*$",
+        "target_level": 2
+      }
+    ],
+    "default_heading_level": null,
+    "demote_heading_patterns": [
+      "^各位[\\u4e00-\\u9fa5]+!$",
+      "^同志们[\\u4e00-\\u9fa5]*!$"
+    ],
+    "italicize_date_lines": false,
+    "date_patterns": [
+      "\\(\\d{4}年\\d{1,2}月\\d{1,2}日\\)"
+    ],
+    "remove_trailing_heading_marks": [],
+    "merge_broken_paragraphs": true,
+    "merge_min_left_chars": 18,
+    "merge_across_single_blank": true,
+    "terminal_chars": "。！？!?；;：:”’）)】》…",
+    "max_blank_lines": 1,
+    "trim_trailing_spaces": true
+  }
+}

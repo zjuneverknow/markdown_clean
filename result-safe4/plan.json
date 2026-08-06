@@ -1,0 +1,50 @@
+{
+  "safety": {
+    "max_delete_ratio": 0.35,
+    "max_single_section_chars": 20000,
+    "abort_on_missing_section_end": true
+  },
+  "rules": {
+    "remove_html_comments": true,
+    "remove_images": true,
+    "remove_image_file_noise": true,
+    "preserve_image_captions": true,
+    "image_caption_max_chars": 120,
+    "remove_ocr_noise": false,
+    "ocr_noise_patterns": [],
+    "remove_exact_lines": [
+      "## X",
+      "## Y",
+      "## z"
+    ],
+    "remove_line_patterns": [],
+    "remove_sections": [],
+    "remove_front_matter": false,
+    "front_matter_anchor_heading_patterns": [],
+    "front_matter_body_start_heading_patterns": [],
+    "remove_inline_patterns": [],
+    "remove_meaningless_headings": false,
+    "meaningless_heading_patterns": [],
+    "remove_plain_meaningless_lines": false,
+    "normalize_headings": false,
+    "heading_rules": [
+      {
+        "pattern": "^注释$",
+        "target_level": 3
+      }
+    ],
+    "default_heading_level": null,
+    "demote_heading_patterns": [
+      "^注释$"
+    ],
+    "italicize_date_lines": false,
+    "date_patterns": [],
+    "remove_trailing_heading_marks": [],
+    "merge_broken_paragraphs": false,
+    "merge_min_left_chars": 18,
+    "merge_across_single_blank": true,
+    "terminal_chars": "。！？!?；;：:”’）)】》…",
+    "max_blank_lines": 1,
+    "trim_trailing_spaces": true
+  }
+}

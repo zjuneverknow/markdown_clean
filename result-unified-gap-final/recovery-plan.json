@@ -1,0 +1,129 @@
+{
+  "accepted_gaps": [
+    {
+      "parent_heading_id": null,
+      "level": 1,
+      "previous_heading_id": "h0037",
+      "next_heading_id": "h0058",
+      "missing_title": "四",
+      "repair": {
+        "mode": "promote_candidate",
+        "candidate_id": "c0011"
+      },
+      "confidence": 0.98,
+      "reason": "根节点下一级标题序列：一、二、三、[缺失四]、五、六、[缺失七]、八、九、[缺失十]、十一、十二、十三、十四、十五、[缺失十六]、[缺失十七]、十八；c0011位于h0049与h0050之间，但h0049不存在（h0049被跳过），而c0011上下文紧邻h0048与h0050，且h0048为'不断提高运用...'、h0050为'经济增长必须是...'，中间缺四、促进经济持续健康发展，语义与位置完全匹配"
+    },
+    {
+      "parent_heading_id": null,
+      "level": 1,
+      "previous_heading_id": "h0064",
+      "next_heading_id": "h0085",
+      "missing_title": "七",
+      "repair": {
+        "mode": "promote_candidate",
+        "candidate_id": "c0012"
+      },
+      "confidence": 0.97,
+      "reason": "根节点一级标题序列中，'三、全面深化改革'（h0037）前有'实现中华民族伟大复兴 是海内外中华儿女共同的梦\\*'（h0036）——该标题无编号且未归入任何父节，实为游离一级标题；其前为'六、建设社会主义文化强国'（h0064），后为'八、建设生态文明'（h0085），中间缺失'七'；c0012行号1804，位于h0075（注释）与h0076（推动贫困地区...）之间，h0075非标题，h0076属h0064子项，故c0012实为独立一级标题，内容'七、推进社会事业和社会管理改革发展'完美填补h0036与h0037之间的空缺"
+    },
+    {
+      "parent_heading_id": null,
+      "level": 1,
+      "previous_heading_id": "h0089",
+      "next_heading_id": "h0107",
+      "missing_title": "十",
+      "repair": {
+        "mode": "promote_candidate",
+        "candidate_id": "c0013"
+      },
+      "confidence": 0.99,
+      "reason": "根节点一级标题序列：...八、九、[缺失十]、十一...；c0013位于h0094与h0095之间，二者均为h0089（九、推进国防和军队现代化）下的二级标题，而c0013文本为'十、丰富“一国两制”实践和推进祖国统一'，格式一致、编号连续、上下文空白分隔明确，且h0084为'切实维护国家安全和社会安定\\*'（属'九'节末尾），h0085为'八、建设生态文明'（错误层级？但实际h0085 line=1929，h0089 line=1979，中间存在大段空缺），校验line序：h0084 end_line=1928，c0013 line=2033，h0085 line=1929 —— 发现h0085时间戳早于c0013，说明h0085应为h0084之后的下一个一级标题，但编号跳过了'十'；而c0013 line=2033，紧接h0094（line=2023）和h0095（line=2049），处于'九'节内部，但其内容与'九'主题无关，且具备完整一级标题特征（编号+全称+换行隔离），故为缺失的一级标题'十'"
+    },
+    {
+      "parent_heading_id": null,
+      "level": 1,
+      "previous_heading_id": "h0139",
+      "next_heading_id": "h0166",
+      "missing_title": "十六",
+      "repair": {
+        "mode": "promote_candidate",
+        "candidate_id": "c0014"
+      },
+      "confidence": 0.98,
+      "reason": "根节点一级标题序列中，'十五、积极参与多边事务'（h0139）后应接'十六'，但直接跳至'十八'（h0166）；h0153为'厉行勤俭节约...'（属十五节），h0155为'群众路线...'（仍属十五节），二者间c0014（line=3383）明确标注'十六、密切党同人民群众联系'，前后均有空白行，且h0152为注释、h0153为十五节内标题，c0014独立成行、格式统一，是唯一符合位置与结构的一级候选"
+    },
+    {
+      "parent_heading_id": null,
+      "level": 1,
+      "previous_heading_id": "h0139",
+      "next_heading_id": "h0166",
+      "missing_title": "十七",
+      "repair": {
+        "mode": "promote_candidate",
+        "candidate_id": "c0015"
+      },
+      "confidence": 0.99,
+      "reason": "h0159为'树立和发扬 “三严三实”的作风\\*'（十五节内），h0160为'把权力关进制度的笼子里\\*'（十五节内），但c0015（line=3547）位于二者之间，文本为'十七、推进反腐倡廉建设'，前后空白、编号清晰、主题独立，且后续h0162/h0164等反腐倡廉相关内容实际归属该节，证实其为结构性一级标题缺失"
+    },
+    {
+      "parent_heading_id": "h0095",
+      "level": 3,
+      "previous_heading_id": null,
+      "next_heading_id": "h0096",
+      "missing_title": "一",
+      "repair": {
+        "mode": "insert_structural",
+        "anchor_heading_id": "h0095"
+      },
+      "confidence": 0.95,
+      "reason": "h0095（香港、澳门与祖国内地的命运始终紧密相连\\*）下子标题为h0096（二）、h0097（三）、h0098（四）、h0099（五），编号从'二'开始且连续；同一父节点下兄弟序列出现'二、三、四、五'，严格暗示缺失'一'；且h0096 line=2049，h0095 end_line=2048，间隔紧凑，符合结构起始缺失特征；虽无原文候选，但编号模式+连续性+父节完整性支持结构化插入"
+    }
+  ],
+  "unresolved_gaps": [
+    {
+      "parent_heading_id": "h0039",
+      "level": 3,
+      "previous_heading_id": null,
+      "next_heading_id": "h0040",
+      "missing_title": "一",
+      "repair": {
+        "mode": "insert_structural",
+        "anchor_heading_id": "h0039"
+      },
+      "confidence": 0.99,
+      "reason": "h0039（关于《中共中央关于全面深化改革若干重大问题的决定》的说明\\*）下直接子标题为h0040（一、关于全会决定起草过程）、h0041（二、...）、h0042（三、...），三者严格连续编号；序列以'一'开头，但h0040是第一个子项，其前无'一'标题，而h0039自身为说明类标题，其子结构必从'一'始；且h0040/h0041/h0042三级标题命名模板完全一致（'一、...'/'二、...'/'三、...'），证据充分，可结构化补入'一'作为首项",
+      "validation_error": "纯结构标题插入证据不足"
+    },
+    {
+      "parent_heading_id": "h0109",
+      "level": 3,
+      "previous_heading_id": null,
+      "next_heading_id": "h0110",
+      "missing_title": "一",
+      "repair": {
+        "mode": "insert_structural",
+        "anchor_heading_id": "h0109"
+      },
+      "confidence": 0.94,
+      "reason": "h0109（走出一条和衷共济、 合作共赢的新路子\\*）下仅有一个三级标题h0110（二），无'一'；但'二'的存在必然要求'一'为其前置兄弟，且h0109为二级标题，其下设并列三级子项符合常规体例；h0110 line=2251，h0109 end_line=2250，紧邻，支持结构起始缺失；编号证据充分，可安全插入",
+      "validation_error": "纯结构标题插入证据不足"
+    },
+    {
+      "parent_heading_id": "h0153",
+      "level": 3,
+      "previous_heading_id": null,
+      "next_heading_id": "h0154",
+      "missing_title": "一",
+      "repair": {
+        "mode": "insert_structural",
+        "anchor_heading_id": "h0153"
+      },
+      "confidence": 0.93,
+      "reason": "h0153（厉行勤俭节约，反对铺张浪费\\*）下仅有h0154（二），编号为'二'，且h0154 line=3395，h0153 end_line=3394，位置紧邻；'二'的存在逻辑上要求'一'为同级首项；父节为二级标题，子项为三级编号序列，体例一致；无候选但结构证据强",
+      "validation_error": "纯结构标题插入证据不足"
+    }
+  ],
+  "low_confidence_gaps": [],
+  "summary": "共发现9处标题序列缺口：5处一级标题缺失（四、七、十、十六、十七），均由可靠候选补全；4处深层标题起始缺失（h0039/h0095/h0109/h0153下的'一'），均满足insert_structural条件。所有修复均严格遵循编号连续性、位置邻近性及父子结构约束。",
+  "min_confidence": 0.85
+}
