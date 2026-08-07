@@ -225,6 +225,7 @@ def _apply_interactive_actions(
     drop: set[int] = set()
     exact_only = os.getenv("EXACT_REPEAT_ONLY", "").strip().lower() in {"1", "true", "yes"}
     factbase_mode = os.getenv("FACTBASE_MODE", "").strip().lower() in {"1", "true", "yes"}
+    no_action_validation = os.getenv("NO_ACTION_VALIDATION", "").strip().lower() in {"1", "true", "yes"}
     proofs: list[dict[str, Any]] = []
     rejected_actions: list[dict[str, Any]] = []
 
@@ -239,14 +240,18 @@ def _apply_interactive_actions(
                 raise RuntimeError("非法格式")
             start, end = _action_line_number(item[0]), _action_line_number(item[1])
             if not (1 <= start <= end <= total):
-                raise RuntimeError(f"越界，核心区共 {total} 行")
-            if exact_only:
+                if not no_action_validation:
+                    raise RuntimeError(f"越界，核心区共 {total} 行")
+                start, end = max(1, start), min(total, end)
+                if start > end:
+                    raise RuntimeError(f"越界且与核心区无交集（核心区共 {total} 行）")
+            if exact_only and not no_action_validation:
                 if document_lines is None or core_start is None:
                     raise RuntimeError("严格重复模式缺少原始文档校验上下文")
                 proofs.append(_prove_later_exact_repeat(
                     document_lines, core_start + start - 1, core_start + end
                 ))
-            elif factbase_mode and document_lines is not None and core_start is not None:
+            elif factbase_mode and not no_action_validation and document_lines is not None and core_start is not None:
                 spans = _paragraph_spans(document_lines)
                 global_start, global_end = core_start + start - 1, core_start + end
                 for paragraph_start, paragraph_end, _text in spans:
@@ -264,13 +269,13 @@ def _apply_interactive_actions(
             line_no = _action_line_number(item)
             if not 1 <= line_no <= total:
                 raise RuntimeError(f"越界，核心区共 {total} 行")
-            if exact_only:
+            if exact_only and not no_action_validation:
                 if document_lines is None or core_start is None:
                     raise RuntimeError("严格重复模式缺少原始文档校验上下文")
                 proofs.append(_prove_later_exact_repeat(
                     document_lines, core_start + line_no - 1, core_start + line_no
                 ))
-            elif factbase_mode:
+            elif factbase_mode and not no_action_validation:
                 raise RuntimeError("事实库模式请使用 drop_ranges 删除完整段落")
             drop.add(line_no)
         except (TypeError, ValueError, RuntimeError) as exc:
@@ -292,7 +297,7 @@ def _apply_interactive_actions(
                 raise RuntimeError("不能把图片行变成标题")
             if level and in_fence(line_no):
                 raise RuntimeError("不能修改代码围栏内文本")
-            if level and not _heading_target_has_format_evidence(lines, line_no):
+            if level and not no_action_validation and not _heading_target_has_format_evidence(lines, line_no):
                 raise RuntimeError("缺少标题格式证据，拒绝把普通正文升级为标题")
             headings[line_no] = level
         except (TypeError, ValueError, RuntimeError) as exc:
@@ -302,7 +307,7 @@ def _apply_interactive_actions(
     joined_tail_lines: set[int] = set()
     for item in actions.get("join_heading_ranges", []):
         try:
-            if exact_only:
+            if exact_only and not no_action_validation:
                 raise RuntimeError("严格重复模式禁止拼接标题")
             if not isinstance(item, dict) or not {"start", "end", "level"} <= item.keys():
                 raise RuntimeError("非法格式")
@@ -877,8 +882,15 @@ def main() -> None:
     parser.add_argument("--window-chars", type=int, default=10000)
     parser.add_argument("--plan", type=Path, help="只执行显式 plan.json，不调用 LLM")
     parser.add_argument("--plan-out", type=Path, help="把本次窗口动作固化为可重放 plan.json")
+    parser.add_argument(
+        "--no-action-validation",
+        action="store_true",
+        help="跳过 LLM 动作的语义安全校验；仍保留行号边界和 Markdown 基本结构保护",
+    )
     args = parser.parse_args()
     load_dotenv(Path.cwd() / ".env")
+    if args.no_action_validation:
+        os.environ["NO_ACTION_VALIDATION"] = "1"
     if args.window_chars < 1000:
         parser.error("--window-chars 不能小于 1000")
     if args.batch:
