@@ -159,6 +159,23 @@ def _action_line_number(value: Any) -> int:
     return int(match.group(1))
 
 
+def _drop_range_references(item: Any) -> tuple[Any, Any]:
+    """读取删除区间，同时容错常见的对象写法。
+
+    协议首选 ``["C0001", "C0003"]``。部分模型会受其他动作影响，
+    输出 ``{"start": "C0001", "end": "C0003"}``；两者语义相同，
+    因此在进入后续安全校验前统一为一对行号引用。
+    """
+    if isinstance(item, list) and len(item) == 2:
+        return item[0], item[1]
+    if isinstance(item, dict) and {"start", "end"} <= item.keys():
+        return item["start"], item["end"]
+    raise RuntimeError(
+        '非法格式；drop_ranges 必须是 ["C0001", "C0003"] '
+        '或 {"start":"C0001","end":"C0003"}'
+    )
+
+
 def _heading_target_has_format_evidence(lines: list[str], line_no: int) -> bool:
     """Validate only an LLM-targeted line; never pre-scan the document for titles."""
     text = lines[line_no - 1]
@@ -283,9 +300,8 @@ def _apply_interactive_actions(
 
     for item in actions.get("drop_ranges", []):
         try:
-            if not isinstance(item, list) or len(item) != 2:
-                raise RuntimeError("非法格式")
-            start, end = _action_line_number(item[0]), _action_line_number(item[1])
+            start_ref, end_ref = _drop_range_references(item)
+            start, end = _action_line_number(start_ref), _action_line_number(end_ref)
             if not (1 <= start <= end <= total):
                 if not no_action_validation:
                     raise RuntimeError(f"越界，核心区共 {total} 行")
@@ -802,6 +818,12 @@ def call_llm(
         "禁止自行计算、递增或创造 C 标签。"
 
         + deletion_rule +
+
+        "drop_ranges 的唯一推荐格式为 "
+        '{"drop_ranges":[["C0001","C0003"]]}；'
+        "每个删除区间必须是含两个 C 标签的数组，单行删除也必须写成 "
+        '["C0001","C0001"]。'
+        '禁止输出 {"start":"C0001","end":"C0003"} 这种对象形式。'
 
         "set_headings 格式为 "
         '{"line":"C0001","level":1到6}；'
