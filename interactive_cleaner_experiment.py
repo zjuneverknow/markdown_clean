@@ -56,6 +56,7 @@ OCR_SYSTEM_NOISE_RE = re.compile(
     r"\b[^\n]{0,1000}\s*$",
     re.I,
 )
+CONTROL_CHARACTER_RE = re.compile(r"[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]")
 PURE_COURTESY_RE = re.compile(
     r"^\s*(?:"
     r"(?:尊敬的|敬爱的|亲爱的)[^。！？!?：:]{1,120}[，,!！：:]?|"
@@ -67,6 +68,8 @@ PURE_COURTESY_RE = re.compile(
 FENCE_RE = re.compile(r"^[ \t]{0,3}(`{3,}|~{3,})(?:[^\n]*)$")
 CORE_LINE_LABEL_RE = re.compile(r"^C\d{4,}\t")
 CORE_LINE_REFERENCE_RE = re.compile(r"^C0*(\d+)$", re.I)
+HEADING_REFERENCE_RE = re.compile(r"^H0*(\d+)$", re.I)
+PENDING_HEADING_LIMIT = 30
 
 
 def _fenced_line_mask(lines: list[str]) -> list[bool]:
@@ -91,6 +94,44 @@ def _fenced_line_mask(lines: list[str]) -> list[bool]:
     return mask
 
 
+def preprocess_markdown(markdown: str) -> tuple[str, dict[str, int]]:
+    """运行在 LLM 前的确定性卫生清洗；不推断标题，也不修改正文文本。"""
+    raw_lines = markdown.replace("\r\n", "\n").replace("\r", "\n").splitlines()
+    fenced = _fenced_line_mask(raw_lines)
+    output: list[str] = []
+    report = {
+        "control_characters_removed": 0,
+        "image_lines_removed": 0,
+        "source_marker_lines_removed": 0,
+        "ocr_system_noise_lines_removed": 0,
+        "extra_blank_lines_removed": 0,
+    }
+    blank_run = 0
+    for index, raw_line in enumerate(raw_lines):
+        line, removed = CONTROL_CHARACTER_RE.subn("", raw_line)
+        report["control_characters_removed"] += removed
+        if not fenced[index]:
+            if PURE_IMAGE_RE.fullmatch(line):
+                report["image_lines_removed"] += 1
+                continue
+            if PURE_SOURCE_RE.fullmatch(line):
+                report["source_marker_lines_removed"] += 1
+                continue
+            if OCR_SYSTEM_NOISE_RE.fullmatch(line):
+                report["ocr_system_noise_lines_removed"] += 1
+                continue
+        if not fenced[index] and not line.strip():
+            blank_run += 1
+            if blank_run > 2:
+                report["extra_blank_lines_removed"] += 1
+                continue
+        else:
+            blank_run = 0
+        output.append(line)
+    # 不用 strip()，避免破坏缩进代码块或 Markdown 的行尾空格语义。
+    return ("\n".join(output).rstrip("\n") + "\n" if output else ""), report
+
+
 def _interactive_core(prompt: str) -> str:
     marker = "【核心区】\n"
     tail = "\n\n【后置只读上下文】"
@@ -98,18 +139,24 @@ def _interactive_core(prompt: str) -> str:
         raise RuntimeError("交互模式无法从 prompt 定位核心区")
     core = prompt.split(marker, 1)[1].split(tail, 1)[0]
     # Prompt 中的 C0001 标签只供模型精确引用；执行器必须继续拿到原始 Markdown。
-    return "\n".join(CORE_LINE_LABEL_RE.sub("", line) for line in core.splitlines())
+    output: list[str] = []
+    for line in core.splitlines():
+        value = CORE_LINE_LABEL_RE.sub("", line)
+        # <BLANK> 只用于让 LLM 明确看见空行，执行动作前必须还原为空字符串。
+        if value.strip() == "<BLANK>":
+            value = ""
+        output.append(value)
+    return "\n".join(output)
 
 
 def _action_line_number(value: Any) -> int:
-    """Accept either the requested integer or the visible prompt label C0001."""
-    if isinstance(value, bool):
-        raise ValueError("布尔值不是行号")
-    if isinstance(value, str):
-        match = CORE_LINE_REFERENCE_RE.fullmatch(value.strip())
-        if match:
-            return int(match.group(1))
-    return int(value)
+    """只接受核心区可见的 C 行号，避免把全文参考位置当成动作目标。"""
+    if not isinstance(value, str):
+        raise ValueError("行号必须使用核心区 C 标签，例如 C0001；不接受裸数字")
+    match = CORE_LINE_REFERENCE_RE.fullmatch(value.strip())
+    if not match:
+        raise ValueError("行号必须使用核心区 C 标签，例如 C0001")
+    return int(match.group(1))
 
 
 def _heading_target_has_format_evidence(lines: list[str], line_no: int) -> bool:
@@ -212,7 +259,7 @@ def _apply_interactive_actions(
     call_id: int | None = None,
 ) -> str:
     """只允许删除原行、改变标题层级或拼接被 OCR 拆行的标题；正文字符不可改写。"""
-    lines = core.splitlines()
+    lines = core.split("\n")
     total = len(lines)
     global_fenced = _fenced_line_mask(document_lines) if document_lines is not None else []
 
@@ -320,8 +367,8 @@ def _apply_interactive_actions(
                 raise RuntimeError("越界")
             if end - start + 1 > 4:
                 raise RuntimeError("最多拼接 4 个连续原始行")
-            if any(not lines[line_no - 1].strip() for line_no in range(start, end + 1)):
-                raise RuntimeError("不能跨空行")
+            if not lines[start - 1].strip() or not lines[end - 1].strip():
+                raise RuntimeError("join 的 start/end 必须是非空文本")
             if any(in_fence(line_no) for line_no in range(start, end + 1)):
                 raise RuntimeError("不能拼接代码围栏内文本")
             if any(line_no in drop for line_no in range(start, end + 1)):
@@ -394,7 +441,8 @@ def _apply_interactive_actions(
             end, level = joins[line_no]
             fragments: list[str] = []
             for source_line in lines[line_no - 1:end]:
-                fragments.append(_heading_content_for_relevel(source_line))
+                if source_line.strip():
+                    fragments.append(_heading_content_for_relevel(source_line))
             output.append("#" * level + " " + "".join(fragments))
             continue
         level = headings.get(line_no)
@@ -443,6 +491,182 @@ def setting(primary: str, fallback: str | None = None, default: str | None = Non
     return os.getenv(primary) or (os.getenv(fallback) if fallback else None) or default
 
 
+def env_flag(name: str) -> bool:
+    return os.getenv(name, "").strip().lower() in {"1", "true", "yes"}
+
+
+def _request_heading_actions(catalog: str) -> dict[str, Any]:
+    """让模型只复核全文标题层级；不提供正文，也不允许任何其他编辑。"""
+    base_url = setting(
+        "LLM_BASE_URL", "POLITICAL_LLM_BASE_URL",
+        "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    ).rstrip("/")
+    api_key = setting("LLM_API_KEY", "POLITICAL_LLM_API_KEY") or os.getenv("DASHSCOPE_API_KEY")
+    if not api_key:
+        raise RuntimeError("请设置 LLM_API_KEY、POLITICAL_LLM_API_KEY 或 DASHSCOPE_API_KEY。")
+    prompt = (
+        "你正在进行 Markdown 文档的第二遍全局标题层级复审。\n"
+        "下面是按原文顺序抽取的全文 Markdown 标题目录；每行包含 H 标签、当前 # 层级和标题文字。\n"
+        "当前 # 数量可能是第一遍清洗产生的错误结果，只能作为参考，不能当作正确答案。\n\n"
+
+        "【唯一任务】\n"
+        "只检查和修正现有标题的层级逻辑。唯一允许的动作是 set_levels，即调整标题前 # 的数量。\n"
+        "禁止删除标题、添加标题、改写标题文字、拼接标题、移动标题或处理任何正文。\n\n"
+
+        "【重点检查】\n"
+        "1. 顶层起点：全文标题体系应存在一级标题 #；不要让文档在没有父级的情况下直接从 ##、### 等层级开始。\n"
+        "2. 格式稳定：必须比较前后相邻标题和全文重复模式。同一种编号格式、命名形式、结构角色应尽量保持同一层级。\n"
+        "   例如连续的‘第一章/第二章’应同级，连续的‘一、/二、/三、’应同级，连续的‘（一）/（二）’应同级。\n"
+        "3. 章与节：章是节的父级，章与其内部的节不能同级；同一本书中的章通常彼此同级，节通常彼此同级。\n"
+        "4. 文章与内部小节：文章、报告、文件等完整篇目标题是其内部小节的父级，不能与文章内部的‘一、二、三’"
+        "或其他小节标题处于同一层级。\n"
+        "5. 父子关系优先：父标题必须高于其子标题；同一结构角色保持同级。判断时优先使用编号体系、标题措辞、"
+        "相邻关系和全文反复出现的稳定模式。\n"
+        "6. 不要机械套固定层级。常见教材可能是‘章 > 节 > 一、 > （一）’，文章型内容可能是"
+        "‘上级章节 > 文章标题 > 一、 > （一）’，但最终以当前文档自身反复出现的结构模式为准。\n"
+        "7. 只修复有明确依据的层级错误；已经合理的标题不要重复输出，不确定时保持当前层级。\n\n"
+
+        "【输出协议】\n"
+        "只返回一个 JSON object，不要 Markdown、代码围栏、解释或分析。\n"
+        "只能返回确实需要修改的标题，H 标签必须从目录中原样复制，禁止裸数字、禁止创造 H 标签。\n"
+        "格式：{\"set_levels\":[{\"heading\":\"H0001\",\"level\":1}]}\n"
+        "如果全部层级合理，返回：{\"set_levels\":[]}\n\n"
+
+        "【全文标题目录】\n" + catalog
+    )
+    payload = json.dumps({
+        "model": setting("LLM_MODEL", "POLITICAL_DEFAULT_MODEL", "qwen3.7-plus"),
+        "temperature": 0,
+        "messages": [
+            {
+                "role": "system",
+                "content": "你是 Markdown 全局标题层级复核器。你只能调整现有标题的 # 层级，只返回 set_levels JSON。",
+            },
+            {"role": "user", "content": prompt},
+        ],
+    }, ensure_ascii=False).encode("utf-8")
+    request = urllib.request.Request(
+        f"{base_url}/chat/completions",
+        data=payload,
+        headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
+    )
+    timeout = int(setting("LLM_TIMEOUT", "POLITICAL_LLM_TIMEOUT", "120"))
+    retries = int(setting("LLM_MAX_RETRIES", "POLITICAL_LLM_MAX_RETRIES", "2"))
+    last_error: Exception | None = None
+    for attempt in range(retries + 1):
+        try:
+            with urllib.request.urlopen(request, timeout=timeout) as response:
+                result = json.loads(response.read())
+            content = result["choices"][0]["message"]["content"].strip()
+            fenced = re.fullmatch(r"```(?:json)?\s*(.*?)\s*```", content, re.S | re.I)
+            if fenced:
+                content = fenced.group(1).strip()
+            actions = json.loads(content)
+            if not isinstance(actions, dict):
+                raise ValueError("标题后处理动作必须是 JSON object")
+            return actions
+        except urllib.error.HTTPError as exc:
+            detail = exc.read().decode("utf-8", errors="replace").strip()
+            if exc.code not in {408, 429, 500, 502, 503, 504}:
+                raise RuntimeError(f"标题后处理调用失败：HTTP {exc.code}；{detail[:500]}") from exc
+            last_error = exc
+        except (urllib.error.URLError, TimeoutError, KeyError, ValueError, json.JSONDecodeError) as exc:
+            last_error = exc
+        if attempt < retries:
+            time.sleep(min(2 ** attempt, 4))
+    raise RuntimeError(f"标题后处理调用失败：{last_error}") from last_error
+
+
+def postprocess_headings(markdown: str) -> tuple[str, dict[str, Any]]:
+    """第二遍全局复审：只调整现有标题的 # 数量，绝不修改标题文字或正文。"""
+    lines = markdown.splitlines()
+    entries: list[dict[str, Any]] = []
+    for line_index, text in enumerate(lines):
+        info = heading_info(text)
+        if info:
+            level, title = info
+            entries.append({
+                "id": f"H{len(entries) + 1:04d}",
+                "line_index": line_index,
+                "level": level,
+                "title": title,
+            })
+    if not entries:
+        return markdown, {
+            "enabled": True,
+            "status": "skipped_no_headings",
+            "headings": 0,
+            "accepted_actions": [],
+            "rejected_actions": [],
+        }
+
+    catalog = "\n".join(
+        f"{entry['id']}\t{'#' * entry['level']} {entry['title']}" for entry in entries
+    )
+    tqdm.write(f"标题后处理：正在复核 {len(entries)} 个标题")
+    try:
+        actions = _request_heading_actions(catalog)
+    except RuntimeError as exc:
+        tqdm.write(f"[跳过标题后处理] {exc}")
+        return markdown, {
+            "enabled": True,
+            "status": "skipped_error",
+            "headings": len(entries),
+            "error": str(exc),
+            "accepted_actions": [],
+            "rejected_actions": [],
+        }
+
+    by_id = {entry["id"]: entry for entry in entries}
+    new_levels: dict[str, int] = {}
+    accepted: list[dict[str, Any]] = []
+    rejected: list[dict[str, Any]] = []
+
+    def reject(kind: str, item: Any, reason: str) -> None:
+        rejected.append({"type": kind, "item": item, "reason": reason})
+        tqdm.write(f"[跳过标题后处理动作] {kind} {item!r}：{reason}")
+
+    unknown_fields = sorted(set(actions) - {"set_levels"})
+    for field in unknown_fields:
+        reject("unknown_field", field, "标题复审只允许 set_levels")
+    set_level_items = actions.get("set_levels", [])
+    if not isinstance(set_level_items, list):
+        reject("set_levels", set_level_items, "必须是数组")
+        set_level_items = []
+
+    for item in set_level_items:
+        try:
+            if not isinstance(item, dict) or set(item) != {"heading", "level"}:
+                raise ValueError("格式必须只有 heading 和 level")
+            heading_id = item["heading"]
+            if not isinstance(heading_id, str) or not HEADING_REFERENCE_RE.fullmatch(heading_id):
+                raise ValueError("heading 必须使用 H 标签，例如 H0001")
+            if heading_id not in by_id:
+                raise ValueError("H 标签不存在")
+            level = int(item["level"])
+            if not 1 <= level <= 6:
+                raise ValueError("level 必须为 1 到 6")
+            if level == by_id[heading_id]["level"]:
+                continue
+            new_levels[heading_id] = level
+            accepted.append({"type": "set_level", "heading": heading_id, "level": level})
+        except (TypeError, ValueError) as exc:
+            reject("set_levels", item, str(exc))
+    for heading_id, entry in by_id.items():
+        line_index = entry["line_index"]
+        if heading_id in new_levels:
+            lines[line_index] = "#" * new_levels[heading_id] + " " + entry["title"]
+
+    output = "\n".join(lines).rstrip("\n") + "\n"
+    return output, {
+        "enabled": True,
+        "status": "completed",
+        "headings": len(entries),
+        "accepted_actions": accepted,
+        "rejected_actions": rejected,
+    }
+
+
 def call_llm(
     system: str,
     prompt: str,
@@ -481,7 +705,7 @@ def call_llm(
         _INTERACTIVE_CALL_NO += 1
         call_id = _INTERACTIVE_CALL_NO
         core = _interactive_core(prompt)
-        core_lines = core.splitlines()
+        core_lines = core.split("\n")
         end_marker = f"<<<LLM_RESPONSE_END:{call_id}>>>"
         compact_debug = os.getenv("LLM_INTERACTIVE_COMPACT", "").strip().lower() in {
             "1", "true", "yes"
@@ -549,21 +773,56 @@ def call_llm(
     api_key = setting("LLM_API_KEY", "POLITICAL_LLM_API_KEY") or os.getenv("DASHSCOPE_API_KEY")
     if not api_key:
         raise RuntimeError("请设置 LLM_API_KEY、POLITICAL_LLM_API_KEY 或 DASHSCOPE_API_KEY。")
+    factbase_mode = env_flag("FACTBASE_MODE")
+    if factbase_mode:
+        empty_schema = (
+            '{"drop_ranges":[],'
+            '"set_headings":[],'
+            '"join_heading_ranges":[]}'
+        )
+        deletion_rule = (
+            "drop_ranges 仅删除明确噪声，并且必须覆盖完整 Markdown 段落；"
+            "段落指两个空行边界之间连续的全部非空行。禁止输出 drop_lines。"
+        )
+    else:
+        empty_schema = (
+            '{"drop_ranges":[],'
+            '"drop_lines":[],'
+            '"set_headings":[],'
+            '"join_heading_ranges":[]}'
+        )
+        deletion_rule = "非事实库模式可使用 drop_ranges 或 drop_lines。"
+
     action_prompt = prompt + (
-        "\n\n【强制输出协议】不要返回 Markdown 全文，只返回一个 JSON object，不要代码围栏。"
-        "字段只能是："
-        '"drop_ranges":[[起始行,结束行],...], '
-        '"drop_lines":[], '
-        '"set_headings":[{"line":行号,"level":0到6}], '
-        '"join_heading_ranges":[{"start":起始行,"end":结束行,"level":1到6}]。'
-        "【核心区】的每一行均以 C0001、C0002 等标签开头；所有行号必须严格使用该标签中的数字，"
-        "不得自行按视觉行数估算，也不得引用前后只读上下文。事实库模式只用 drop_ranges 删除完整段落；"
-        "join_heading_ranges 只能拼接 OCR 拆开的连续标题行，绝不能改字。没有动作时返回空数组字段。"
+        "\n\n【动作输出规则】"
+        "默认不执行任何动作。绝大多数正常正文应该保持原样；"
+        "不要为了使用某个字段而寻找修改。"
+
+        "只能复制【核心区】实际存在的 C 标签；"
+        "禁止自行计算、递增或创造 C 标签。"
+
+        + deletion_rule +
+
+        "set_headings 格式为 "
+        '{"line":"C0001","level":1到6}；'
+        "仅用于单独一行已经是完整标题、只需调整标题层级的情况。"
+        "空行不得作为 set_headings 目标。"
+
+        "join_heading_ranges 格式为 "
+        '{"start":"C0001","end":"C0003","level":1到6}；'
+        "仅用于同一个标题被 OCR 拆成多个文本行。"
+        "start 和 end 必须非空；中间允许空行；最多覆盖4行。"
+        "如果只是调整单行标题层级，必须使用 set_headings。"
+
+        "不确定时不执行动作。"
+
+        "\n\n【输出格式】只返回 JSON object，不要 Markdown 或解释："
+        + empty_schema
     )
     payload = json.dumps({
-        "model": setting("LLM_MODEL", "POLITICAL_DEFAULT_MODEL", "qwen-plus"),
+        "model": setting("LLM_MODEL", "POLITICAL_DEFAULT_MODEL", "qwen3.7-plus"),
         "temperature": 0,
-        "messages": [{"role": "system", "content": "你是事实库 Markdown 清理器，只返回 JSON 动作。"},
+        "messages": [{"role": "system", "content": "你是 Markdown 清理和排版器，只返回 JSON 动作。"},
                      {"role": "user", "content": action_prompt}],
     }, ensure_ascii=False).encode("utf-8")
     request = urllib.request.Request(
@@ -620,6 +879,50 @@ def call_llm(
         })
         return value
     raise RuntimeError(f"LLM 调用失败：{last_error}") from last_error
+
+
+def call_straight_llm(system: str, prompt: str) -> str:
+    """激进模式：模型直接返回清理后的核心 Markdown，不解析动作。"""
+    if env_flag("LLM_INTERACTIVE"):
+        raise RuntimeError("--straight 暂不支持 LLM_INTERACTIVE，请使用正常 API 调用")
+    base_url = setting(
+        "LLM_BASE_URL", "POLITICAL_LLM_BASE_URL",
+        "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    ).rstrip("/")
+    api_key = setting("LLM_API_KEY", "POLITICAL_LLM_API_KEY") or os.getenv("DASHSCOPE_API_KEY")
+    if not api_key:
+        raise RuntimeError("请设置 LLM_API_KEY、POLITICAL_LLM_API_KEY 或 DASHSCOPE_API_KEY。")
+    payload = json.dumps({
+        "model": setting("LLM_MODEL", "POLITICAL_DEFAULT_MODEL", "qwen3.7-plus"),
+        "temperature": 0,
+        "messages": [
+            {"role": "system", "content": system},
+            {"role": "user", "content": prompt},
+        ],
+    }, ensure_ascii=False).encode("utf-8")
+    request = urllib.request.Request(
+        f"{base_url}/chat/completions",
+        data=payload,
+        headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
+    )
+    timeout = int(setting("LLM_TIMEOUT", "POLITICAL_LLM_TIMEOUT", "120"))
+    retries = int(setting("LLM_MAX_RETRIES", "POLITICAL_LLM_MAX_RETRIES", "2"))
+    last_error: Exception | None = None
+    for attempt in range(retries + 1):
+        try:
+            with urllib.request.urlopen(request, timeout=timeout) as response:
+                payload = json.loads(response.read())
+            return payload["choices"][0]["message"]["content"].strip()
+        except urllib.error.HTTPError as exc:
+            detail = exc.read().decode("utf-8", errors="replace").strip()
+            if exc.code not in {408, 429, 500, 502, 503, 504}:
+                raise RuntimeError(f"Straight LLM 调用失败：HTTP {exc.code}；{detail[:500]}") from exc
+            last_error = exc
+        except (urllib.error.URLError, TimeoutError, KeyError, ValueError, json.JSONDecodeError) as exc:
+            last_error = exc
+        if attempt < retries:
+            time.sleep(min(2 ** attempt, 4))
+    raise RuntimeError(f"Straight LLM 调用失败：{last_error}") from last_error
 
 
 def heading_info(text: str) -> tuple[int, str] | None:
@@ -697,12 +1000,25 @@ def make_windows(lines: list[Line], target_chars: int = 10000) -> list[Window]:
     return [Window(number, left, right) for number, (left, right) in enumerate(_pack(lines, blocks, target_chars), 1)]
 
 
-def recent_headings(cleaned_parts: list[str], limit: int = 20) -> str:
+def pending_headings(
+    lines: list[Line], window: Window, limit: int = PENDING_HEADING_LIMIT
+) -> str:
+    """提供少量后续标题文本；不暴露全文行号，防止与核心区 C 标签冲突。"""
+    headings = [
+        line.text
+        for line in lines[window.start:]
+        if heading_info(line.text)
+    ][:limit]
+    return "\n".join(headings) or "（没有可参考的待处理标题）"
+
+
+def confirmed_headings(cleaned_parts: list[str], limit: int = 20) -> str:
+    """前序窗口已应用后的标题，仅作为当前窗口的跨窗口结构锚点。"""
     headings = [line for part in cleaned_parts for line in part.splitlines() if heading_info(line)]
-    return "\n".join(headings[-limit:]) or "（无）"
+    return "\n".join(headings[-limit:]) or "（无：这是首个窗口或前序窗口没有确认标题）"
 
 
-def _nearby_context(lines: list[Line], start: int, end: int, chars: int = 1200) -> tuple[str, str]:
+def _nearby_context(lines: list[Line], start: int, end: int, chars: int) -> tuple[str, str]:
     before: list[str] = []
     used = 0
     for line in reversed(lines[:start]):
@@ -720,11 +1036,25 @@ def _nearby_context(lines: list[Line], start: int, end: int, chars: int = 1200) 
     return "\n".join(reversed(before)), "\n".join(after)
 
 
-def cleaning_prompt(lines: list[Line], window: Window, cleaned_parts: list[str]) -> str:
-    before, after = _nearby_context(lines, window.start, window.end)
+def context_budget(window_chars: int) -> int:
+    """前后只读上下文各取窗口长度的 1/10，且不少于 1200 字。"""
+    return max(1200, window_chars // 10)
+
+
+def cleaning_prompt(
+    lines: list[Line],
+    window: Window,
+    cleaned_parts: list[str],
+    *,
+    context_chars: int | None = None,
+) -> str:
+    # 独立调用时按实际窗口长度计算；主流程显式传入配置窗口长度的 1/10。
+    if context_chars is None:
+        context_chars = context_budget(_size(lines, window.start, window.end))
+    before, after = _nearby_context(lines, window.start, window.end, chars=context_chars)
     # 给模型稳定、可见的本地行号，避免它因空行或只读上下文产生 off-by-one。
     core = "\n".join(
-        f"C{line_no:04d}\t{line.text}"
+        f"C{line_no:04d}\t{line.text if line.text.strip() else '<BLANK>'}"
         for line_no, line in enumerate(lines[window.start:window.end], 1)
     )
     if os.getenv("EXACT_REPEAT_ONLY", "").strip().lower() in {"1", "true", "yes"}:
@@ -743,9 +1073,10 @@ def cleaning_prompt(lines: list[Line], window: Window, cleaned_parts: list[str])
             "   讲话中的明确政策判断、主张和行动要求也有事实价值，应保留。\n"
             "3. DROP：目录/索引/出版信息/OCR碎片/纯导航\n"
             "   空泛过渡而缺乏可抽取事实的内容。宁可保留边界项，不要为了变短而删。\n"
-            "4. 删除必须按完整段落区间进行；不要从有事实的段落里摘句删除。\n"
+            "4. 删除必须按完整段落区间进行；只能输出 drop_ranges，绝不能输出 drop_lines。"
+            "不要从有事实的段落里摘句删除。\n"
             "5. 标题只做结构修复。教材通常 #=章、##=节、###=一/二/三、####=（一）/（二）；"
-            "文章/文件按上下文判断。即使原行没有 #，明确编号标题也可 set_headings；日期、署名、称呼不是标题。\n"
+            "文章/文件按上下文判断。即使原行没有 #，明确编号标题也可 set_headings；日期、署名、称呼不是标题往往不是标题，也要根据实际判断。\n"
             "6. 后出现的大段逐字重复可删除；独有的事实段落必须保留。\n\n"
         )
     else:
@@ -760,12 +1091,58 @@ def cleaning_prompt(lines: list[Line], window: Window, cleaned_parts: list[str])
     return (
         "清理当前 Markdown 核心区，为后续文本分块准备干净数据。\n"
         + rules +
-        "只对【核心区】做判断。前后上下文及已确认标题仅供判断，绝对不能作为待处理正文；"
-        "调用层会把判断限制为结构化动作，正文没有任何改写通道。\n\n"
-        "【已确认标题】\n" + recent_headings(cleaned_parts) + "\n\n"
+        "只处理【核心区】。其他内容只用于理解结构，不得对其输出动作。\n\n"
+        "【已确认标题】\n" + confirmed_headings(cleaned_parts) + "\n\n"
+        f"【待处理标题（最多 {PENDING_HEADING_LIMIT} 条）】\n"
+        + pending_headings(lines, window) + "\n\n"
+        "待处理标题仅用于理解整篇文档的标题层级。"
+        "不要因为标题出现在该列表中就修改它；"
+        "只有核心区存在明确结构错误时才输出标题动作。"
+        "动作只能引用【核心区】的 C 标签；不确定时保持原样。\n\n"
         "【前置只读上下文】\n" + before + "\n\n"
         "【核心区】\n" + core + "\n\n"
         "【后置只读上下文】\n" + after
+    )
+
+
+def markdown_code_block(content: str) -> str:
+    """用不与嵌入 Markdown 冲突的反引号围栏包裹提示词中的原文。"""
+    longest = max((len(match.group(0)) for match in re.finditer(r"`+", content)), default=0)
+    fence = "`" * max(3, longest + 1)
+    return f"{fence}markdown\n{content}\n{fence}"
+
+
+def straight_cleaning_prompt(
+    lines: list[Line],
+    window: Window,
+    cleaned_parts: list[str],
+    *,
+    context_chars: int,
+) -> str:
+    """不标行号的直接清洗提示词；模型只返回当前核心区的 Markdown。"""
+    before, after = _nearby_context(lines, window.start, window.end, chars=context_chars)
+    core = "\n".join(line.text for line in lines[window.start:window.end])
+    if env_flag("FACTBASE_MODE"):
+        scope_rule = "保留可抽取的事实性主体内容；删除明确的目录、索引、出版信息、图片链接、OCR 碎片和纯导航。"
+    else:
+        scope_rule = "删除明确的 OCR 与出版噪声，修复明显错误的 Markdown 标题结构。"
+    return (
+        "# Markdown 清理和排版\n\n"
+        "请根据标题层级逻辑与正文内容，清理并排版 `核心区`，"
+        "直接返回处理后的完整核心区 Markdown。\n\n"
+        "## 规则\n\n"
+        "- 不得解释、不得输出代码围栏、不得输出前后上下文。\n"
+        "- 正文不得改写、概括、补写或移动；不得把正文压缩成目录或提纲。\n"
+        "- 排版只包括：根据正文内容与编号关系调整现有标题层级、整理段落边界，"
+        "或拼接被 OCR 拆开的同一标题。\n"
+        f"- {scope_rule}\n"
+        "- 日期、署名、称呼、出处不是标题；不确定时保留原文。\n\n"
+        "## 已确认标题\n\n" + markdown_code_block(confirmed_headings(cleaned_parts)) + "\n\n"
+        f"## 待处理标题（最多 {PENDING_HEADING_LIMIT} 条）\n\n"
+        + markdown_code_block(pending_headings(lines, window)) + "\n\n"
+        "## 前置只读上下文\n\n" + markdown_code_block(before) + "\n\n"
+        "## 核心区\n\n" + markdown_code_block(core) + "\n\n"
+        "## 后置只读上下文\n\n" + markdown_code_block(after)
     )
 
 
@@ -781,12 +1158,23 @@ def normalize_model_markdown(text: str) -> str:
     return re.sub(r"\n{3,}", "\n\n", value).strip() + "\n"
 
 
-def clean_markdown(markdown: str, target_chars: int = 10000) -> tuple[str, dict[str, Any]]:
+def clean_markdown(
+    markdown: str,
+    target_chars: int = 10000,
+    *,
+    preprocess: bool = True,
+    heading_postprocess: bool = False,
+    straight: bool = False,
+) -> tuple[str, dict[str, Any]]:
     global _INTERACTIVE_EXACT_PROOFS, _INTERACTIVE_ACTION_AUDIT, _INTERACTIVE_AUTOMATIC_DROPS, _PLAN_CURSOR
     _INTERACTIVE_EXACT_PROOFS = []
     _INTERACTIVE_ACTION_AUDIT = []
     _INTERACTIVE_AUTOMATIC_DROPS = []
     _PLAN_CURSOR = 0
+    raw_input_characters = len(markdown)
+    preprocessing: dict[str, int] = {}
+    if preprocess:
+        markdown, preprocessing = preprocess_markdown(markdown)
     lines = make_lines(markdown)
     document_lines = [line.text for line in lines]
     windows = make_windows(lines, target_chars)
@@ -794,57 +1182,91 @@ def clean_markdown(markdown: str, target_chars: int = 10000) -> tuple[str, dict[
     with tqdm(windows, desc="LLM 清洗", unit="窗口", dynamic_ncols=True) as progress:
         for window in progress:
             progress.set_postfix_str(f"原始行 {window.start + 1}-{window.end}")
-            response = call_llm(
-                "你是 Markdown OCR 清理器，只返回 Markdown。",
-                cleaning_prompt(lines, window, cleaned_parts),
-                document_lines=document_lines,
-                core_start=window.start,
-            )
+            if straight:
+                response = call_straight_llm(
+                    "你是 Markdown 清理和排版器。根据标题层级逻辑与正文内容处理 Markdown；"
+                    "只返回处理后的 Markdown。",
+                    straight_cleaning_prompt(
+                        lines,
+                        window,
+                        cleaned_parts,
+                        context_chars=context_budget(target_chars),
+                    ),
+                )
+            else:
+                response = call_llm(
+                    "你是 Markdown 清理和排版器，只返回 Markdown。",
+                    cleaning_prompt(
+                        lines,
+                        window,
+                        cleaned_parts,
+                        context_chars=context_budget(target_chars),
+                    ),
+                    document_lines=document_lines,
+                    core_start=window.start,
+                )
             cleaned_parts.append(normalize_model_markdown(response))
     if _PLAN_ACTIONS is not None and _PLAN_CURSOR != len(_PLAN_ACTIONS):
         raise RuntimeError(
             f"plan.json 动作数与窗口数不一致：已使用 {_PLAN_CURSOR}，计划 {len(_PLAN_ACTIONS)}"
         )
     cleaned = re.sub(r"\n{3,}", "\n\n", "\n".join(cleaned_parts)).strip() + "\n"
-    # Independent body-character provenance check. Heading markers are ignored;
-    # every remaining nonblank line must still come from the raw file in order.
-    def body(line: str) -> str:
-        match = HEADING_RE.match(line)
-        return match.group(2) if match else line
-    source_stream = [body(line.text).strip() for line in lines if line.text.strip()]
-    output_stream = [body(line) for line in cleaned.splitlines() if line.strip()]
-    cursor = 0
-    for value in output_stream:
-        value = value.strip()
-        found_end: int | None = None
-        scan = cursor
-        while scan < len(source_stream) and found_end is None:
-            combined = ""
-            for end in range(scan, min(scan + 4, len(source_stream))):
-                combined += source_stream[end]
-                if combined == value:
-                    found_end = end + 1
-                    break
-                if len(combined) >= len(value):
-                    break
-            scan += 1
-        if found_end is None:
-            raise RuntimeError(
-                "正文来源校验失败：输出出现无法按原顺序追溯到原文件的非空行；"
-                f"cursor={cursor} value={value!r}"
-            )
-        cursor = found_end
+    heading_postprocess_report: dict[str, Any] = {"enabled": False, "status": "disabled"}
+    if heading_postprocess:
+        cleaned, heading_postprocess_report = postprocess_headings(cleaned)
+    body_provenance = "SKIPPED_STRAIGHT" if straight else "PASS"
+    if not straight:
+        # Independent body-character provenance check. Heading markers are ignored;
+        # every remaining nonblank line must still come from the raw file in order.
+        def body(line: str) -> str:
+            match = HEADING_RE.match(line)
+            return match.group(2) if match else line
+        source_stream = [body(line.text).strip() for line in lines if line.text.strip()]
+        output_stream = [body(line) for line in cleaned.splitlines() if line.strip()]
+        cursor = 0
+        for value in output_stream:
+            value = value.strip()
+            found_end: int | None = None
+            scan = cursor
+            while scan < len(source_stream) and found_end is None:
+                combined = ""
+                for end in range(scan, min(scan + 4, len(source_stream))):
+                    combined += source_stream[end]
+                    if combined == value:
+                        found_end = end + 1
+                        break
+                    if len(combined) >= len(value):
+                        break
+                scan += 1
+            if found_end is None:
+                raise RuntimeError(
+                    "正文来源校验失败：输出出现无法按原顺序追溯到原文件的非空行；"
+                    f"cursor={cursor} value={value!r}"
+                )
+            cursor = found_end
 
-    return cleaned, {"windows": len(windows), "input_characters": len(markdown),
+    return cleaned, {"windows": len(windows), "input_characters": raw_input_characters,
+                     "preprocessed_characters": len(markdown),
                      "output_characters": len(cleaned),
                      "delete_ratio": round(max(0.0, (len(markdown) - len(cleaned)) / len(markdown)), 6),
-                     "body_provenance": "PASS",
+                     "mode": "straight" if straight else "action_only",
+                     "body_provenance": body_provenance,
                      "exact_repeat_proofs": list(_INTERACTIVE_EXACT_PROOFS),
                      "automatic_drops": list(_INTERACTIVE_AUTOMATIC_DROPS),
-                     "interactive_actions": list(_INTERACTIVE_ACTION_AUDIT)}
+                     "interactive_actions": list(_INTERACTIVE_ACTION_AUDIT),
+                     "heading_postprocess": heading_postprocess_report,
+                     "preprocessing": preprocessing}
 
 
-def batch_clean_dataset(dataset_dir: Path, clean_dir: Path, target_chars: int = 10000) -> dict[str, Any]:
+def batch_clean_dataset(
+    dataset_dir: Path,
+    clean_dir: Path,
+    target_chars: int = 10000,
+    *,
+    preprocess: bool = True,
+    heading_postprocess: bool = False,
+    straight: bool = False,
+) -> dict[str, Any]:
     if not dataset_dir.is_dir():
         raise ValueError(f"批处理输入不是目录：{dataset_dir}")
     clean_dir.mkdir(parents=True, exist_ok=True)
@@ -859,7 +1281,13 @@ def batch_clean_dataset(dataset_dir: Path, clean_dir: Path, target_chars: int = 
             print(f"[跳过] {source.name}")
             continue
         try:
-            cleaned, _ = clean_markdown(source.read_text(encoding="utf-8-sig"), target_chars)
+            cleaned, _ = clean_markdown(
+                source.read_text(encoding="utf-8-sig"),
+                target_chars,
+                preprocess=preprocess,
+                heading_postprocess=heading_postprocess,
+                straight=straight,
+            )
             target.parent.mkdir(parents=True, exist_ok=True)
             target.write_text(cleaned, encoding="utf-8")
             report["processed"] += 1
@@ -883,18 +1311,54 @@ def main() -> None:
     parser.add_argument("--plan", type=Path, help="只执行显式 plan.json，不调用 LLM")
     parser.add_argument("--plan-out", type=Path, help="把本次窗口动作固化为可重放 plan.json")
     parser.add_argument(
+        "--factbase-mode",
+        action=argparse.BooleanOptionalAction,
+        default=None,
+        help="启用事实库清洗模式；可用 --no-factbase-mode 显式覆盖 .env 配置",
+    )
+    parser.add_argument(
         "--no-action-validation",
         action="store_true",
         help="跳过 LLM 动作的语义安全校验；仍保留行号边界和 Markdown 基本结构保护",
     )
+    parser.add_argument(
+        "--heading-postprocess",
+        action=argparse.BooleanOptionalAction,
+        default=None,
+        help="清洗后复核完整标题目录；可用 --no-heading-postprocess 覆盖 .env 配置",
+    )
+    parser.add_argument(
+        "--straight",
+        action="store_true",
+        help="激进模式：LLM 直接返回清理后的 Markdown，不使用行号动作或本地动作校验",
+    )
+    parser.add_argument("--no-preprocess", action="store_true", help="关闭 LLM 前的确定性格式预处理")
     args = parser.parse_args()
     load_dotenv(Path.cwd() / ".env")
+    if args.factbase_mode is not None:
+        os.environ["FACTBASE_MODE"] = "1" if args.factbase_mode else "0"
     if args.no_action_validation:
         os.environ["NO_ACTION_VALIDATION"] = "1"
+    heading_postprocess = (
+        args.heading_postprocess
+        if args.heading_postprocess is not None
+        else env_flag("HEADING_POSTPROCESS")
+    )
     if args.window_chars < 1000:
         parser.error("--window-chars 不能小于 1000")
+    if heading_postprocess and (args.plan or args.plan_out):
+        parser.error("--heading-postprocess 暂不与 --plan/--plan-out 组合使用")
+    if args.straight and (args.plan or args.plan_out or heading_postprocess):
+        parser.error("--straight 暂不与 --plan、--plan-out 或 --heading-postprocess 组合使用")
     if args.batch:
-        report = batch_clean_dataset(args.input, args.clean_dir, args.window_chars)
+        report = batch_clean_dataset(
+            args.input,
+            args.clean_dir,
+            args.window_chars,
+            preprocess=not args.no_preprocess,
+            heading_postprocess=heading_postprocess,
+            straight=args.straight,
+        )
         print(f"批处理完成：发现 {report['found']}，完成 {report['processed']}，跳过 {report['skipped']}，失败 {report['failed']}")
         return
     raw_bytes = args.input.read_bytes()
@@ -913,7 +1377,13 @@ def main() -> None:
         _PLAN_CHECKPOINT_SOURCE_SHA256 = raw_sha256
         _PLAN_CHECKPOINT_WINDOW_CHARS = args.window_chars
     out_dir = args.out_dir or Path("result") / args.input.stem
-    cleaned, report = clean_markdown(raw_bytes.decode("utf-8-sig"), args.window_chars)
+    cleaned, report = clean_markdown(
+        raw_bytes.decode("utf-8-sig"),
+        args.window_chars,
+        preprocess=not args.no_preprocess,
+        heading_postprocess=heading_postprocess,
+        straight=args.straight,
+    )
     out_dir.mkdir(parents=True, exist_ok=True)
     (out_dir / "clean.md").write_text(cleaned, encoding="utf-8")
     (out_dir / "audit.json").write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")

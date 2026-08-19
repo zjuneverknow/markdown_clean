@@ -1,8 +1,9 @@
 {
-  "windows": 8,
+  "windows": 15,
   "input_characters": 185780,
-  "output_characters": 156798,
-  "delete_ratio": 0.156002,
+  "preprocessed_characters": 171452,
+  "output_characters": 154553,
+  "delete_ratio": 0.098564,
   "body_provenance": "PASS",
   "exact_repeat_proofs": [],
   "automatic_drops": [],
@@ -18,1885 +19,148 @@
           ],
           [
             82,
-            117
+            82
           ],
           [
-            130,
-            132
+            84,
+            116
           ],
           [
-            232,
-            232
-          ],
-          [
-            262,
-            262
-          ],
-          [
-            270,
-            270
-          ],
-          [
-            326,
-            326
-          ],
-          [
-            336,
-            336
-          ],
-          [
-            346,
-            346
-          ],
-          [
-            372,
-            372
-          ],
-          [
-            386,
-            386
-          ],
-          [
-            396,
-            396
-          ],
-          [
-            420,
-            420
-          ],
-          [
-            450,
-            450
-          ],
-          [
-            458,
-            458
-          ],
-          [
-            472,
-            472
-          ],
-          [
-            482,
-            482
-          ],
-          [
-            484,
-            489
-          ],
-          [
-            496,
-            496
-          ],
-          [
-            498,
-            498
-          ],
-          [
-            514,
-            514
-          ],
-          [
-            518,
-            518
-          ],
-          [
-            534,
-            534
-          ],
-          [
-            536,
-            536
-          ],
-          [
-            542,
-            542
-          ]
-        ],
-        "drop_lines": [],
-        "set_headings": [
-          {
-            "line": 134,
-            "level": 1
-          },
-          {
-            "line": 135,
-            "level": 2
-          },
-          {
-            "line": 136,
-            "level": 2
-          },
-          {
-            "line": 137,
-            "level": 2
-          },
-          {
-            "line": 138,
-            "level": 1
-          },
-          {
-            "line": 139,
-            "level": 2
-          },
-          {
-            "line": 140,
-            "level": 3
-          },
-          {
-            "line": 141,
-            "level": 3
-          },
-          {
-            "line": 142,
-            "level": 3
-          },
-          {
-            "line": 143,
-            "level": 2
-          },
-          {
-            "line": 144,
-            "level": 3
-          },
-          {
-            "line": 145,
-            "level": 3
-          },
-          {
-            "line": 146,
-            "level": 3
-          },
-          {
-            "line": 147,
-            "level": 2
-          },
-          {
-            "line": 148,
-            "level": 3
-          },
-          {
-            "line": 149,
-            "level": 3
-          },
-          {
-            "line": 150,
-            "level": 3
-          },
-          {
-            "line": 151,
-            "level": 1
-          },
-          {
-            "line": 152,
-            "level": 2
-          },
-          {
-            "line": 156,
-            "level": 2
-          },
-          {
-            "line": 157,
-            "level": 3
-          },
-          {
-            "line": 158,
-            "level": 3
-          },
-          {
-            "line": 159,
-            "level": 3
-          },
-          {
-            "line": 161,
-            "level": 2
-          },
-          {
-            "line": 162,
-            "level": 3
-          },
-          {
-            "line": 163,
-            "level": 3
-          },
-          {
-            "line": 164,
-            "level": 3
-          },
-          {
-            "line": 166,
-            "level": 1
-          },
-          {
-            "line": 168,
-            "level": 2
-          },
-          {
-            "line": 169,
-            "level": 3
-          },
-          {
-            "line": 170,
-            "level": 3
-          },
-          {
-            "line": 171,
-            "level": 3
-          },
-          {
-            "line": 172,
-            "level": 3
-          },
-          {
-            "line": 174,
-            "level": 2
-          },
-          {
-            "line": 175,
-            "level": 3
-          },
-          {
-            "line": 176,
-            "level": 3
-          },
-          {
-            "line": 177,
-            "level": 3
-          },
-          {
-            "line": 178,
-            "level": 3
-          },
-          {
-            "line": 180,
-            "level": 2
-          },
-          {
-            "line": 181,
-            "level": 3
-          },
-          {
-            "line": 182,
-            "level": 3
-          },
-          {
-            "line": 183,
-            "level": 3
-          },
-          {
-            "line": 185,
-            "level": 1
-          },
-          {
-            "line": 187,
-            "level": 2
-          },
-          {
-            "line": 188,
-            "level": 3
-          },
-          {
-            "line": 190,
-            "level": 2
-          },
-          {
-            "line": 191,
-            "level": 3
-          },
-          {
-            "line": 192,
-            "level": 3
-          },
-          {
-            "line": 193,
-            "level": 3
-          },
-          {
-            "line": 194,
-            "level": 2
-          },
-          {
-            "line": 195,
-            "level": 3
-          },
-          {
-            "line": 196,
-            "level": 3
-          },
-          {
-            "line": 197,
-            "level": 1
-          },
-          {
-            "line": 198,
-            "level": 2
-          },
-          {
-            "line": 199,
-            "level": 3
-          },
-          {
-            "line": 200,
-            "level": 3
-          },
-          {
-            "line": 201,
-            "level": 3
-          },
-          {
-            "line": 202,
-            "level": 2
-          },
-          {
-            "line": 203,
-            "level": 3
-          },
-          {
-            "line": 204,
-            "level": 3
-          },
-          {
-            "line": 205,
-            "level": 3
-          },
-          {
-            "line": 206,
-            "level": 2
-          },
-          {
-            "line": 207,
-            "level": 3
-          },
-          {
-            "line": 208,
-            "level": 3
-          },
-          {
-            "line": 209,
-            "level": 3
-          },
-          {
-            "line": 210,
-            "level": 3
-          },
-          {
-            "line": 211,
-            "level": 1
-          },
-          {
-            "line": 212,
-            "level": 2
-          },
-          {
-            "line": 213,
-            "level": 3
-          },
-          {
-            "line": 214,
-            "level": 3
-          },
-          {
-            "line": 215,
-            "level": 3
-          },
-          {
-            "line": 217,
-            "level": 2
-          },
-          {
-            "line": 218,
-            "level": 3
-          },
-          {
-            "line": 219,
-            "level": 3
-          },
-          {
-            "line": 220,
-            "level": 3
-          },
-          {
-            "line": 222,
-            "level": 2
-          },
-          {
-            "line": 223,
-            "level": 3
-          },
-          {
-            "line": 224,
-            "level": 3
-          },
-          {
-            "line": 225,
-            "level": 3
-          },
-          {
-            "line": 227,
-            "level": 2
-          },
-          {
-            "line": 228,
-            "level": 3
-          },
-          {
-            "line": 229,
-            "level": 3
-          },
-          {
-            "line": 230,
-            "level": 3
-          },
-          {
-            "line": 234,
-            "level": 1
-          },
-          {
-            "line": 244,
-            "level": 2
-          },
-          {
-            "line": 264,
-            "level": 2
-          },
-          {
-            "line": 272,
-            "level": 2
-          },
-          {
-            "line": 278,
-            "level": 2
-          },
-          {
-            "line": 310,
-            "level": 2
-          },
-          {
-            "line": 328,
-            "level": 2
-          },
-          {
-            "line": 336,
-            "level": 2
-          },
-          {
-            "line": 346,
-            "level": 2
-          },
-          {
-            "line": 356,
-            "level": 1
-          },
-          {
-            "line": 360,
-            "level": 2
-          },
-          {
-            "line": 364,
-            "level": 3
-          },
-          {
-            "line": 368,
-            "level": 3
-          },
-          {
-            "line": 374,
-            "level": 3
-          },
-          {
-            "line": 380,
-            "level": 3
-          },
-          {
-            "line": 388,
-            "level": 3
-          },
-          {
-            "line": 402,
-            "level": 2
-          },
-          {
-            "line": 406,
-            "level": 3
-          },
-          {
-            "line": 428,
-            "level": 2
-          },
-          {
-            "line": 440,
-            "level": 1
-          },
-          {
-            "line": 444,
-            "level": 2
-          },
-          {
-            "line": 460,
-            "level": 2
-          },
-          {
-            "line": 468,
-            "level": 2
-          },
-          {
-            "line": 476,
-            "level": 3
-          },
-          {
-            "line": 484,
-            "level": 3
-          },
-          {
-            "line": 490,
-            "level": 3
-          },
-          {
-            "line": 492,
-            "level": 3
-          },
-          {
-            "line": 494,
-            "level": 3
-          },
-          {
-            "line": 498,
-            "level": 2
-          },
-          {
-            "line": 504,
-            "level": 2
-          },
-          {
-            "line": 508,
-            "level": 3
-          },
-          {
-            "line": 512,
-            "level": 3
-          },
-          {
-            "line": 522,
-            "level": 3
-          },
-          {
-            "line": 524,
-            "level": 3
-          },
-          {
-            "line": 526,
-            "level": 2
-          },
-          {
-            "line": 528,
-            "level": 3
-          },
-          {
-            "line": 530,
-            "level": 3
-          },
-          {
-            "line": 532,
-            "level": 3
-          },
-          {
-            "line": 534,
-            "level": 3
-          },
-          {
-            "line": 538,
-            "level": 3
-          },
-          {
-            "line": 542,
-            "level": 3
-          },
-          {
-            "line": 544,
-            "level": 1
-          }
-        ],
-        "join_heading_ranges": [
-          {
-            "start": 134,
-            "end": 134,
-            "level": 1
-          },
-          {
-            "start": 135,
-            "end": 137,
-            "level": 2
-          },
-          {
-            "start": 138,
-            "end": 138,
-            "level": 1
-          },
-          {
-            "start": 139,
-            "end": 142,
-            "level": 2
-          },
-          {
-            "start": 143,
-            "end": 146,
-            "level": 2
-          },
-          {
-            "start": 147,
-            "end": 150,
-            "level": 2
-          },
-          {
-            "start": 151,
-            "end": 151,
-            "level": 1
-          },
-          {
-            "start": 152,
-            "end": 152,
-            "level": 2
-          },
-          {
-            "start": 156,
-            "end": 159,
-            "level": 2
-          },
-          {
-            "start": 161,
-            "end": 164,
-            "level": 2
-          },
-          {
-            "start": 166,
-            "end": 166,
-            "level": 1
-          },
-          {
-            "start": 168,
-            "end": 172,
-            "level": 2
-          },
-          {
-            "start": 174,
-            "end": 178,
-            "level": 2
-          },
-          {
-            "start": 180,
-            "end": 183,
-            "level": 2
-          },
-          {
-            "start": 185,
-            "end": 185,
-            "level": 1
-          },
-          {
-            "start": 187,
-            "end": 188,
-            "level": 2
-          },
-          {
-            "start": 190,
-            "end": 193,
-            "level": 2
-          },
-          {
-            "start": 194,
-            "end": 196,
-            "level": 2
-          },
-          {
-            "start": 197,
-            "end": 197,
-            "level": 1
-          },
-          {
-            "start": 198,
-            "end": 201,
-            "level": 2
-          },
-          {
-            "start": 202,
-            "end": 205,
-            "level": 2
-          },
-          {
-            "start": 206,
-            "end": 210,
-            "level": 2
-          },
-          {
-            "start": 211,
-            "end": 211,
-            "level": 1
-          },
-          {
-            "start": 212,
-            "end": 215,
-            "level": 2
-          },
-          {
-            "start": 217,
-            "end": 220,
-            "level": 2
-          },
-          {
-            "start": 222,
-            "end": 225,
-            "level": 2
-          },
-          {
-            "start": 227,
-            "end": 230,
-            "level": 2
-          },
-          {
-            "start": 234,
-            "end": 234,
-            "level": 1
-          },
-          {
-            "start": 244,
-            "end": 244,
-            "level": 2
-          },
-          {
-            "start": 264,
-            "end": 264,
-            "level": 2
-          },
-          {
-            "start": 272,
-            "end": 272,
-            "level": 2
-          },
-          {
-            "start": 278,
-            "end": 278,
-            "level": 2
-          },
-          {
-            "start": 310,
-            "end": 310,
-            "level": 2
-          },
-          {
-            "start": 328,
-            "end": 328,
-            "level": 2
-          },
-          {
-            "start": 336,
-            "end": 336,
-            "level": 2
-          },
-          {
-            "start": 346,
-            "end": 346,
-            "level": 2
-          },
-          {
-            "start": 356,
-            "end": 356,
-            "level": 1
-          },
-          {
-            "start": 360,
-            "end": 360,
-            "level": 2
-          },
-          {
-            "start": 364,
-            "end": 364,
-            "level": 3
-          },
-          {
-            "start": 368,
-            "end": 368,
-            "level": 3
-          },
-          {
-            "start": 374,
-            "end": 374,
-            "level": 3
-          },
-          {
-            "start": 380,
-            "end": 380,
-            "level": 3
-          },
-          {
-            "start": 388,
-            "end": 388,
-            "level": 3
-          },
-          {
-            "start": 402,
-            "end": 402,
-            "level": 2
-          },
-          {
-            "start": 406,
-            "end": 406,
-            "level": 3
-          },
-          {
-            "start": 428,
-            "end": 428,
-            "level": 2
-          },
-          {
-            "start": 440,
-            "end": 440,
-            "level": 1
-          },
-          {
-            "start": 444,
-            "end": 444,
-            "level": 2
-          },
-          {
-            "start": 460,
-            "end": 460,
-            "level": 2
-          },
-          {
-            "start": 468,
-            "end": 468,
-            "level": 2
-          },
-          {
-            "start": 476,
-            "end": 476,
-            "level": 3
-          },
-          {
-            "start": 484,
-            "end": 484,
-            "level": 3
-          },
-          {
-            "start": 490,
-            "end": 490,
-            "level": 3
-          },
-          {
-            "start": 492,
-            "end": 492,
-            "level": 3
-          },
-          {
-            "start": 494,
-            "end": 494,
-            "level": 3
-          },
-          {
-            "start": 498,
-            "end": 498,
-            "level": 2
-          },
-          {
-            "start": 504,
-            "end": 504,
-            "level": 2
-          },
-          {
-            "start": 508,
-            "end": 508,
-            "level": 3
-          },
-          {
-            "start": 512,
-            "end": 512,
-            "level": 3
-          },
-          {
-            "start": 522,
-            "end": 522,
-            "level": 3
-          },
-          {
-            "start": 524,
-            "end": 524,
-            "level": 3
-          },
-          {
-            "start": 526,
-            "end": 526,
-            "level": 2
-          },
-          {
-            "start": 528,
-            "end": 528,
-            "level": 3
-          },
-          {
-            "start": 530,
-            "end": 530,
-            "level": 3
-          },
-          {
-            "start": 532,
-            "end": 532,
-            "level": 3
-          },
-          {
-            "start": 534,
-            "end": 534,
-            "level": 3
-          },
-          {
-            "start": 538,
-            "end": 538,
-            "level": 3
-          },
-          {
-            "start": 542,
-            "end": 542,
-            "level": 3
-          },
-          {
-            "start": 544,
-            "end": 544,
-            "level": 1
-          }
-        ]
-      },
-      "rejected_actions": [
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 134,
-            "end": 134,
-            "level": 1
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 138,
-            "end": 138,
-            "level": 1
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 151,
-            "end": 151,
-            "level": 1
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 152,
-            "end": 152,
-            "level": 2
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 166,
-            "end": 166,
-            "level": 1
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 168,
-            "end": 172,
-            "level": 2
-          },
-          "reason": "最多拼接 4 个连续原始行"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 174,
-            "end": 178,
-            "level": 2
-          },
-          "reason": "最多拼接 4 个连续原始行"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 185,
-            "end": 185,
-            "level": 1
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 197,
-            "end": 197,
-            "level": 1
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 206,
-            "end": 210,
-            "level": 2
-          },
-          "reason": "最多拼接 4 个连续原始行"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 211,
-            "end": 211,
-            "level": 1
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 234,
-            "end": 234,
-            "level": 1
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 244,
-            "end": 244,
-            "level": 2
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 264,
-            "end": 264,
-            "level": 2
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 272,
-            "end": 272,
-            "level": 2
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 278,
-            "end": 278,
-            "level": 2
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 310,
-            "end": 310,
-            "level": 2
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 328,
-            "end": 328,
-            "level": 2
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 336,
-            "end": 336,
-            "level": 2
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 346,
-            "end": 346,
-            "level": 2
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 356,
-            "end": 356,
-            "level": 1
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 360,
-            "end": 360,
-            "level": 2
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 364,
-            "end": 364,
-            "level": 3
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 368,
-            "end": 368,
-            "level": 3
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 374,
-            "end": 374,
-            "level": 3
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 380,
-            "end": 380,
-            "level": 3
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 388,
-            "end": 388,
-            "level": 3
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 402,
-            "end": 402,
-            "level": 2
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 406,
-            "end": 406,
-            "level": 3
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 428,
-            "end": 428,
-            "level": 2
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 440,
-            "end": 440,
-            "level": 1
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 444,
-            "end": 444,
-            "level": 2
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 460,
-            "end": 460,
-            "level": 2
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 468,
-            "end": 468,
-            "level": 2
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 476,
-            "end": 476,
-            "level": 3
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 484,
-            "end": 484,
-            "level": 3
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 490,
-            "end": 490,
-            "level": 3
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 492,
-            "end": 492,
-            "level": 3
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 494,
-            "end": 494,
-            "level": 3
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 498,
-            "end": 498,
-            "level": 2
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 504,
-            "end": 504,
-            "level": 2
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 508,
-            "end": 508,
-            "level": 3
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 512,
-            "end": 512,
-            "level": 3
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 522,
-            "end": 522,
-            "level": 3
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 524,
-            "end": 524,
-            "level": 3
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 526,
-            "end": 526,
-            "level": 2
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 528,
-            "end": 528,
-            "level": 3
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 530,
-            "end": 530,
-            "level": 3
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 532,
-            "end": 532,
-            "level": 3
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 534,
-            "end": 534,
-            "level": 3
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 538,
-            "end": 538,
-            "level": 3
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 542,
-            "end": 542,
-            "level": 3
-          },
-          "reason": "越界"
-        },
-        {
-          "type": "join_heading_ranges",
-          "item": {
-            "start": 544,
-            "end": 544,
-            "level": 1
-          },
-          "reason": "越界"
-        }
-      ]
-    },
-    {
-      "call": 2,
-      "core_start_line": 548,
-      "actions": {},
-      "rejected_actions": [
-        {
-          "type": "llm_response",
-          "item": null,
-          "reason": "模型动作 JSON 无效，按空动作继续：Expecting value: line 3 column 6 (char 26)"
-        }
-      ]
-    },
-    {
-      "call": 3,
-      "core_start_line": 884,
-      "actions": {
-        "drop_ranges": [
-          [
-            17,
-            20
-          ],
-          [
-            101,
-            108
-          ],
-          [
-            111,
-            112
-          ],
-          [
-            171,
-            174
-          ],
-          [
-            235,
-            242
-          ],
-          [
-            245,
-            249
-          ],
-          [
-            251,
-            252
-          ],
-          [
-            259,
-            260
-          ],
-          [
-            261,
-            264
-          ],
-          [
-            311,
-            318
-          ],
-          [
-            355,
-            356
-          ],
-          [
-            357,
-            360
-          ]
-        ],
-        "drop_lines": [
-          41,
-          47,
-          329,
-          331
-        ],
-        "set_headings": [
-          {
-            "line": 1,
-            "level": 2
-          },
-          {
-            "line": 7,
-            "level": 2
-          },
-          {
-            "line": 27,
-            "level": 2
-          },
-          {
-            "line": 48,
-            "level": 2
-          },
-          {
-            "line": 57,
-            "level": 2
-          },
-          {
-            "line": 71,
-            "level": 2
-          },
-          {
-            "line": 75,
-            "level": 2
-          },
-          {
-            "line": 79,
-            "level": 2
-          },
-          {
-            "line": 95,
-            "level": 2
-          },
-          {
-            "line": 121,
-            "level": 2
-          },
-          {
-            "line": 125,
-            "level": 3
-          },
-          {
-            "line": 137,
-            "level": 3
-          },
-          {
-            "line": 151,
-            "level": 2
-          },
-          {
-            "line": 155,
-            "level": 3
-          },
-          {
-            "line": 163,
-            "level": 3
-          },
-          {
-            "line": 181,
-            "level": 3
-          },
-          {
-            "line": 185,
-            "level": 2
-          },
-          {
-            "line": 187,
-            "level": 2
-          },
-          {
-            "line": 195,
-            "level": 2
-          },
-          {
-            "line": 199,
-            "level": 2
-          },
-          {
-            "line": 223,
-            "level": 2
-          },
-          {
-            "line": 229,
-            "level": 3
-          },
-          {
-            "line": 267,
-            "level": 3
-          },
-          {
-            "line": 287,
-            "level": 2
-          },
-          {
-            "line": 291,
-            "level": 3
-          },
-          {
-            "line": 305,
-            "level": 3
-          },
-          {
-            "line": 321,
-            "level": 2
-          },
-          {
-            "line": 325,
-            "level": 3
-          },
-          {
-            "line": 335,
-            "level": 3
-          },
-          {
-            "line": 349,
-            "level": 3
-          },
-          {
-            "line": 363,
-            "level": 2
-          }
-        ],
-        "join_heading_ranges": []
-      },
-      "rejected_actions": [
-        {
-          "type": "set_headings",
-          "item": {
-            "line": 48,
-            "level": 2
-          },
-          "reason": "不能把空行变成标题"
-        }
-      ]
-    },
-    {
-      "call": 4,
-      "core_start_line": 1250,
-      "actions": {
-        "drop_ranges": [
-          [
-            7,
-            7
-          ],
-          [
-            21,
-            21
-          ],
-          [
-            31,
-            31
-          ],
-          [
-            44,
-            44
-          ],
-          [
-            45,
-            45
-          ],
-          [
-            81,
-            81
-          ],
-          [
-            83,
-            85
-          ],
-          [
-            90,
-            90
-          ],
-          [
-            91,
-            91
-          ],
-          [
-            93,
-            103
-          ],
-          [
-            105,
+            118,
             118
           ],
           [
-            143,
-            143
+            130,
+            130
+          ],
+          [
+            132,
+            132
+          ],
+          [
+            134,
+            134
+          ],
+          [
+            154,
+            154
           ],
           [
             155,
             155
           ],
           [
-            171,
-            171
+            165,
+            165
           ],
           [
-            173,
-            173
+            167,
+            167
           ],
           [
-            177,
-            177
+            184,
+            184
           ],
           [
-            187,
-            187
+            185,
+            185
           ],
           [
-            213,
-            213
+            197,
+            197
           ],
           [
-            215,
-            215
+            206,
+            206
+          ],
+          [
+            216,
+            216
           ],
           [
             221,
             221
           ],
           [
-            229,
-            229
+            226,
+            226
           ],
           [
             231,
             231
           ],
           [
-            245,
-            245
+            232,
+            232
           ],
           [
-            253,
-            253
+            233,
+            233
           ],
           [
-            255,
-            255
+            259,
+            259
           ],
           [
-            271,
-            271
+            267,
+            267
           ],
           [
-            273,
-            273
+            296,
+            296
           ],
           [
-            279,
-            281
-          ],
-          [
-            297,
-            299
+            319,
+            319
           ],
           [
             327,
             327
           ],
           [
+            328,
+            328
+          ],
+          [
+            330,
+            336
+          ],
+          [
             337,
             337
           ],
           [
-            349,
-            349
-          ],
-          [
-            351,
-            351
-          ],
-          [
-            353,
-            353
-          ],
-          [
-            365,
-            365
-          ],
-          [
-            375,
-            375
-          ],
-          [
-            377,
-            377
-          ],
-          [
-            379,
-            379
-          ],
-          [
-            391,
-            391
-          ],
-          [
-            393,
-            412
-          ],
-          [
-            420,
-            420
-          ],
-          [
-            422,
-            422
+            339,
+            346
           ]
         ],
-        "drop_lines": [],
         "set_headings": [
           {
-            "line": 1,
+            "line": 3,
+            "level": 1
+          },
+          {
+            "line": 5,
+            "level": 1
+          },
+          {
+            "line": 13,
+            "level": 1
+          },
+          {
+            "line": 134,
             "level": 2
           },
           {
-            "line": 15,
+            "line": 234,
             "level": 2
           },
           {
-            "line": 49,
+            "line": 243,
             "level": 2
           },
           {
-            "line": 53,
-            "level": 3
-          },
-          {
-            "line": 69,
-            "level": 3
-          },
-          {
-            "line": 93,
-            "level": 2
-          },
-          {
-            "line": 105,
-            "level": 2
-          },
-          {
-            "line": 127,
-            "level": 2
-          },
-          {
-            "line": 131,
-            "level": 3
-          },
-          {
-            "line": 141,
-            "level": 3
-          },
-          {
-            "line": 151,
-            "level": 3
-          },
-          {
-            "line": 161,
-            "level": 2
-          },
-          {
-            "line": 165,
-            "level": 3
-          },
-          {
-            "line": 205,
-            "level": 3
-          },
-          {
-            "line": 207,
-            "level": 2
-          },
-          {
-            "line": 223,
-            "level": 3
-          },
-          {
-            "line": 237,
+            "line": 261,
             "level": 2
           },
           {
@@ -1904,214 +168,139 @@
             "level": 2
           },
           {
-            "line": 283,
-            "level": 3
-          },
-          {
-            "line": 289,
-            "level": 3
-          },
-          {
-            "line": 301,
-            "level": 3
-          },
-          {
-            "line": 307,
+            "line": 275,
             "level": 2
           },
           {
-            "line": 311,
-            "level": 3
-          },
-          {
-            "line": 315,
-            "level": 3
-          },
-          {
-            "line": 331,
-            "level": 3
-          },
-          {
-            "line": 345,
-            "level": 3
-          },
-          {
-            "line": 357,
+            "line": 304,
             "level": 2
           },
           {
-            "line": 361,
-            "level": 3
-          },
-          {
-            "line": 371,
-            "level": 3
-          },
-          {
-            "line": 383,
+            "line": 321,
             "level": 2
           },
           {
-            "line": 387,
+            "line": 347,
+            "level": 2
+          },
+          {
+            "line": 351,
             "level": 3
           },
           {
-            "line": 391,
-            "level": 2
+            "line": 355,
+            "level": 3
+          },
+          {
+            "line": 359,
+            "level": 3
+          },
+          {
+            "line": 365,
+            "level": 3
+          },
+          {
+            "line": 370,
+            "level": 3
           }
         ],
         "join_heading_ranges": []
       },
-      "rejected_actions": []
-    },
-    {
-      "call": 5,
-      "core_start_line": 1673,
-      "actions": {
-        "drop_ranges": [
-          [
-            11,
-            12
-          ],
-          [
-            15,
-            15
-          ],
-          [
-            19,
-            19
-          ],
-          [
-            26,
-            26
-          ],
-          [
-            35,
-            35
-          ],
-          [
-            43,
-            43
-          ],
-          [
-            59,
-            59
-          ],
-          [
-            75,
-            75
-          ],
-          [
-            85,
-            85
-          ],
-          [
-            94,
-            94
-          ],
-          [
-            102,
-            102
-          ],
-          [
-            117,
-            117
-          ],
-          [
-            119,
-            124
-          ],
-          [
+      "rejected_actions": [
+        {
+          "type": "drop_ranges",
+          "item": [
             134,
             134
           ],
+          "reason": "事实库模式删除切到段落内部（原始行 134-134）"
+        },
+        {
+          "type": "drop_ranges",
+          "item": [
+            197,
+            197
+          ],
+          "reason": "事实库模式删除切到段落内部（原始行 197-197）"
+        },
+        {
+          "type": "drop_ranges",
+          "item": [
+            206,
+            206
+          ],
+          "reason": "事实库模式删除切到段落内部（原始行 206-206）"
+        },
+        {
+          "type": "set_headings",
+          "item": {
+            "line": 134,
+            "level": 2
+          },
+          "reason": "缺少标题格式证据，拒绝把普通正文升级为标题"
+        },
+        {
+          "type": "set_headings",
+          "item": {
+            "line": 370,
+            "level": 3
+          },
+          "reason": "越界"
+        }
+      ]
+    },
+    {
+      "call": 2,
+      "core_start_line": 371,
+      "actions": {
+        "drop_ranges": [
           [
-            164,
-            164
+            9,
+            9
           ],
           [
-            166,
-            168
+            39,
+            39
           ],
           [
-            174,
-            174
+            67,
+            67
           ],
           [
-            188,
-            188
+            74,
+            74
           ],
           [
-            190,
-            200
+            88,
+            88
           ],
           [
-            218,
-            218
+            97,
+            97
           ],
           [
-            220,
-            224
+            99,
+            104
           ],
           [
-            242,
-            242
+            111,
+            111
           ],
           [
-            246,
-            246
+            129,
+            129
           ],
           [
-            270,
-            270
+            148,
+            148
           ],
           [
-            272,
-            274
+            169,
+            169
           ],
           [
-            278,
-            278
-          ],
-          [
-            280,
-            284
-          ],
-          [
-            296,
-            296
-          ],
-          [
-            306,
-            306
-          ],
-          [
-            310,
-            310
-          ],
-          [
-            330,
-            330
-          ],
-          [
-            343,
-            343
-          ],
-          [
-            345,
-            357
-          ],
-          [
-            365,
-            365
-          ],
-          [
-            367,
-            370
-          ],
-          [
-            371,
-            386
+            177,
+            177
           ]
         ],
         "drop_lines": [],
@@ -2121,36 +310,137 @@
             "level": 3
           },
           {
-            "line": 21,
+            "line": 22,
+            "level": 2
+          },
+          {
+            "line": 46,
+            "level": 2
+          },
+          {
+            "line": 57,
+            "level": 2
+          },
+          {
+            "line": 61,
             "level": 3
           },
           {
-            "line": 27,
+            "line": 76,
             "level": 3
           },
           {
-            "line": 31,
+            "line": 84,
             "level": 3
           },
           {
-            "line": 49,
+            "line": 113,
             "level": 3
           },
           {
-            "line": 67,
+            "line": 119,
+            "level": 2
+          },
+          {
+            "line": 123,
             "level": 3
           },
           {
-            "line": 69,
-            "level": 4
-          },
-          {
-            "line": 77,
+            "line": 140,
             "level": 3
           },
           {
-            "line": 87,
+            "line": 157,
+            "level": 2
+          },
+          {
+            "line": 161,
             "level": 3
+          },
+          {
+            "line": 171,
+            "level": 3
+          }
+        ],
+        "join_heading_ranges": []
+      },
+      "rejected_actions": []
+    },
+    {
+      "call": 3,
+      "core_start_line": 549,
+      "actions": {
+        "drop_ranges": [
+          [
+            5,
+            5
+          ],
+          [
+            51,
+            52
+          ],
+          [
+            72,
+            80
+          ],
+          [
+            81,
+            99
+          ],
+          [
+            115,
+            115
+          ],
+          [
+            142,
+            144
+          ],
+          [
+            155,
+            155
+          ],
+          [
+            186,
+            186
+          ],
+          [
+            190,
+            190
+          ],
+          [
+            203,
+            203
+          ]
+        ],
+        "drop_lines": [],
+        "set_headings": [
+          {
+            "line": 1,
+            "level": 2
+          },
+          {
+            "line": 16,
+            "level": 2
+          },
+          {
+            "line": 24,
+            "level": 3
+          },
+          {
+            "line": 26,
+            "level": 3
+          },
+          {
+            "line": 34,
+            "level": 2
+          },
+          {
+            "line": 58,
+            "level": 3
+          },
+          {
+            "line": 99,
+            "level": 2
           },
           {
             "line": 103,
@@ -2162,86 +452,30 @@
           },
           {
             "line": 111,
+            "level": 4
+          },
+          {
+            "line": 117,
             "level": 3
           },
           {
-            "line": 115,
+            "line": 127,
             "level": 4
           },
           {
-            "line": 146,
+            "line": 151,
             "level": 3
           },
           {
-            "line": 148,
-            "level": 4
-          },
-          {
-            "line": 154,
-            "level": 4
-          },
-          {
-            "line": 176,
+            "line": 177,
             "level": 3
           },
           {
-            "line": 182,
+            "line": 186,
             "level": 3
           },
           {
-            "line": 204,
-            "level": 3
-          },
-          {
-            "line": 208,
-            "level": 4
-          },
-          {
-            "line": 214,
-            "level": 4
-          },
-          {
-            "line": 230,
-            "level": 3
-          },
-          {
-            "line": 234,
-            "level": 4
-          },
-          {
-            "line": 250,
-            "level": 4
-          },
-          {
-            "line": 258,
-            "level": 3
-          },
-          {
-            "line": 262,
-            "level": 3
-          },
-          {
-            "line": 266,
-            "level": 4
-          },
-          {
-            "line": 271,
-            "level": 4
-          },
-          {
-            "line": 294,
-            "level": 4
-          },
-          {
-            "line": 318,
-            "level": 3
-          },
-          {
-            "line": 322,
-            "level": 4
-          },
-          {
-            "line": 337,
+            "line": 188,
             "level": 4
           }
         ],
@@ -2249,27 +483,1015 @@
       },
       "rejected_actions": [
         {
+          "type": "drop_ranges",
+          "item": [
+            203,
+            203
+          ],
+          "reason": "越界，核心区共 190 行"
+        },
+        {
           "type": "set_headings",
           "item": {
-            "line": 271,
+            "line": 188,
             "level": 4
           },
-          "reason": "不能把空行变成标题"
+          "reason": "缺少标题格式证据，拒绝把普通正文升级为标题"
         }
       ]
     },
     {
-      "call": 6,
-      "core_start_line": 2059,
+      "call": 4,
+      "core_start_line": 740,
       "actions": {
         "drop_ranges": [
           [
-            19,
+            145,
+            152
+          ]
+        ],
+        "drop_lines": [],
+        "set_headings": [
+          {
+            "line": 1,
+            "level": 2
+          },
+          {
+            "line": 5,
+            "level": 2
+          },
+          {
+            "line": 32,
+            "level": 2
+          },
+          {
+            "line": 50,
+            "level": 2
+          },
+          {
+            "line": 58,
+            "level": 2
+          },
+          {
+            "line": 66,
+            "level": 2
+          },
+          {
+            "line": 77,
+            "level": 2
+          },
+          {
+            "line": 87,
+            "level": 2
+          },
+          {
+            "line": 91,
+            "level": 2
+          },
+          {
+            "line": 108,
+            "level": 2
+          },
+          {
+            "line": 110,
+            "level": 2
+          },
+          {
+            "line": 116,
+            "level": 2
+          },
+          {
+            "line": 135,
+            "level": 2
+          }
+        ],
+        "join_heading_ranges": []
+      },
+      "rejected_actions": [
+        {
+          "type": "drop_ranges",
+          "item": [
+            145,
+            152
+          ],
+          "reason": "越界，核心区共 151 行"
+        }
+      ]
+    },
+    {
+      "call": 5,
+      "core_start_line": 892,
+      "actions": {
+        "drop_ranges": [
+          [
+            10,
             19
           ],
           [
-            31,
-            31
+            133,
+            135
+          ],
+          [
+            136,
+            136
+          ],
+          [
+            142,
+            142
+          ],
+          [
+            151,
+            152
+          ],
+          [
+            153,
+            156
+          ],
+          [
+            157,
+            157
+          ],
+          [
+            160,
+            160
+          ],
+          [
+            163,
+            163
+          ],
+          [
+            167,
+            167
+          ],
+          [
+            172,
+            173
+          ]
+        ],
+        "drop_lines": [],
+        "set_headings": [
+          {
+            "line": 1,
+            "level": 2
+          },
+          {
+            "line": 24,
+            "level": 2
+          },
+          {
+            "line": 28,
+            "level": 2
+          },
+          {
+            "line": 32,
+            "level": 3
+          },
+          {
+            "line": 47,
+            "level": 3
+          },
+          {
+            "line": 71,
+            "level": 3
+          },
+          {
+            "line": 75,
+            "level": 4
+          },
+          {
+            "line": 87,
+            "level": 4
+          },
+          {
+            "line": 100,
+            "level": 3
+          },
+          {
+            "line": 104,
+            "level": 4
+          },
+          {
+            "line": 112,
+            "level": 4
+          },
+          {
+            "line": 129,
+            "level": 4
+          },
+          {
+            "line": 135,
+            "level": 2
+          },
+          {
+            "line": 143,
+            "level": 2
+          },
+          {
+            "line": 147,
+            "level": 3
+          },
+          {
+            "line": 169,
+            "level": 3
+          }
+        ],
+        "join_heading_ranges": []
+      },
+      "rejected_actions": []
+    },
+    {
+      "call": 6,
+      "core_start_line": 1066,
+      "actions": {
+        "drop_ranges": [
+          [
+            7,
+            7
+          ],
+          [
+            15,
+            15
+          ],
+          [
+            76,
+            76
+          ],
+          [
+            119,
+            119
+          ],
+          [
+            157,
+            157
+          ],
+          [
+            166,
+            166
+          ],
+          [
+            183,
+            183
+          ],
+          [
+            185,
+            185
+          ]
+        ],
+        "drop_lines": [],
+        "set_headings": [
+          {
+            "line": 1,
+            "level": 3
+          },
+          {
+            "line": 30,
+            "level": 2
+          },
+          {
+            "line": 36,
+            "level": 3
+          },
+          {
+            "line": 54,
+            "level": 2
+          },
+          {
+            "line": 58,
+            "level": 3
+          },
+          {
+            "line": 71,
+            "level": 3
+          },
+          {
+            "line": 85,
+            "level": 2
+          },
+          {
+            "line": 89,
+            "level": 3
+          },
+          {
+            "line": 95,
+            "level": 2
+          },
+          {
+            "line": 99,
+            "level": 3
+          },
+          {
+            "line": 107,
+            "level": 2
+          },
+          {
+            "line": 113,
+            "level": 3
+          },
+          {
+            "line": 119,
+            "level": 2
+          },
+          {
+            "line": 121,
+            "level": 3
+          },
+          {
+            "line": 127,
+            "level": 2
+          },
+          {
+            "line": 131,
+            "level": 3
+          },
+          {
+            "line": 144,
+            "level": 3
+          },
+          {
+            "line": 175,
+            "level": 2
+          },
+          {
+            "line": 179,
+            "level": 3
+          },
+          {
+            "line": 185,
+            "level": 2
+          }
+        ],
+        "join_heading_ranges": []
+      },
+      "rejected_actions": []
+    },
+    {
+      "call": 7,
+      "core_start_line": 1260,
+      "actions": {
+        "drop_ranges": [
+          [
+            23,
+            33
+          ],
+          [
+            34,
+            47
+          ],
+          [
+            48,
+            48
+          ],
+          [
+            112,
+            129
+          ],
+          [
+            145,
+            145
+          ],
+          [
+            159,
+            159
+          ],
+          [
+            166,
+            168
+          ],
+          [
+            182,
+            182
+          ],
+          [
+            193,
+            193
+          ],
+          [
+            197,
+            197
+          ],
+          [
+            215,
+            215
+          ],
+          [
+            217,
+            220
+          ],
+          [
+            227,
+            227
+          ],
+          [
+            231,
+            231
+          ]
+        ],
+        "drop_lines": [],
+        "set_headings": [
+          {
+            "line": 1,
+            "level": 2
+          },
+          {
+            "line": 48,
+            "level": 2
+          },
+          {
+            "line": 52,
+            "level": 2
+          },
+          {
+            "line": 56,
+            "level": 2
+          },
+          {
+            "line": 60,
+            "level": 3
+          },
+          {
+            "line": 79,
+            "level": 3
+          },
+          {
+            "line": 88,
+            "level": 2
+          },
+          {
+            "line": 92,
+            "level": 3
+          },
+          {
+            "line": 114,
+            "level": 2
+          },
+          {
+            "line": 132,
+            "level": 3
+          },
+          {
+            "line": 147,
+            "level": 2
+          },
+          {
+            "line": 160,
+            "level": 3
+          },
+          {
+            "line": 190,
+            "level": 2
+          },
+          {
+            "line": 199,
+            "level": 2
+          },
+          {
+            "line": 203,
+            "level": 3
+          },
+          {
+            "line": 209,
+            "level": 3
+          },
+          {
+            "line": 217,
+            "level": 2
+          },
+          {
+            "line": 227,
+            "level": 2
+          },
+          {
+            "line": 231,
+            "level": 2
+          }
+        ],
+        "join_heading_ranges": []
+      },
+      "rejected_actions": []
+    },
+    {
+      "call": 8,
+      "core_start_line": 1494,
+      "actions": {
+        "drop_ranges": [
+          [
+            9,
+            9
+          ],
+          [
+            72,
+            72
+          ],
+          [
+            74,
+            76
+          ],
+          [
+            78,
+            95
+          ],
+          [
+            114,
+            114
+          ],
+          [
+            119,
+            119
+          ],
+          [
+            121,
+            121
+          ],
+          [
+            166,
+            166
+          ],
+          [
+            168,
+            168
+          ],
+          [
+            175,
+            175
+          ],
+          [
+            184,
+            184
+          ],
+          [
+            199,
+            199
+          ]
+        ],
+        "drop_lines": [],
+        "set_headings": [
+          {
+            "line": 1,
+            "level": 3
+          },
+          {
+            "line": 16,
+            "level": 3
+          },
+          {
+            "line": 29,
+            "level": 3
+          },
+          {
+            "line": 40,
+            "level": 2
+          },
+          {
+            "line": 44,
+            "level": 3
+          },
+          {
+            "line": 53,
+            "level": 3
+          },
+          {
+            "line": 64,
+            "level": 2
+          },
+          {
+            "line": 68,
+            "level": 3
+          },
+          {
+            "line": 104,
+            "level": 3
+          },
+          {
+            "line": 123,
+            "level": 2
+          },
+          {
+            "line": 129,
+            "level": 2
+          },
+          {
+            "line": 133,
+            "level": 3
+          },
+          {
+            "line": 149,
+            "level": 3
+          },
+          {
+            "line": 200,
+            "level": 1
+          },
+          {
+            "line": 204,
+            "level": 2
+          },
+          {
+            "line": 208,
+            "level": 3
+          }
+        ],
+        "join_heading_ranges": []
+      },
+      "rejected_actions": []
+    },
+    {
+      "call": 9,
+      "core_start_line": 1705,
+      "actions": {
+        "drop_ranges": [
+          [
+            3,
+            4
+          ],
+          [
+            30,
+            30
+          ],
+          [
+            32,
+            32
+          ],
+          [
+            57,
+            58
+          ],
+          [
+            59,
+            61
+          ],
+          [
+            71,
+            71
+          ],
+          [
+            73,
+            84
+          ],
+          [
+            101,
+            103
+          ],
+          [
+            120,
+            124
+          ],
+          [
+            147,
+            147
+          ],
+          [
+            149,
+            152
+          ],
+          [
+            155,
+            161
+          ],
+          [
+            172,
+            172
+          ],
+          [
+            175,
+            175
+          ],
+          [
+            177,
+            177
+          ]
+        ],
+        "drop_lines": [],
+        "set_headings": [
+          {
+            "line": 1,
+            "level": 3
+          },
+          {
+            "line": 38,
+            "level": 3
+          },
+          {
+            "line": 59,
+            "level": 3
+          },
+          {
+            "line": 65,
+            "level": 3
+          },
+          {
+            "line": 87,
+            "level": 3
+          },
+          {
+            "line": 91,
+            "level": 4
+          },
+          {
+            "line": 97,
+            "level": 4
+          },
+          {
+            "line": 108,
+            "level": 3
+          },
+          {
+            "line": 112,
+            "level": 4
+          },
+          {
+            "line": 127,
+            "level": 4
+          },
+          {
+            "line": 135,
+            "level": 2
+          },
+          {
+            "line": 139,
+            "level": 3
+          },
+          {
+            "line": 143,
+            "level": 4
+          },
+          {
+            "line": 149,
+            "level": 4
+          },
+          {
+            "line": 170,
+            "level": 4
+          }
+        ],
+        "join_heading_ranges": []
+      },
+      "rejected_actions": []
+    },
+    {
+      "call": 10,
+      "core_start_line": 1885,
+      "actions": {},
+      "rejected_actions": [
+        {
+          "type": "llm_response",
+          "item": null,
+          "reason": "模型动作 JSON 无效，按空动作继续：Expecting value: line 3 column 6 (char 26)"
+        }
+      ]
+    },
+    {
+      "call": 11,
+      "core_start_line": 2116,
+      "actions": {
+        "drop_ranges": [
+          [
+            5,
+            5
+          ],
+          [
+            12,
+            15
+          ],
+          [
+            26,
+            26
+          ],
+          [
+            72,
+            72
+          ],
+          [
+            117,
+            117
+          ],
+          [
+            125,
+            125
+          ],
+          [
+            133,
+            133
+          ],
+          [
+            159,
+            159
+          ],
+          [
+            170,
+            170
+          ],
+          [
+            177,
+            177
+          ],
+          [
+            181,
+            181
+          ],
+          [
+            208,
+            208
+          ]
+        ],
+        "drop_lines": [],
+        "set_headings": [
+          {
+            "line": 1,
+            "level": 2
+          },
+          {
+            "line": 18,
+            "level": 2
+          },
+          {
+            "line": 28,
+            "level": 2
+          },
+          {
+            "line": 36,
+            "level": 2
+          },
+          {
+            "line": 40,
+            "level": 3
+          },
+          {
+            "line": 55,
+            "level": 2
+          },
+          {
+            "line": 62,
+            "level": 2
+          },
+          {
+            "line": 74,
+            "level": 2
+          },
+          {
+            "line": 82,
+            "level": 2
+          },
+          {
+            "line": 92,
+            "level": 2
+          },
+          {
+            "line": 96,
+            "level": 3
+          },
+          {
+            "line": 111,
+            "level": 3
+          },
+          {
+            "line": 119,
+            "level": 2
+          },
+          {
+            "line": 127,
+            "level": 2
+          },
+          {
+            "line": 140,
+            "level": 2
+          },
+          {
+            "line": 160,
+            "level": 2
+          },
+          {
+            "line": 171,
+            "level": 2
+          },
+          {
+            "line": 181,
+            "level": 1
+          },
+          {
+            "line": 185,
+            "level": 2
+          },
+          {
+            "line": 189,
+            "level": 2
+          },
+          {
+            "line": 193,
+            "level": 3
+          },
+          {
+            "line": 208,
+            "level": 2
+          }
+        ],
+        "join_heading_ranges": []
+      },
+      "rejected_actions": []
+    },
+    {
+      "call": 12,
+      "core_start_line": 2325,
+      "actions": {
+        "drop_ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            14,
+            14
+          ],
+          [
+            16,
+            16
+          ],
+          [
+            17,
+            17
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            22,
+            22
+          ],
+          [
+            24,
+            24
+          ],
+          [
+            26,
+            26
+          ],
+          [
+            28,
+            28
+          ],
+          [
+            29,
+            29
+          ],
+          [
+            30,
+            30
+          ],
+          [
+            32,
+            32
+          ],
+          [
+            34,
+            34
+          ],
+          [
+            36,
+            36
+          ],
+          [
+            37,
+            37
+          ],
+          [
+            39,
+            39
+          ],
+          [
+            41,
+            41
+          ],
+          [
+            43,
+            43
+          ],
+          [
+            45,
+            45
           ],
           [
             47,
@@ -2277,43 +1499,191 @@
           ],
           [
             49,
-            51
+            49
+          ],
+          [
+            51,
+            52
+          ],
+          [
+            53,
+            53
+          ],
+          [
+            55,
+            55
+          ],
+          [
+            57,
+            57
           ],
           [
             59,
-            60
+            59
           ],
           [
-            86,
-            86
+            61,
+            61
           ],
           [
-            88,
-            90
+            63,
+            63
           ],
           [
-            108,
-            108
+            65,
+            65
           ],
           [
-            110,
-            110
+            67,
+            67
           ],
           [
-            112,
-            112
+            69,
+            69
           ],
           [
-            126,
-            126
+            71,
+            71
           ],
           [
-            128,
-            128
+            73,
+            73
           ],
           [
-            130,
-            130
+            75,
+            75
+          ],
+          [
+            77,
+            77
+          ],
+          [
+            79,
+            79
+          ],
+          [
+            81,
+            81
+          ],
+          [
+            83,
+            83
+          ],
+          [
+            85,
+            85
+          ],
+          [
+            87,
+            87
+          ],
+          [
+            89,
+            89
+          ],
+          [
+            91,
+            91
+          ],
+          [
+            93,
+            93
+          ],
+          [
+            95,
+            95
+          ],
+          [
+            97,
+            97
+          ],
+          [
+            99,
+            99
+          ],
+          [
+            101,
+            101
+          ],
+          [
+            103,
+            103
+          ],
+          [
+            105,
+            105
+          ],
+          [
+            107,
+            107
+          ],
+          [
+            109,
+            109
+          ],
+          [
+            111,
+            111
+          ],
+          [
+            113,
+            113
+          ],
+          [
+            115,
+            115
+          ],
+          [
+            117,
+            117
+          ],
+          [
+            119,
+            119
+          ],
+          [
+            120,
+            120
+          ],
+          [
+            121,
+            121
+          ],
+          [
+            123,
+            123
+          ],
+          [
+            125,
+            125
+          ],
+          [
+            127,
+            127
+          ],
+          [
+            129,
+            129
+          ],
+          [
+            131,
+            131
+          ],
+          [
+            132,
+            132
+          ],
+          [
+            134,
+            134
+          ],
+          [
+            136,
+            136
+          ],
+          [
+            138,
+            138
           ],
           [
             140,
@@ -2324,299 +1694,147 @@
             142
           ],
           [
+            144,
+            144
+          ],
+          [
             146,
-            151
+            146
+          ],
+          [
+            148,
+            148
+          ],
+          [
+            150,
+            150
           ],
           [
             152,
-            157
+            152
           ],
           [
-            164,
-            164
+            154,
+            154
           ],
           [
-            166,
-            166
+            156,
+            156
           ],
           [
-            172,
-            175
+            158,
+            158
           ],
           [
-            205,
-            205
+            159,
+            159
           ],
           [
-            219,
-            219
+            161,
+            161
           ],
           [
-            221,
-            221
+            163,
+            163
           ],
           [
-            235,
-            235
+            165,
+            165
           ],
           [
-            237,
-            237
+            167,
+            167
           ],
           [
-            239,
-            241
+            169,
+            169
           ],
           [
-            281,
-            281
-          ],
-          [
-            283,
-            283
-          ],
-          [
-            289,
-            289
-          ],
-          [
-            291,
-            291
-          ],
-          [
-            297,
-            297
-          ],
-          [
-            299,
-            299
-          ],
-          [
-            301,
-            301
-          ],
-          [
-            309,
-            309
-          ],
-          [
-            310,
-            310
-          ],
-          [
-            325,
-            325
-          ],
-          [
-            337,
-            337
-          ],
-          [
-            339,
-            339
-          ],
-          [
-            345,
-            345
-          ],
-          [
-            349,
-            349
-          ],
-          [
-            377,
-            377
-          ],
-          [
-            379,
-            379
-          ],
-          [
-            395,
-            395
-          ],
-          [
-            397,
-            397
-          ],
-          [
-            407,
-            407
+            170,
+            170
           ]
         ],
         "drop_lines": [],
         "set_headings": [
           {
             "line": 1,
-            "level": 3
-          },
-          {
-            "line": 15,
             "level": 2
           },
           {
-            "line": 37,
+            "line": 7,
+            "level": 2
+          },
+          {
+            "line": 19,
+            "level": 2
+          },
+          {
+            "line": 25,
+            "level": 2
+          },
+          {
+            "line": 31,
+            "level": 2
+          },
+          {
+            "line": 46,
+            "level": 2
+          },
+          {
+            "line": 62,
+            "level": 2
+          },
+          {
+            "line": 72,
+            "level": 2
+          },
+          {
+            "line": 76,
             "level": 3
           },
           {
-            "line": 43,
+            "line": 87,
             "level": 3
           },
           {
-            "line": 64,
+            "line": 98,
+            "level": 2
+          },
+          {
+            "line": 107,
             "level": 3
           },
           {
-            "line": 70,
+            "line": 111,
+            "level": 2
+          },
+          {
+            "line": 119,
+            "level": 2
+          },
+          {
+            "line": 121,
+            "level": 2
+          },
+          {
+            "line": 125,
             "level": 3
           },
           {
-            "line": 74,
-            "level": 3
+            "line": 133,
+            "level": 2
           },
           {
-            "line": 78,
-            "level": 4
-          },
-          {
-            "line": 92,
-            "level": 4
-          },
-          {
-            "line": 104,
-            "level": 4
-          },
-          {
-            "line": 122,
-            "level": 3
-          },
-          {
-            "line": 134,
-            "level": 4
-          },
-          {
-            "line": 141,
-            "level": 3
+            "line": 152,
+            "level": 2
           },
           {
             "line": 160,
-            "level": 4
-          },
-          {
-            "line": 177,
-            "level": 4
-          },
-          {
-            "line": 179,
-            "level": 3
-          },
-          {
-            "line": 197,
-            "level": 3
-          },
-          {
-            "line": 201,
-            "level": 4
-          },
-          {
-            "line": 225,
-            "level": 4
-          },
-          {
-            "line": 245,
-            "level": 4
-          },
-          {
-            "line": 255,
-            "level": 3
-          },
-          {
-            "line": 259,
-            "level": 4
-          },
-          {
-            "line": 275,
-            "level": 4
-          },
-          {
-            "line": 282,
-            "level": 3
-          },
-          {
-            "line": 284,
-            "level": 4
-          },
-          {
-            "line": 291,
-            "level": 4
-          },
-          {
-            "line": 305,
-            "level": 4
-          },
-          {
-            "line": 327,
-            "level": 3
-          },
-          {
-            "line": 339,
-            "level": 3
-          },
-          {
-            "line": 349,
             "level": 2
           },
           {
-            "line": 353,
-            "level": 3
-          },
-          {
-            "line": 357,
-            "level": 3
-          },
-          {
-            "line": 361,
-            "level": 4
-          },
-          {
-            "line": 373,
-            "level": 4
-          },
-          {
-            "line": 377,
-            "level": 3
-          },
-          {
-            "line": 379,
-            "level": 4
-          },
-          {
-            "line": 385,
-            "level": 4
-          },
-          {
-            "line": 389,
-            "level": 4
-          },
-          {
-            "line": 391,
-            "level": 4
-          },
-          {
-            "line": 393,
-            "level": 4
-          },
-          {
-            "line": 401,
-            "level": 4
-          },
-          {
-            "line": 403,
-            "level": 3
-          },
-          {
-            "line": 405,
-            "level": 3
+            "line": 162,
+            "level": 2
           }
         ],
         "join_heading_ranges": []
@@ -2625,547 +1843,73 @@
         {
           "type": "set_headings",
           "item": {
-            "line": 141,
-            "level": 3
+            "line": 62,
+            "level": 2
           },
           "reason": "不能把空行变成标题"
         },
         {
           "type": "set_headings",
           "item": {
-            "line": 282,
-            "level": 3
+            "line": 162,
+            "level": 2
           },
-          "reason": "不能把空行变成标题"
-        },
-        {
-          "type": "set_headings",
-          "item": {
-            "line": 284,
-            "level": 4
-          },
-          "reason": "不能把空行变成标题"
+          "reason": "缺少标题格式证据，拒绝把普通正文升级为标题"
         }
       ]
     },
     {
-      "call": 7,
-      "core_start_line": 2467,
-      "actions": {
-        "drop_ranges": [
-          [
-            7,
-            7
-          ],
-          [
-            17,
-            17
-          ],
-          [
-            23,
-            23
-          ],
-          [
-            39,
-            39
-          ],
-          [
-            43,
-            43
-          ],
-          [
-            55,
-            55
-          ],
-          [
-            69,
-            69
-          ],
-          [
-            77,
-            77
-          ],
-          [
-            117,
-            117
-          ],
-          [
-            167,
-            167
-          ],
-          [
-            171,
-            171
-          ],
-          [
-            215,
-            215
-          ],
-          [
-            237,
-            237
-          ],
-          [
-            240,
-            240
-          ],
-          [
-            251,
-            251
-          ],
-          [
-            252,
-            252
-          ],
-          [
-            262,
-            262
-          ],
-          [
-            268,
-            268
-          ],
-          [
-            274,
-            274
-          ],
-          [
-            282,
-            282
-          ],
-          [
-            284,
-            286
-          ],
-          [
-            296,
-            296
-          ],
-          [
-            306,
-            306
-          ],
-          [
-            324,
-            324
-          ],
-          [
-            346,
-            346
-          ],
-          [
-            350,
-            350
-          ],
-          [
-            360,
-            360
-          ]
-        ],
-        "drop_lines": [
-          2,
-          4,
-          6,
-          8,
-          10,
-          12,
-          14,
-          16,
-          18,
-          20,
-          22,
-          24,
-          26,
-          28,
-          30,
-          32,
-          34,
-          36,
-          38,
-          40,
-          42,
-          44,
-          46,
-          48,
-          50,
-          52,
-          54,
-          56,
-          58,
-          60,
-          62,
-          64,
-          66,
-          68,
-          70,
-          72,
-          74,
-          76,
-          78,
-          80,
-          82,
-          84,
-          86,
-          88,
-          90,
-          92,
-          94,
-          96,
-          98,
-          100,
-          102,
-          104,
-          106,
-          108,
-          110,
-          112,
-          114,
-          116,
-          118,
-          120,
-          122,
-          124,
-          126,
-          128,
-          130,
-          132,
-          134,
-          136,
-          138,
-          140,
-          142,
-          144,
-          146,
-          148,
-          150,
-          152,
-          154,
-          156,
-          158,
-          160,
-          162,
-          164,
-          166,
-          168,
-          170,
-          172,
-          174,
-          176,
-          178,
-          180,
-          182,
-          184,
-          186,
-          188,
-          190,
-          192,
-          194,
-          196,
-          198,
-          200,
-          202,
-          204,
-          206,
-          208,
-          210,
-          212,
-          214,
-          216,
-          218,
-          220,
-          222,
-          224,
-          226,
-          228,
-          230,
-          232,
-          234,
-          236,
-          238,
-          240,
-          242,
-          244,
-          246,
-          248,
-          250,
-          252,
-          254,
-          256,
-          258,
-          260,
-          262,
-          264,
-          266,
-          268,
-          270,
-          272,
-          274,
-          276,
-          278,
-          280,
-          282,
-          284,
-          286,
-          288,
-          290,
-          292,
-          294,
-          296,
-          298,
-          300,
-          302,
-          304,
-          306,
-          308,
-          310,
-          312,
-          314,
-          316,
-          318,
-          320,
-          322,
-          324,
-          326,
-          328,
-          330,
-          332,
-          334,
-          336,
-          338,
-          340,
-          342,
-          344,
-          346,
-          348,
-          350,
-          352,
-          354,
-          356,
-          358,
-          360
-        ],
-        "set_headings": [
-          {
-            "line": 1,
-            "level": 2
-          },
-          {
-            "line": 17,
-            "level": 2
-          },
-          {
-            "line": 35,
-            "level": 2
-          },
-          {
-            "line": 45,
-            "level": 2
-          },
-          {
-            "line": 49,
-            "level": 3
-          },
-          {
-            "line": 61,
-            "level": 3
-          },
-          {
-            "line": 73,
-            "level": 2
-          },
-          {
-            "line": 83,
-            "level": 3
-          },
-          {
-            "line": 95,
-            "level": 2
-          },
-          {
-            "line": 97,
-            "level": 2
-          },
-          {
-            "line": 101,
-            "level": 3
-          },
-          {
-            "line": 109,
-            "level": 2
-          },
-          {
-            "line": 127,
-            "level": 2
-          },
-          {
-            "line": 129,
-            "level": 2
-          },
-          {
-            "line": 137,
-            "level": 2
-          },
-          {
-            "line": 145,
-            "level": 2
-          },
-          {
-            "line": 147,
-            "level": 2
-          },
-          {
-            "line": 149,
-            "level": 2
-          },
-          {
-            "line": 155,
-            "level": 2
-          },
-          {
-            "line": 159,
-            "level": 3
-          },
-          {
-            "line": 185,
-            "level": 3
-          },
-          {
-            "line": 189,
-            "level": 2
-          },
-          {
-            "line": 191,
-            "level": 2
-          },
-          {
-            "line": 205,
-            "level": 2
-          },
-          {
-            "line": 209,
-            "level": 3
-          },
-          {
-            "line": 233,
-            "level": 2
-          },
-          {
-            "line": 243,
-            "level": 3
-          },
-          {
-            "line": 247,
-            "level": 4
-          },
-          {
-            "line": 264,
-            "level": 4
-          },
-          {
-            "line": 280,
-            "level": 3
-          },
-          {
-            "line": 282,
-            "level": 2
-          },
-          {
-            "line": 292,
-            "level": 4
-          },
-          {
-            "line": 318,
-            "level": 4
-          },
-          {
-            "line": 344,
-            "level": 3
-          },
-          {
-            "line": 348,
-            "level": 4
-          },
-          {
-            "line": 354,
-            "level": 4
-          }
-        ],
-        "join_heading_ranges": []
-      },
-      "rejected_actions": []
+      "call": 13,
+      "core_start_line": 2496,
+      "actions": {},
+      "rejected_actions": [
+        {
+          "type": "llm_response",
+          "item": null,
+          "reason": "模型动作 JSON 无效，按空动作继续：Expecting value: line 3 column 6 (char 26)"
+        }
+      ]
     },
     {
-      "call": 8,
-      "core_start_line": 2828,
+      "call": 14,
+      "core_start_line": 2678,
+      "actions": {},
+      "rejected_actions": [
+        {
+          "type": "llm_response",
+          "item": null,
+          "reason": "模型动作 JSON 无效，按空动作继续：Expecting value: line 3 column 6 (char 26)"
+        }
+      ]
+    },
+    {
+      "call": 15,
+      "core_start_line": 2838,
       "actions": {
         "drop_ranges": [
           [
-            17,
-            17
+            90,
+            99
           ],
           [
-            69,
-            69
+            101,
+            109
           ],
           [
-            113,
-            113
+            111,
+            124
           ],
           [
-            135,
-            135
+            125,
+            136
           ],
           [
-            145,
-            145
+            137,
+            148
           ],
           [
-            165,
-            165
-          ],
-          [
-            177,
-            177
-          ],
-          [
-            185,
-            185
-          ],
-          [
-            207,
-            207
-          ],
-          [
-            209,
-            212
-          ],
-          [
-            215,
-            215
-          ],
-          [
-            219,
-            219
-          ],
-          [
-            237,
-            237
-          ],
-          [
-            239,
-            249
-          ],
-          [
-            251,
-            260
-          ],
-          [
-            261,
-            299
-          ],
-          [
-            300,
-            309
+            149,
+            159
           ]
         ],
         "drop_lines": [],
@@ -3179,65 +1923,72 @@
             "level": 2
           },
           {
-            "line": 29,
+            "line": 18,
             "level": 2
           },
           {
-            "line": 33,
+            "line": 20,
             "level": 2
           },
           {
-            "line": 37,
-            "level": 3
+            "line": 30,
+            "level": 2
           },
           {
-            "line": 51,
-            "level": 3
+            "line": 32,
+            "level": 2
           },
           {
-            "line": 77,
+            "line": 40,
+            "level": 2
+          },
+          {
+            "line": 46,
+            "level": 2
+          },
+          {
+            "line": 50,
+            "level": 2
+          },
+          {
+            "line": 56,
+            "level": 2
+          },
+          {
+            "line": 60,
+            "level": 2
+          },
+          {
+            "line": 62,
+            "level": 2
+          },
+          {
+            "line": 68,
+            "level": 2
+          },
+          {
+            "line": 73,
             "level": 2
           },
           {
             "line": 81,
-            "level": 3
-          },
-          {
-            "line": 103,
-            "level": 3
-          },
-          {
-            "line": 129,
-            "level": 3
-          },
-          {
-            "line": 155,
-            "level": 3
-          },
-          {
-            "line": 193,
             "level": 2
           },
           {
-            "line": 197,
-            "level": 3
-          },
-          {
-            "line": 203,
-            "level": 3
-          },
-          {
-            "line": 221,
-            "level": 3
-          },
-          {
-            "line": 229,
-            "level": 3
+            "line": 156,
+            "level": 1
           }
         ],
         "join_heading_ranges": []
       },
       "rejected_actions": []
     }
-  ]
+  ],
+  "preprocessing": {
+    "control_characters_removed": 0,
+    "image_lines_removed": 138,
+    "source_marker_lines_removed": 0,
+    "ocr_system_noise_lines_removed": 0,
+    "extra_blank_lines_removed": 3
+  }
 }
